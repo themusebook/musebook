@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-10T19:34:31.823244+00:00",
+  "worker_version": "36310a5c-b5a5-4395-8282-72577857502a",
+  "module_sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+  "public_feed_post_restore_status": 503,
+  "public_feed_error_category": "agent_indexer_unavailable",
+  "historical_limiter_restored_and_verified": true,
+  "public_rpc_gateway": {
+    "path": "/api/solana/rpc",
+    "searchAssets_allowed_by_preserved_deployed_allowlist": false,
+    "expected_blocked_method_status": 403,
+    "upstream_probe_sent": false,
+    "reason": "searchAssets is absent from the explicit allowed-method set; existing gateway also converts params to an array."
+  },
+  "relevant_source_hashes": {
+    "handleAgentFeed": {
+      "bytes": 881,
+      "sha256": "5437c7b9710494eb08f0a9d6c46ed09fffb1db68c1dea7612f6467968071df9d"
+    },
+    "createAgentFeed": {
+      "bytes": 2236,
+      "sha256": "f4c8a3fb0d3f75246cfc8dc0bde63e03ff60a805649c8848ea5ba2c27d24420b"
+    },
+    "parseAgentFeed": {
+      "bytes": 1389,
+      "sha256": "f99879ca67d8799627f52dbae4c5e547df9794af0e56acecf44cc4c5a95d4119"
+    },
+    "handleSolanaRpcProxy": {
+      "bytes": 2174,
+      "sha256": "5713e478ee22d9ef1a0d11d5f8655ce90db7b8d446f6c5aa34a9064807c0aff6"
+    },
+    "solRpcUpstreams": {
+      "bytes": 98,
+      "sha256": "41b370566f1a6836b3b97fd6585fae136cfb61a8a74fe35ba8b3da77735f94e0"
+    },
+    "solanaRpcUrl": {
+      "bytes": 266,
+      "sha256": "0fe859a508099a0472475a78aa0e7075402517eeef0c184836e4cce3b97d7c7a"
+    }
+  },
+  "feed_request_contract": {
+    "jsonrpc": "2.0",
+    "method": "searchAssets",
+    "params": {
+      "isAgent": true,
+      "interface": "MplCoreAsset",
+      "burnt": false,
+      "page": 1,
+      "limit": 12,
+      "sortBy": {
+        "sortBy": "created",
+        "sortDirection": "desc"
+      }
+    }
+  },
+  "remaining_catch_categories": [
+    "limiter.limit throws",
+    "shared agent-feed:upstream limiter denies the request",
+    "four simultaneous pending pages",
+    "empty endpoint",
+    "network or eight-second timeout failure",
+    "non-success upstream HTTP status",
+    "upstream JSON-RPC error or JSON parsing failure",
+    "invalid items/page/positive last_indexed_slot contract",
+    "provider result lacks true is_agent/MplCoreAsset filter or valid asset/owner/signer fields",
+    "duplicate assets",
+    "indexed slot regresses or does not advance within120 seconds"
+  ],
+  "per_ip_limiter_denial_would_return429_instead_of_observed503": true,
+  "existing_rpc_basic_read_health_verified": true,
+  "actual_remaining_cause_identified": false,
+  "conclusion": "The exact restored limiter descriptor is proven. The generic503 does not reveal which remaining gate failed. Actual upstream DAS unsupported status is not proven, and the public RPC gateway blocks the bounded searchAssets diagnostic. Investigation stopped without changing code, secrets or RPC selection.",
+  "secret_values_or_upstream_urls_requested_or_published": false,
+  "raw_responses_published": false,
+  "remote_mutations": 0
+}

@@ -1,0 +1,43 @@
+{
+  "worker": "musebook-proxy",
+  "plan_sha256": "f07379171199e433c33ef8dff69e5a730696b622d7e0d600a52f27b2a605e86b",
+  "deployment_id": "daf7aaaa-e809-47fe-a624-150d2eebd9bc",
+  "version_id": "36310a5c-b5a5-4395-8282-72577857502a",
+  "original_module_hashes": {
+    "worker.js": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+  },
+  "planned_module_hashes": {
+    "worker.js": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+  },
+  "module_hashes": {
+    "worker.js": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+  },
+  "executable_unchanged": true,
+  "planned_modules_deployed": true,
+  "runtime_code_unchanged_except_openapi": true,
+  "documentation_patch": null,
+  "named_handlers_preserved": true,
+  "runtime_metadata_preserved": true,
+  "schedules_preserved": true,
+  "binding_diff": {
+    "before_count": 126,
+    "after_count": 127,
+    "removed": [],
+    "added": [
+      "AGENT_FEED_LIMITER"
+    ],
+    "changed": [
+      "MUSEBOOK_APP_RELEASE_UPSTREAM",
+      "MUSEBOOK_BUNDLE_UPSTREAM",
+      "MUSEBOOK_CONNECTOR_UPSTREAM",
+      "MUSEBOOK_PAYMENT_APP_UPSTREAM"
+    ],
+    "unexpected_changed": [],
+    "unexpected_added": [],
+    "passed": true
+  },
+  "exact_planned_bindings": true,
+  "asset_count": 49,
+  "asset_content_sha256": "d5cdb57ae544de0b2e34a1760957e7bde233fb7e70c395ed91c9d3a2d482157c",
+  "passed": true
+}

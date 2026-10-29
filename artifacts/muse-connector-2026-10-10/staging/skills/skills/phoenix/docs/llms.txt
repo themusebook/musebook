@@ -1,0 +1,121 @@
+# Phoenix
+
+- [Getting Started](https://docs.phoenix.trade/index.md): Getting started with Phoenix
+- [Perpetual Futures](https://docs.phoenix.trade/phoenix/perpetual-futures.md): How Phoenix perpetual futures work, what makes them different from spot, and where each risk mechanism fits
+- [Collateral](https://docs.phoenix.trade/phoenix/collateral-and-accounts/collateral.md): How Phoenix uses USDC and SOL collateral
+- [Accounts](https://docs.phoenix.trade/phoenix/collateral-and-accounts/accounts.md): How Phoenix accounts work and how cross and isolated risk differ
+- [Cross-chain Deposits](https://docs.phoenix.trade/phoenix/collateral-and-accounts/cross-chain-deposits.md): How to deposit source tokens to Phoenix from other chains
+- [Matching Engine](https://docs.phoenix.trade/phoenix/matching-engine/matching-engine.md): How Phoenix matches orders across the FIFO order book and spline liquidity
+- [FIFO Order Book](https://docs.phoenix.trade/phoenix/matching-engine/fifo-order-book.md): Price-time priority and user-facing orderbook behavior
+- [Spline Liquidity](https://docs.phoenix.trade/phoenix/matching-engine/spline-liquidity.md): How spline traders quote and fill liquidity on Phoenix
+- [Self-Trade Prevention](https://docs.phoenix.trade/phoenix/matching-engine/self-trade-prevention.md): How Phoenix handles orders that would match against your own liquidity
+- [Order Types](https://docs.phoenix.trade/phoenix/matching-engine/order-types.md): Phoenix order types, matching behavior, and advanced order controls
+- [Take Profit and Stop Loss](https://docs.phoenix.trade/phoenix/matching-engine/take-profit-stop-loss.md): Attach conditional orders to positions or limit orders to close at a trigger price
+- [Fees](https://docs.phoenix.trade/phoenix/matching-engine/fees.md): Trading fees, liquidation fees, referral discounts, and Flight builder fees
+- [Mark Price](https://docs.phoenix.trade/phoenix/margin-and-risk/mark-price.md): Mark price determines position valuations for PnL and liquidation calculations.
+- [Entry Price And PnL](https://docs.phoenix.trade/phoenix/margin-and-risk/entry-price-pnl.md): How Phoenix tracks entry price, unrealized PnL, and realized PnL
+- [Funding](https://docs.phoenix.trade/phoenix/margin-and-risk/funding-rate.md): Funding rates keep perpetual prices aligned with spot prices through periodic payments between traders.
+- [Leverage Tiers](https://docs.phoenix.trade/phoenix/margin-and-risk/leverage-tiers.md): How position size affects max leverage and margin
+- [Margin Math](https://docs.phoenix.trade/phoenix/margin-and-risk/margin-math.md): How Phoenix calculates effective collateral, position margin, and limit-order margin
+- [Account Health](https://docs.phoenix.trade/phoenix/margin-and-risk/account-health.md): How Phoenix turns collateral and margin into health states and risk tiers
+- [Risk Tiers And Liquidation](https://docs.phoenix.trade/phoenix/margin-and-risk/liquidations.md): Risk classification, automatic SOL conversion, and liquidation types
+- [Risk Warning](https://docs.phoenix.trade/phoenix/margin-and-risk/risk-warning.md): Important risk disclosures
+- [Index Price](https://docs.phoenix.trade/phoenix/real-world-assets/index-price.md): How commodity and equity perp index prices update across external and internal pricing windows
+- [Impact Pricing](https://docs.phoenix.trade/phoenix/real-world-assets/impact-pricing.md): How Phoenix uses order book impact to price real-world asset perps when external markets are closed
+- [Mark Price And Bounds](https://docs.phoenix.trade/phoenix/real-world-assets/mark-price-and-bounds.md): How mark price and closed-period price bounds work for real-world asset perps
+- [Market Specs](https://docs.phoenix.trade/phoenix/real-world-assets/market-specs.md): Leverage, underlying references, price bounds, and margin modes for commodity and equity perps
+- [Phoenix Market Parameters](https://docs.phoenix.trade/phoenix/market-parameters.md): Phoenix Markets: Risk, Leverage, and Parameters
+- [Overview](https://docs.phoenix.trade/builder-codes.md): How Flight codes work on Phoenix
+- [Referral Program](https://docs.phoenix.trade/incentive-programs/referral-program.md): Earn by referring traders to Phoenix
+- [Flight Club](https://docs.phoenix.trade/incentive-programs/flight-club.md): Earn by trading on Phoenix
+- [FAQ](https://docs.phoenix.trade/phoenix/faq/faq.md): Answers to the most common execution, margin, and account questions
+- [Support](https://docs.phoenix.trade/phoenix/faq/support.md): Get help and stay updated
+- [Glossary](https://docs.phoenix.trade/phoenix/glossary.md): Key Phoenix trading, execution, and risk terms
+- [Rise SDK](https://docs.phoenix.trade/sdk/rise.md): Developer SDKs for Phoenix perpetuals in TypeScript and Rust.
+- [Auth](https://docs.phoenix.trade/sdk/auth.md): JWT lifecycle for authenticated Phoenix API and Rise SDK sessions.
+- [Trader Onboarding](https://docs.phoenix.trade/sdk/register.md): Activate Phoenix trader accounts with or without a referral code.
+- [Exchange Data](https://docs.phoenix.trade/sdk/markets.md): Use the Rise SDK exchange cache, market metadata, market stats, and orderbook streams.
+- [WS/API Best Practices](https://docs.phoenix.trade/sdk/ws-api-best-practices.md): Use Phoenix REST, WebSocket, and RPC surfaces without drifting state or hitting rate limits.
+- [Accounts](https://docs.phoenix.trade/sdk/accounts.md): Manage Phoenix trader account indexes, cross-margin accounts, isolated subaccounts, and trader-state subscriptions with the Rise SDK.
+- [Collateral](https://docs.phoenix.trade/sdk/collateral.md): Build Phoenix USDC deposit, withdrawal, and collateral verification flows with the TypeScript and Rust SDKs.
+- [Native SOL collateral](https://docs.phoenix.trade/sdk/native-sol-collateral.md): Deposit SOL and include it in Rise TypeScript and Rust margin calculations.
+- [Orders](https://docs.phoenix.trade/sdk/orders.md): Build Phoenix order, cancellation, stop-loss, and conditional-order instructions with the Rise SDK.
+- [Margin](https://docs.phoenix.trade/sdk/margin.md): Compute Phoenix trader margin and liquidation estimates with the Rise SDK.
+- [On-Chain Programs](https://docs.phoenix.trade/sdk/on-chain-programs.md): Integrate Solana programs with Phoenix perpetuals through the Rise Rust SDK and CPI helpers.
+- [LiteSVM Testing](https://docs.phoenix.trade/sdk/litesvm-testing.md): Use phoenix-rise-litesvm-test fixtures to test Phoenix program integrations locally.
+- [API](https://docs.phoenix.trade/api/index.md): Phoenix REST and WebSocket API endpoints for market data, trader state, and transaction building.
+- [Get exchange](https://docs.phoenix.trade/api/exchange/get-exchange.md): Handles `GET /v1/view/exchange` via `get.v1.view.exchange`.
+- [Get exchange keys](https://docs.phoenix.trade/api/exchange/get-exchange-keys.md): Handles `GET /v1/view/exchange/keys` via `get.v1.view.exchange.keys`.
+- [List markets](https://docs.phoenix.trade/api/exchange/list-markets.md): Handles `GET /v1/view/exchange/markets` via `get.v1.view.exchange.markets`.
+- [Get market](https://docs.phoenix.trade/api/exchange/get-market.md): Handles `GET /v1/view/exchange/market/{symbol}` via `get.v1.view.exchange.market.by_symbol`.
+- [Get exchange status](https://docs.phoenix.trade/api/exchange/get-exchange-status.md): Handles `GET /v1/view/exchange/status` via `get.v1.view.exchange.status`.
+- [Get exchange snapshot](https://docs.phoenix.trade/api/exchange/get-exchange-snapshot.md): Handles `GET /v1/exchange/snapshot` via `get.v1.exchange.snapshot`.
+- [Build register trader instructions](https://docs.phoenix.trade/api/exchange/build-register-trader-instructions.md): Returns the register and delegated-onboarding instructions for the default trader account without a referral code. The caller chooses the transaction fee payer, builds the transaction locally, and signs it with the trader authority and fee payer.
+- [Submit register trader transaction](https://docs.phoenix.trade/api/exchange/submit-register-trader-transaction.md): Validates a base64-encoded transaction for the default trader account, signs it with the Phoenix onboarder, simulates it to ensure the onboarder pays no lamports, sends it to Phoenix's RPC, and returns the transaction signature.
+- [Get orderbook](https://docs.phoenix.trade/api/exchange/get-orderbook.md): Handles `GET /v1/view/orderbook/{symbol}` via `get.v1.view.orderbook.by_symbol`.
+- [Get mark price](https://docs.phoenix.trade/api/exchange/get-mark-price.md): Handles `GET /v1/market/{symbol}/mark-price` via `get.v1.market.by_symbol.mark_price`.
+- [Get market stats history](https://docs.phoenix.trade/api/exchange/get-market-stats-history.md): Handles `GET /v1/market/{symbol}/stats` via `get.v1.market.by_symbol.stats`.
+- [Get next market calendar transition](https://docs.phoenix.trade/api/exchange/get-next-market-calendar-transition.md): Handles `GET /v1/market/{symbol}/next-market-calendar-transition` via `get.v1.market.by_symbol.next_market_calendar_transition`.
+- [Get next commodity market transition](https://docs.phoenix.trade/api/exchange/get-next-commodity-market-transition.md): Handles `GET /v1/market/next-commodity-market-transition` via `get.v1.market.next_commodity_market_transition`.
+- [Get market calendar](https://docs.phoenix.trade/api/exchange/get-market-calendar.md): Handles `GET /v1/market/{symbol}/market-calendar` via `get.v1.market.by_symbol.market_calendar`.
+- [Get market calendar by ID](https://docs.phoenix.trade/api/exchange/get-market-calendar-by-id.md): Handles `GET /v1/market-calendar/{market_calendar_id}` via `get.v1.market_calendar.by_market_calendar_id`.
+- [Get commodity market calendar](https://docs.phoenix.trade/api/exchange/get-commodity-market-calendar.md): Handles `GET /v1/market/commodity-calendar` via `get.v1.market.commodity_calendar`.
+- [Get candles](https://docs.phoenix.trade/api/exchange/get-candles.md): Handles `GET /v1/candles/{symbol}` via `get.v1.candles.by_symbol`.
+- [Get funding rate history](https://docs.phoenix.trade/api/exchange/get-funding-rate-history.md): Handles `GET /v1/funding/{symbol}/rates` via `get.v1.funding.by_symbol.rates`.
+- [Get funding overview](https://docs.phoenix.trade/api/exchange/get-funding-overview.md): Handles `GET /v1/funding/overview` via `get.v1.funding.overview`.
+- [Get market fills](https://docs.phoenix.trade/api/exchange/get-market-fills.md): Returns unaggregated fill records for a market, ordered by time descending. Only fills with valid transaction signatures are included.
+- [Get trader](https://docs.phoenix.trade/api/trader/get-trader.md): Handles `GET /v1/view/trader/{pubkey}` via `get.v1.view.trader.by_pubkey`.
+- [Get trader capabilities](https://docs.phoenix.trade/api/trader/get-trader-capabilities.md): Handles `GET /v1/view/trader-capabilities` via `get.v1.view.trader_capabilities`.
+- [Get trader state](https://docs.phoenix.trade/api/trader/get-trader-state.md): Handles `GET /v1/trader/state/{authority_pubkey}` via `get.v1.trader.state.by_authority_pubkey`.
+- [Get user PnL](https://docs.phoenix.trade/api/trader/get-user-pnl.md): Handles `GET /v1/users/{user_pubkey}/pnl` via `get.v1.users.by_user_pubkey.pnl`.
+- [Get trader portfolio values](https://docs.phoenix.trade/api/trader/get-trader-portfolio-values.md): Handles `GET /v1/traders/{trader_pubkey}/portfolio-values` via `get.v1.traders.by_trader_pubkey.portfolio_values`.
+- [Get trader PnL](https://docs.phoenix.trade/api/trader/get-trader-pnl.md): Handles `GET /v1/traders/{trader_pubkey}/pnl` via `get.v1.traders.by_trader_pubkey.pnl`.
+- [Get trader market PnL](https://docs.phoenix.trade/api/trader/get-trader-market-pnl.md): Handles `GET /v1/traders/{trader_pubkey}/pnl/markets` via `get.v1.traders.by_trader_pubkey.pnl.markets`.
+- [Get user collateral history](https://docs.phoenix.trade/api/trader/get-user-collateral-history.md): Handles `GET /v1/users/{user_pubkey}/collateral-history` via `get.v1.users.by_user_pubkey.collateral_history`.
+- [Get trader collateral history](https://docs.phoenix.trade/api/trader/get-trader-collateral-history.md): Handles `GET /v1/trader/{authority}/collateral-history` via `get.v1.trader.by_authority.collateral_history`.
+- [Get trader collateral history](https://docs.phoenix.trade/api/trader/get-trader-collateral-history-1.md): Handles `GET /v1/traders/{trader_pubkey}/collateral-history` via `get.v1.traders.by_trader_pubkey.collateral_history`.
+- [Get user liquidation history](https://docs.phoenix.trade/api/trader/get-user-liquidation-history.md): Handles `GET /v1/users/{user_pubkey}/liquidation-history` via `get.v1.users.by_user_pubkey.liquidation_history`.
+- [Get trader funding history](https://docs.phoenix.trade/api/trader/get-trader-funding-history.md): Handles `GET /v1/trader/{authority}/funding-history` via `get.v1.trader.by_authority.funding_history`.
+- [Get user hourly funding](https://docs.phoenix.trade/api/trader/get-user-hourly-funding.md): Handles `GET /v1/users/{user_pubkey}/funding-hourly` via `get.v1.users.by_user_pubkey.funding_hourly`.
+- [Get order history](https://docs.phoenix.trade/api/trader/get-order-history.md): Handles `GET /v1/trader/{authority}/order-history` via `get.v1.trader.by_authority.order_history`.
+- [Get order history v2](https://docs.phoenix.trade/api/trader/get-order-history-v2.md): Handles `GET /v1/traders/{trader_pubkey}/orders_v2` via `get.v1.traders.by_trader_pubkey.orders_v2`.
+- [Get trade history](https://docs.phoenix.trade/api/trader/get-trade-history.md): Handles `GET /v1/trader/{authority}/trades-history` via `get.v1.trader.by_authority.trades_history`.
+- [Get user trade history v2](https://docs.phoenix.trade/api/trader/get-user-trade-history-v2.md): Handles `GET /v1/users/{user_pubkey}/trades_v2` via `get.v1.users.by_user_pubkey.trades_v2`.
+- [Get trader trade history v2](https://docs.phoenix.trade/api/trader/get-trader-trade-history-v2.md): Handles `GET /v1/traders/{trader_pubkey}/trades_v2` via `get.v1.traders.by_trader_pubkey.trades_v2`.
+- [Build isolated limit order transaction](https://docs.phoenix.trade/api/trader/build-isolated-limit-order-transaction.md): Handles `POST /v1/ix/place-isolated-limit-order` via `post.v1.ix.place_isolated_limit_order`.
+- [Build isolated market order transaction](https://docs.phoenix.trade/api/trader/build-isolated-market-order-transaction.md): Handles `POST /v1/ix/place-isolated-market-order` via `post.v1.ix.place_isolated_market_order`.
+- [Build cancel conditional order transaction](https://docs.phoenix.trade/api/trader/build-cancel-conditional-order-transaction.md): Handles `POST /v1/ix/cancel-conditional-order` via `post.v1.ix.cancel_conditional_order`.
+- [Build stop loss order transaction](https://docs.phoenix.trade/api/trader/build-stop-loss-order-transaction.md): Handles `POST /v1/ix/place-stop-loss-order` via `post.v1.ix.place_stop_loss_order`.
+- [Build cancel stop loss order transaction](https://docs.phoenix.trade/api/trader/build-cancel-stop-loss-order-transaction.md): Handles `POST /v1/ix/cancel-stop-loss-order` via `post.v1.ix.cancel_stop_loss_order`.
+- [Build attached conditional order transaction](https://docs.phoenix.trade/api/trader/build-attached-conditional-order-transaction.md): Handles `POST /v1/ix/place-attached-conditional-order` via `post.v1.ix.place_attached_conditional_order`.
+- [Build position conditional order transaction](https://docs.phoenix.trade/api/trader/build-position-conditional-order-transaction.md): Handles `POST /v1/ix/place-position-conditional-order` via `post.v1.ix.place_position_conditional_order`.
+- [Build isolated limit order transaction with conditionals](https://docs.phoenix.trade/api/trader/build-isolated-limit-order-transaction-with-conditionals.md): Handles `POST /v1/ix/place-isolated-limit-order-with-conditionals` via `post.v1.ix.place_isolated_limit_order_with_conditionals`.
+- [Build isolated limit order transaction with liquidation estimate](https://docs.phoenix.trade/api/trader/build-isolated-limit-order-transaction-with-liquidation-estimate.md): Handles `POST /v1/ix/place-isolated-limit-order-enhanced` via `post.v1.ix.place_isolated_limit_order_enhanced`.
+- [Build isolated market order transaction with liquidation estimate](https://docs.phoenix.trade/api/trader/build-isolated-market-order-transaction-with-liquidation-estimate.md): Handles `POST /v1/ix/place-isolated-market-order-enhanced` via `post.v1.ix.place_isolated_market_order_enhanced`.
+- [List trader notifications](https://docs.phoenix.trade/api/notifications/list-trader-notifications.md): Handles `GET /v1/traders/{trader_pubkey}/notifications` via `get.v1.traders.by_trader_pubkey.notifications`.
+- [Acknowledge notifications up to timestamp](https://docs.phoenix.trade/api/notifications/acknowledge-notifications-up-to-timestamp.md): Handles `POST /v1/traders/{trader_pubkey}/notifications/ack/up-to` via `post.v1.traders.by_trader_pubkey.notifications.ack.up_to`.
+- [Acknowledge notifications](https://docs.phoenix.trade/api/notifications/acknowledge-notifications.md): Handles `POST /v1/traders/{trader_pubkey}/notifications/ack/notifications` via `post.v1.traders.by_trader_pubkey.notifications.ack.notifications`.
+- [Validate invite](https://docs.phoenix.trade/api/invite/validate-invite.md): Validates an invite code and whitelists the wallet if the code is valid and unused.
+- [Check wallet invite status](https://docs.phoenix.trade/api/invite/check-wallet-invite-status.md): Checks whether a wallet address is whitelisted and returns associated information.
+- [Activate referral (deprecated June 30, 2026)](https://docs.phoenix.trade/api/invite/activate-referral-deprecated-june-30-2026.md): Deprecated on June 30, 2026. New onboarding should use delegated on-chain permission accounts or `/v1/referral/activate-tx` instead.
+- [Get referral activation permission](https://docs.phoenix.trade/api/invite/get-referral-activation-permission.md): Returns the trader onboarder, risk authority, and permission account needed to build a referral activation transaction.
+- [Activate referral with user-funded transaction](https://docs.phoenix.trade/api/invite/activate-referral-with-user-funded-transaction.md): Activates a trader with a valid referral code by validating a user-funded transaction, signing it with the referral activation onboarder, and submitting it. The trader authority or another non-Phoenix payer must pay fees and trader-account rent.
+- [Log in with Privy token](https://docs.phoenix.trade/api/auth/log-in-with-privy-token.md): Handles `POST /v1/auth/login/privy` via `post.v1.auth.login.privy`.
+- [Create wallet transaction challenge](https://docs.phoenix.trade/api/auth/create-wallet-transaction-challenge.md): Handles `POST /v1/auth/wallet/transaction-challenge` via `post.v1.auth.wallet.transaction_challenge`.
+- [Log in with signed wallet transaction](https://docs.phoenix.trade/api/auth/log-in-with-signed-wallet-transaction.md): Handles `POST /v1/auth/login/wallet/transaction` via `post.v1.auth.login.wallet.transaction`.
+- [Create service login challenge](https://docs.phoenix.trade/api/auth/create-service-login-challenge.md): Handles `POST /v1/auth/login/service/challenge` via `post.v1.auth.login.service.challenge`.
+- [Log in with service signature](https://docs.phoenix.trade/api/auth/log-in-with-service-signature.md): Handles `POST /v1/auth/login/service` via `post.v1.auth.login.service`.
+- [Get wallet login nonce](https://docs.phoenix.trade/api/auth/get-wallet-login-nonce.md): Handles `GET /v1/auth/nonce` via `get.v1.auth.nonce`.
+- [Log in with wallet signature](https://docs.phoenix.trade/api/auth/log-in-with-wallet-signature.md): Handles `POST /v1/auth/login/wallet` via `post.v1.auth.login.wallet`.
+- [Refresh session](https://docs.phoenix.trade/api/auth/refresh-session.md): Handles `POST /v1/auth/refresh` via `post.v1.auth.refresh`.
+- [Log out](https://docs.phoenix.trade/api/auth/log-out.md): Handles `POST /v1/auth/logout` via `post.v1.auth.logout`.
+- [Get JWKS](https://docs.phoenix.trade/api/auth/get-jwks.md): Handles `GET /v1/auth/jwks` via `get.v1.auth.jwks`.
+- [WebSocket](https://docs.phoenix.trade/api/websocket.md): Supported Phoenix WebSocket subscription requests and response message types.
+- [CLI](https://docs.phoenix.trade/cli/index.md): Agent and human-friendly CLI for trading Phoenix perpetual futures on Solana.
+- [Installation](https://docs.phoenix.trade/cli/installation.md): Install the Vulcan CLI and set up your wallet, configuration, and agent integrations.
+- [Command reference](https://docs.phoenix.trade/cli/commands.md): Every Vulcan CLI command, grouped by topic.
+- [Strategies](https://docs.phoenix.trade/cli/strategies.md): First-class strategy runners: TWAP, grid, and TA-driven trading on Phoenix perpetuals.
+
+## OpenAPI Specs
+
+- [phoenix-public-api](/openapi/phoenix-public-api.json)

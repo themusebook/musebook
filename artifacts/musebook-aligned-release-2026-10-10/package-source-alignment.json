@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-10T19:32:29.670824+00:00",
+  "scope": "Frozen release source and downloadable package alignment. Deployment promotion and live route evidence are recorded separately.",
+  "sanitization": "No secrets, environment values, machine-specific absolute paths, service bindings or private runtime source are included.",
+  "source": {
+    "designatedFrontend": "musebook-private/web-react",
+    "frontendSourceEqualsDesignatedOriginal": true,
+    "designatedSourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "privateBaseRevision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "includesReviewedUncommittedChanges": true,
+    "revisionCaveat": "revision identifies the private base commit; sourceHash identifies the complete reviewed committed and uncommitted build inputs.",
+    "publicGitBaseRevision": "4a3540d049999107cc598cbd0feb63555a9beb5c",
+    "sourceHashMethod": "web-react/scripts/release-manifest.mjs: src, scripts, public, vendor, build configuration, shared server modules and included legacy music/font inputs; excludes .DS_Store and public/live snapshots."
+  },
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "archives": [
+    {
+      "name": "musebook-1.2.0.tgz",
+      "version": "1.2.0",
+      "bytes": 132536,
+      "sha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5",
+      "regularFiles": 33,
+      "sourceComparison": {
+        "kind": "all_packaged_source_files",
+        "matchedFiles": 33,
+        "mismatches": 0,
+        "source": "GitHub checkout package allowlist"
+      }
+    },
+    {
+      "name": "musebook-sdk-1.5.0.tgz",
+      "version": "1.5.0",
+      "bytes": 45119,
+      "sha256": "10aa06c688680cdcf2aba4a475c390829f7c001c440a5cf68f5a5e67ef7f782f",
+      "regularFiles": 32,
+      "sourceComparison": {
+        "kind": "all_packaged_source_files",
+        "matchedFiles": 32,
+        "mismatches": 0,
+        "source": "GitHub checkout package allowlist"
+      }
+    },
+    {
+      "name": "musebook-tui-0.1.2.tgz",
+      "version": "0.1.2",
+      "bytes": 25847,
+      "sha256": "05b6b0afab4b118de1b96bfe9c60aae5202e18e78ebd143b311d3dff11fdce7e",
+      "regularFiles": 25,
+      "sourceComparison": {
+        "kind": "preserved_compiled_release",
+        "matchedPackageMetadataFiles": 3,
+        "compiledSystemPromptEqualsCurrentSource": true,
+        "allCompiledModulesRebuiltFromCurrentSource": false,
+        "note": "The evaluated compiled system prompt string exactly matches current GitHub TypeScript source. Preserved runtime files were not rebuilt from the older private TUI checkout."
+      }
+    },
+    {
+      "name": "connector-clawd.tar.gz",
+      "version": "3.15.1",
+      "bytes": 156127,
+      "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4",
+      "archiveEntries": 13,
+      "regularFiles": 9,
+      "sourceComparison": {
+        "kind": "all_archive_files_and_github_tar",
+        "matchedFiles": 9,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "connector-birdeye.tar.gz",
+      "version": "1.2.0",
+      "bytes": 8707,
+      "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059",
+      "archiveEntries": 11,
+      "regularFiles": 7,
+      "sourceComparison": {
+        "kind": "all_archive_files_and_github_tar",
+        "matchedFiles": 7,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "clawd-skills.tar.gz",
+      "version": "3.15.1",
+      "bytes": 23381619,
+      "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+      "archiveEntries": 3306,
+      "regularFiles": 2626,
+      "installableSkills": 272,
+      "skillDocuments": 286,
+      "nestedSkillDocuments": 14,
+      "sourceComparison": {
+        "kind": "github_tar_exact_bytes",
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "musebook-plugin.zip",
+      "version": "1.1.5",
+      "bytes": 1008808,
+      "sha256": "e90ca181c16e13f2e9980c1b8bbd60282d8f51ec77d568ea4f3fc706956835a5",
+      "regularFiles": 11,
+      "skills": 1,
+      "discoverableSkills": 1,
+      "sourceComparison": {
+        "kind": "all_extracted_source_files",
+        "matchedFiles": 11,
+        "mismatches": 0,
+        "sources": [
+          "GitHub plugins",
+          "designated frontend plugins"
+        ]
+      }
+    },
+    {
+      "name": "clawd-plugin.zip",
+      "version": "3.15.1",
+      "bytes": 26160278,
+      "sha256": "2491b0ba6904aed552cc5da612865d14ab457154fbf2ded6a550620ace0e46fc",
+      "regularFiles": 2662,
+      "skills": 273,
+      "discoverableSkills": 272,
+      "sourceComparison": {
+        "kind": "SOURCE_json_complete_provenance",
+        "matchedOriginalFiles": 2626,
+        "mismatches": 0,
+        "normalizedFrontmatterWithRetainedOriginals": 24
+      }
+    },
+    {
+      "name": "clawd-research-plugin.zip",
+      "version": "1.2.1",
+      "bytes": 1013116,
+      "sha256": "68fef7e925c96167abddc68c59f0ee09d8b4273bcd0d2de6fd4ae4ee756454f0",
+      "regularFiles": 11,
+      "skills": 1,
+      "discoverableSkills": 1,
+      "sourceComparison": {
+        "kind": "all_extracted_source_files",
+        "matchedFiles": 11,
+        "mismatches": 0,
+        "sources": [
+          "GitHub plugins",
+          "designated frontend plugins"
+        ]
+      }
+    }
+  ],
+  "counts": {
+    "originalInstallableSkills": 272,
+    "originalSkillDocuments": 286,
+    "nestedSkillDocuments": 14,
+    "originalRegularArchiveFiles": 2626,
+    "archiveEntriesIncludingDirectories": 3306,
+    "serviceConnectors": 17,
+    "connectorPackages": 2,
+    "pluginWorkflowsIncludingMusebookOverlay": 273,
+    "pluginDiscoverableWorkflows": 272,
+    "manualPluginWorkflows": 1,
+    "publicMcpTools": 23,
+    "researchMcpTools": 14,
+    "accountOutputContracts": 4,
+    "openapiPaths": 237,
+    "sourceOnlyOpenapiPaths": 7
+  },
+  "clawdProvenance": {
+    "sourceArchiveSha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+    "sourceVersion": "3.15.1",
+    "originalFilesPreservedExactly": 2626,
+    "packagedFileChecksumsVerified": 2626,
+    "normalizedFrontmatterWithRetainedOriginals": 24,
+    "originalInstallableSkills": 272,
+    "originalDiscoverableSkills": 271,
+    "manualSkills": [
+      "review-animations"
+    ],
+    "addedSkills": [
+      "skills/musebook-updates/SKILL.md"
+    ],
+    "pluginWorkflows": 273,
+    "pluginDiscoverableWorkflows": 272
+  },
+  "pluginContracts": {
+    "musebook": {
+      "contractGroups": {
+        "public": 23,
+        "account": 4
+      },
+      "mcpConnections": 1,
+      "mcpEndpoint": "https://musebook.trade/mcp-auth",
+      "authentication": "OAuth; existing scope grants preserved"
+    },
+    "clawd": {
+      "contractGroups": {
+        "public": 23,
+        "account": 4
+      },
+      "mcpConnections": 1,
+      "mcpEndpoint": "https://musebook.trade/mcp-auth",
+      "authentication": "OAuth; existing scope grants preserved"
+    },
+    "clawd-research": {
+      "contractGroups": {
+        "research": 14
+      },
+      "mcpConnections": 1,
+      "mcpEndpoint": "https://musebook.trade/mcp-research",
+      "authentication": "none"
+    }
+  },
+  "pluginContractVerification": {
+    "publicContractRecordsEqualVerifiedSnapshot": true,
+    "researchOutputSchemasAndSafetyHintsEqualVerifiedLiveCatalog": true,
+    "researchContractDisplayTitlesAreNotPartOfExportedSchemaRecords": true,
+    "addedAuthenticationConnections": 0,
+    "addedAuthenticationGrants": 0,
+    "researchOutputSchemaNames": [
+      "stream_launches",
+      "render_clawd_launches",
+      "search_agents",
+      "get_agent",
+      "directory_stats",
+      "backpack_ticker",
+      "backpack_klines",
+      "coin_snapshot",
+      "coin_decision_history",
+      "prediction_events",
+      "prediction_market",
+      "prediction_orderbook",
+      "site_launch_receipts",
+      "rwa_readiness"
+    ]
+  },
+  "metadataParity": {
+    "pluginManifestMatchesGitHub": true,
+    "clawdManifestMatchesGitHubSemantically": true,
+    "connectorManifestMatchesGitHub": true,
+    "researchManifestMatchesGitHubExactly": true
+  },
+  "publicGithubMirrors": [
+    {
+      "sitePath": "/openapi.json",
+      "githubPath": "openapi.json",
+      "sha256": "3e57f19ca0599ee55e56fbe7827dbb5cd8e4fdb14be71d942bf7abd44c62eb79",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/llms.txt",
+      "githubPath": "llms.txt",
+      "sha256": "56fc5fb2fa150e70fb92ddacdb6d429573a0ce9b53bdf80e95c54040e62340fc",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/skill.md",
+      "githubPath": "SKILL.md",
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/install-cli.sh",
+      "githubPath": "install-cli.sh",
+      "sha256": "235170d307286b71927f56aa5aeb724c5b75f36c34e8a3ad5d3f902df65973f5",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/agentic-layer.md",
+      "githubPath": "docs/AGENTIC-LAYER.md",
+      "sha256": "43b197e65962a6c9f937711ced153d4413d658e02658c31c387bac76a1a09c47",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/manifest.json",
+      "githubPath": "research/manifest.json",
+      "sha256": "1f029ab242673c6ea558ddead762bf79a48ad2e5428ce7bdbd29a424bbadf35c",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.md",
+      "githubPath": "research/clawd-agentic-layer-v0.6.md",
+      "sha256": "c05255a5d1117b6f6cff2434800da7473e767ac58ea06c1c8e5ddaee56298c70",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.html",
+      "githubPath": "research/clawd-agentic-layer-v0.6.html",
+      "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.pdf",
+      "githubPath": "research/clawd-agentic-layer-v0.6.pdf",
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "exactBytes": true
+    }
+  ],
+  "research": {
+    "paperVersion": "0.6",
+    "publishedAt": "2026-10-07",
+    "sourceHash": "207d825f6d3741a0fc66dbbfffc3d98b48f295b750cabb1d95010c5236bdc80a",
+    "pdfSha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465"
+  },
+  "productionBoundaries": {
+    "sourceOnlyPaths": [
+      "/api/metaplex/identities",
+      "/api/metaplex/identities/{hash}/{file}",
+      "/api/metaplex/i/{key}/{file}",
+      "/api/metaplex/identities/verify",
+      "/api/otc/meteora/launch",
+      "/api/otc/coins",
+      "/api/otc/ipfs"
+    ],
+    "statusExtension": "x-musebook-deployment-status",
+    "statusValue": "source_only",
+    "sourceOnlyDescriptionsExplicitlySayProductionHandlerUnavailable": true,
+    "preservedPublicMcpCatalogSize": 23,
+    "preservedResearchMcpCatalogSize": 14,
+    "paymentOrWalletExecutionPerformed": false,
+    "ownerOAuthCallbackPerformed": false,
+    "openaiDirectoryStatus": "not_submitted",
+    "registeredChatGPTApp": false
+  },
+  "validation": {
+    "releaseSourceAndArtifactHashesRecomputed": true,
+    "sourceEqualsDesignatedOriginal": true,
+    "allPublishedArchiveHashesAndSizesVerified": true,
+    "cliPackagedFilesMatched": 33,
+    "sdkPackagedFilesMatched": 32,
+    "connectorExtractedFilesMatched": {
+      "clawd": 9,
+      "birdeye": 7
+    },
+    "standalonePluginExtractedFilesMatched": {
+      "musebook": 11,
+      "clawd-research": 11
+    },
+    "clawdOriginalFileChecksumsMatched": 2626,
+    "focusedDocsCatalogResearchTests": {
+      "pass": 25,
+      "fail": 0,
+      "skipped": 0,
+      "releaseSourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716"
+    },
+    "pluginPackageTests": {
+      "pass": 3,
+      "fail": 0
+    },
+    "gitDiffWhitespaceCheckPassed": true,
+    "fullFrontendTests": {
+      "pass": 525,
+      "fail": 0,
+      "skipped": 0,
+      "releaseSourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+      "releaseArtifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+      "logSha256": "6f1e967bf3255511c0bf9efeef79aeffce0bc82eca29f8b28a295858ee389de1"
+    },
+    "vercelStaticOutputMatchesBuiltDistExactly": true,
+    "matchingBuiltFiles": 1097,
+    "freshPackageSourceComparison": "package-source-comparison.json",
+    "sourceFilesCompared": 2729,
+    "tuiSystemPromptComparison": {
+      "equal": true,
+      "bytes": 1407,
+      "sha256": "a5b58c953cf17c8806896ff4c6f72f056db5f213b881fe458e1ff3464411d331"
+    }
+  },
+  "curatedDiffReview": {
+    "resolvedActiveInaccuracies": [
+      "Current README plugin versions and 14-tool research count",
+      "Current SDK version 1.5.0 in README and active agentic guide",
+      "17 service connector claims and canonical MCP/playground endpoints",
+      "Removed stale static directory population",
+      "Regenerated paper PDF and full research provenance after active guide edit",
+      "Corrected frontend CLI GitHub button to repository root",
+      "Research MCP authority row now lists fourteen public read-only tools",
+      "Removed incorrect claim that Research has no UI resource; optional relay card is preserved"
+    ],
+    "historicalEvidencePreserved": [
+      "Paper version-specific documents",
+      "Prediction helpers first supported in SDK 1.3.0",
+      "Older 202-skill screenshot context"
+    ],
+    "remainingPackageOrDocumentationAlignmentConcerns": []
+  },
+  "pagesArchiveLimit": {
+    "bytes": 26214400,
+    "largestPluginBytes": 26160278,
+    "remainingBytes": 54122
+  },
+  "historicalBrowserEvidence": {
+    "path": "live-browser/report.json",
+    "sha256": "96e2129d2fe9684ff4540a79e442b8f906500f2c9038b7e11ac38c12a673fe00",
+    "startedAt": "2026-10-10T19:10:07.235Z",
+    "finishedAt": "2026-10-10T19:11:02.805Z",
+    "release": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:06:49.290Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "originalHashesAndTimestampsPreserved": true,
+    "carriedForwardChecks": [
+      "Rendering of unchanged compiled HTML, JavaScript and CSS",
+      "Copy controls and clipboard denial fallback",
+      "Mobile navigation",
+      "Unchanged Clawd and BirdEye connector and full skill downloads"
+    ],
+    "notCarriedForwardChecks": [
+      "Old CLI archive digest",
+      "Old release metadata",
+      "Current paper PDF digest",
+      "Routing aliases corrected after the browser run"
+    ],
+    "carryforwardEvidence": [
+      "route-fix-artifact-comparison.json",
+      "before-route-fix-fingerprints.json",
+      "route-fix-fingerprints.json",
+      "package-source-comparison.json"
+    ],
+    "freshReplacementEvidence": "Final release/package/PDF hashes and source comparisons are verified in package-source-comparison.json. Normal-domain live verification is recorded separately by the release coordinator."
+  },
+  "releaseHistory": {
+    "browserTestedRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:06:49.290Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "routeOnlyRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:16:35.466Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "88a7c82f7f4ed97c3632c50627e4943133bd1b19a906b742707ee8ef6246b2eb",
+      "artifactHash": "2e41768e88acbee0d5148dbb2f6f45c417e62c4cc4fd0c9dd70e0bd5948c15c6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "finalRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:29:44.179Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+      "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "routeOnlyChangedFiles": [
+      "_redirects",
+      "release.json"
+    ],
+    "finalDocumentationChangedFiles": [
+      "agentic-layer.md",
+      "clawd-agentic-layer-whitepaper.pdf",
+      "downloads/manifest.json",
+      "downloads/musebook-1.2.0.tgz",
+      "release.json",
+      "research/clawd-agentic-layer-v0.6.pdf",
+      "research/manifest.json"
+    ],
+    "compiledFrontendUnchangedAcrossBothComparisons": true,
+    "revisionAttestation": "build-revision-attestation.json"
+  },
+  "htmlTransformEvidence": {
+    "report": "html-transform-review/transform-review.json",
+    "checkedAt": "2026-10-10T19:20:11.896507+00:00",
+    "reviewedPaths": 4,
+    "negativeMutationChecksPassed": 15,
+    "remainingBytesMatchExactFrozenHtml": true,
+    "webmcpInjectorIndependentlyAttributed": false,
+    "verifier": "html-transform-review/verify_aligned_live.py",
+    "strictNormalization": "html-transform-review/reviewed_html_transforms.py"
+  }
+}

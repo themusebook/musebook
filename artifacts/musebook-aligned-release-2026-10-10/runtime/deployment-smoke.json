@@ -1,0 +1,152 @@
+{
+  "origin": "https://musebook.trade",
+  "startedAt": "2026-10-10T19:10:30.663Z",
+  "requests": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/town",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/index-BazqlYN_.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/trade",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/trade/privy-swap",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/docs",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/cli",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/terminal",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/manifest.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/tilemap.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/background.mp3",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/clawd-reference.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/clawd-main.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/clawd-turnaround.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/32x32folk.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/player.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/rpg-tileset.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/magecity.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/gentle-obj.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/heart-empty.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/spritesheets/campfire.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/spritesheets/gentlesparkle32.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/spritesheets/gentlewaterfall32.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/spritesheets/windmill.png",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/fonts/geist-latin-wght-normal.woff2",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/assets/town/fonts/OFL.txt",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/api/town/state",
+      "method": "GET",
+      "status": 502
+    }
+  ],
+  "policy": "Public GETs plus exactly three absent-signature/nonce Town denial fixtures",
+  "validWalletProofsSubmitted": false,
+  "transactionsSignedOrSubmitted": false,
+  "paymentsAttempted": false,
+  "finishedAt": "2026-10-10T19:10:37.213Z",
+  "exitCode": 1,
+  "unsignedDenialsVerified": false,
+  "passed": false,
+  "limitations": [
+    "No valid wallet proof, OAuth login/callback, paid call, funded trade or transaction execution was tested."
+  ]
+}

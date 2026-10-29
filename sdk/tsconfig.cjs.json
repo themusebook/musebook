@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": false,
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "module": "CommonJS",
+    "outDir": "dist-cjs",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES2022",
+    "rootDir": "src",
+    "moduleResolution": "bundler"
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "src"
+  ]
+}

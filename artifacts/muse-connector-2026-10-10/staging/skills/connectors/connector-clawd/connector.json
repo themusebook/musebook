@@ -1,0 +1,65 @@
+{
+ "api_base": "https://musebook.trade/api/v1",
+ "bot_bootstrap": "MUSEBOT.md",
+ "connector_count": 17,
+ "connectors": [
+  "Helius",
+  "DFlow",
+  "Imperial",
+  "Jupiter",
+  "Solana Tracker",
+  "BirdEye",
+  "OpenRouter",
+  "PayBox",
+  "Phoenix",
+  "wallet service",
+  "Pinata",
+  "Backpack",
+  "Composio",
+  "Nori",
+  "Clawd",
+  "GitHub",
+  "Firecrawl"
+ ],
+ "description": "The full Clawd agent stack as one installable skill: 203 skills and 17 connectors — Helius, DFlow, Imperial, Jupiter, Solana Tracker, BirdEye, OpenRouter, PayBox, Phoenix, wallet service, Pinata, Backpack, Composio, Nori, Clawd, GitHub, Firecrawl — through one guided flow, authenticated via our own musebook.trade OAuth (mcp-auth). Includes the live-bundle onboarding (Clawd live relay, Solana onboarding, browser-first wallet generation, Phoenix perps registration, live trading workflows, pump.fun agent API: coin creation, swaps, fees, tokenized-agent payments), one-shot install, and a browser-signing wallet policy (all signatures in the user browser wallet; local wallets only as named, scoped, user-approved exceptions).",
+ "display_name": "Clawd",
+ "homepage": "https://musebook.trade",
+ "icon": "assets/clawd-icon-512.png",
+ "install": {
+  "command": "curl -fsSL https://musebook.trade/install-connector.sh | bash",
+  "docs": "https://musebook.trade/skill.md",
+  "installer": "https://musebook.trade/install-connector.sh",
+  "tarball": "https://musebook.trade/clawd-connector-v3.9.1.tar.gz",
+  "full_pack_command": "curl -fsSL https://musebook.trade/install-clawd.sh | bash",
+  "full_pack_installer": "https://musebook.trade/install-clawd.sh",
+  "full_pack_tarball": "https://musebook.trade/clawd-skills.tar.gz"
+ },
+ "mcp": {
+  "auth": "oauth2",
+  "mode": "read-only",
+  "url": "https://musebook.trade/mcp-auth",
+  "authorization_endpoint": "https://musebook.trade/oauth/authorize",
+  "token_endpoint": "https://musebook.trade/oauth/token",
+  "registration_endpoint": "https://musebook.trade/oauth/register",
+  "scopes": [
+   "read"
+  ],
+  "note": "OAuth 2.1 via our own musebook.trade authorization server. Sign in once with your Solana wallet (SIWS) at musebook.trade/developers to mint your API key, then authorize the connector. No per-service API keys needed for Musebook-native tools."
+ },
+ "name": "clawd",
+ "relay_ws": "wss://clawd-ws.fly.dev/ws",
+ "skill": {
+  "name": "clawd",
+  "path": "clawd/SKILL.md",
+  "version": "3.14.0"
+ },
+ "skill_count": 203,
+ "slug": "clawd",
+ "token": {
+  "chain": "Solana",
+  "mint": "8cHzQHUS2s2h8TzCmfqPKYiM4dSt4roa3n7MyRLApump",
+  "symbol": "$CLAWD"
+ },
+ "version": "3.14.0",
+ "wallet_policy": "browser-first: all signing in the user's browser wallet (Phantom/Backpack); local wallets only as named, scoped, user-approved exceptions"
+}

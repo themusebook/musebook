@@ -1,0 +1,141 @@
+{
+  "worker": "musebook-proxy",
+  "version_id": "54343cd5-7475-4889-9379-9b7b8effedd8",
+  "before_binding_digest": "cd06729b28204c75319b554e658076b5b5ea41993353eb36897c270a9fb3a2cd",
+  "planned_binding_digest": "43a2037563d5e10e43777f57a34d4cc750a635646d3f2e3778ca05c72db5fa39",
+  "modules": [
+    {
+      "filename": "worker.js",
+      "bytes": 12873410,
+      "sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+    }
+  ],
+  "planned_modules": [
+    {
+      "filename": "worker.js",
+      "bytes": 12873410,
+      "sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+    }
+  ],
+  "documentation_patch": null,
+  "executable_unchanged": true,
+  "runtime_code_unchanged_except_openapi": true,
+  "main_module": "worker.js",
+  "asset_manifest_sha256": "f0834937119e5a1798209703dbe430373584c24a9066ad29386658b989ad41f0",
+  "asset_content_sha256": "d5cdb57ae544de0b2e34a1760957e7bde233fb7e70c395ed91c9d3a2d482157c",
+  "asset_count": 49,
+  "asset_bytes": 36254863,
+  "assets_config": {
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+  "changed_variables": [
+    "MUSEBOOK_APP_RELEASE_UPSTREAM",
+    "MUSEBOOK_BUNDLE_UPSTREAM",
+    "MUSEBOOK_CONNECTOR_ASSETS",
+    "MUSEBOOK_CONNECTOR_ASSETS_2",
+    "MUSEBOOK_CONNECTOR_UPSTREAM",
+    "MUSEBOOK_PAYMENT_APP_UPSTREAM"
+  ],
+  "added_bindings": [
+    {
+      "name": "AGENT_FEED_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1006",
+      "simple": {
+        "limit": 60,
+        "period": 60
+      }
+    }
+  ],
+  "binding_diff": {
+    "before_count": 126,
+    "after_count": 127,
+    "removed": [],
+    "added": [
+      "AGENT_FEED_LIMITER"
+    ],
+    "changed": [
+      "MUSEBOOK_APP_RELEASE_UPSTREAM",
+      "MUSEBOOK_BUNDLE_UPSTREAM",
+      "MUSEBOOK_CONNECTOR_UPSTREAM",
+      "MUSEBOOK_PAYMENT_APP_UPSTREAM"
+    ],
+    "unexpected_changed": [],
+    "unexpected_added": [],
+    "passed": true
+  },
+  "requests": [
+    "POST assets-upload-session",
+    "POST assets/upload?base64=true per returned bucket",
+    "PUT unchanged Worker module with preserved bindings"
+  ],
+  "agent_feed_limiter_restoration": {
+    "historical_version_id": "a17e9a8c-7c26-4509-839e-6a5717029e1e",
+    "exact_descriptor": {
+      "name": "AGENT_FEED_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1006",
+      "simple": {
+        "limit": 60,
+        "period": 60
+      }
+    },
+    "module_references_verified": true,
+    "existing_rpc_fallback_binding_names": [
+      "SOLANA_RPC_URL",
+      "RPC_URL",
+      "HELIUS_RPC_URL"
+    ],
+    "existing_binding_already_exact": false,
+    "new_resources_provisioned": 0,
+    "secret_values_requested": false,
+    "das_search_assets_success_verified": false
+  },
+  "runtime_preservation_review": {
+    "secret_binding_count": 83,
+    "named_handlers": [
+      {
+        "name": "BackpackConnectedAccount",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "BackpackMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "MusebookMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "OreComputer",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "PumpStreamMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "SvmBatchFacilitator",
+        "handlers": [
+          "class"
+        ]
+      }
+    ],
+    "runtime_metadata_sha256": "e377ffa85d3c7ee301a51b26b1d9c677a98d2f73353343e7ff1e562dc8948390",
+    "cron_sha256": "3bc6f0c4792ae6ccc50c1fe9dd3fbcac646d4679b90c90a74be001bf04dc7496",
+    "all_existing_bindings_preserved_except_explicit_release_pins": true
+  },
+  "plan_sha256": "f07379171199e433c33ef8dff69e5a730696b622d7e0d600a52f27b2a605e86b"
+}

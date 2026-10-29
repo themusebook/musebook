@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-03T23:03:41.314Z",
+  "archive": "/Users/8bit/Downloads/clawd-webmcp-starter/musebook/plugins/releases/musebook-plugin.zip",
+  "version": "1.1.4",
+  "bytes": 1011267,
+  "sha256": "49e8a6536aded3be12dff80d165b44895c0d586c238b531c809176792258f6fb",
+  "configuredEndpoint": "https://musebook.trade/mcp-auth",
+  "servers": 1,
+  "transports": {
+    "portable": "streamable-http",
+    "codex": "http"
+  },
+  "archiveChecks": {
+    "crcPassed": true,
+    "sourceParityPassed": true,
+    "hiddenConfigsPresent": true,
+    "webCopyParityPassed": true
+  },
+  "liveConnectionChecks": {
+    "unauthenticatedStatus": 401,
+    "canonicalChallengePassed": true,
+    "resourceMetadataPassed": true,
+    "issuerMetadataPassed": true,
+    "pkce": "S256"
+  },
+  "broaderIntegration": {
+    "passed": false,
+    "missingOutputSchemas": [
+      "x402m_discover"
+    ]
+  },
+  "completedUserOAuthSession": false
+}

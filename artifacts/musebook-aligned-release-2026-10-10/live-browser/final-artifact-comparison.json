@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10T19:32:52Z",
+  "baselineBrowserRelease": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:06:49.290Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+    "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "baselineBrowserStartedAt": "2026-10-10T19:10:07.235Z",
+  "baselineBrowserFinishedAt": "2026-10-10T19:11:02.805Z",
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "filesCompared": 1097,
+  "changedFiles": [
+    "_redirects",
+    "agentic-layer.md",
+    "clawd-agentic-layer-whitepaper.pdf",
+    "downloads/manifest.json",
+    "downloads/musebook-1.2.0.tgz",
+    "release.json",
+    "research/clawd-agentic-layer-v0.6.pdf",
+    "research/manifest.json"
+  ],
+  "removedFiles": [],
+  "addedFiles": [],
+  "assetsCompared": 274,
+  "changedAssets": [],
+  "addedAssets": [],
+  "removedAssets": [],
+  "compiledHtmlJsCssAndAllAssetsCompared": 926,
+  "compiledHtmlJsCssAndAllAssetsUnchanged": true,
+  "unexpectedCompiledChanges": [],
+  "broadBrowserEvidenceCarriedForward": true,
+  "passed": true
+}

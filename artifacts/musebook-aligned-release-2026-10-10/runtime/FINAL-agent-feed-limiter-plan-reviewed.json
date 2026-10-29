@@ -1,0 +1,96 @@
+{
+  "FINAL": true,
+  "plan_sha256": "f07379171199e433c33ef8dff69e5a730696b622d7e0d600a52f27b2a605e86b",
+  "superseded_intermediate_plan_sha256": "518541577b8570633265dc8e580baf6d9e777f1856a9376416bdb866a493948b",
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "final_candidate_origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+  "binding_diff": {
+    "before_count": 126,
+    "after_count": 127,
+    "removed": [],
+    "added": [
+      "AGENT_FEED_LIMITER"
+    ],
+    "changed": [
+      "MUSEBOOK_APP_RELEASE_UPSTREAM",
+      "MUSEBOOK_BUNDLE_UPSTREAM",
+      "MUSEBOOK_CONNECTOR_UPSTREAM",
+      "MUSEBOOK_PAYMENT_APP_UPSTREAM"
+    ],
+    "unexpected_changed": [],
+    "unexpected_added": [],
+    "passed": true
+  },
+  "exact_historical_binding_addition": [
+    {
+      "name": "AGENT_FEED_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1006",
+      "simple": {
+        "limit": 60,
+        "period": 60
+      }
+    }
+  ],
+  "executable_unchanged": true,
+  "module_sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+  "asset_manifest_unchanged_vs_reviewed_intermediate": true,
+  "asset_content_unchanged_vs_reviewed_intermediate": true,
+  "asset_count": 49,
+  "asset_bytes": 36254863,
+  "preserved_runtime_review": {
+    "secret_binding_count": 83,
+    "named_handlers": [
+      {
+        "name": "BackpackConnectedAccount",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "BackpackMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "MusebookMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "OreComputer",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "PumpStreamMcpEvents",
+        "handlers": [
+          "class"
+        ]
+      },
+      {
+        "name": "SvmBatchFacilitator",
+        "handlers": [
+          "class"
+        ]
+      }
+    ],
+    "runtime_metadata_sha256": "e377ffa85d3c7ee301a51b26b1d9c677a98d2f73353343e7ff1e562dc8948390",
+    "cron_sha256": "3bc6f0c4792ae6ccc50c1fe9dd3fbcac646d4679b90c90a74be001bf04dc7496",
+    "all_existing_bindings_preserved_except_explicit_release_pins": true
+  },
+  "secret_values_requested": false,
+  "remote_mutations": 0,
+  "publication_pending_root_review": true,
+  "das_search_assets_success_verified": false
+}

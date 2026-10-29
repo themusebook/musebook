@@ -1,0 +1,132 @@
+{
+  "url": "http://127.0.0.1:4185/connector/",
+  "checkedAt": "2026-10-10T18:21:10.664Z",
+  "checks": [
+    {
+      "name": "submission_page_swap_launcher_absent",
+      "pass": true
+    },
+    {
+      "name": "desktop_content_counts_hash_and_copy_buttons",
+      "pass": true,
+      "copyButtons": 20,
+      "viewport": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "clipboard_copy_mcp_endpoint",
+      "pass": true,
+      "value": "https://musebook.trade/mcp-auth"
+    },
+    {
+      "name": "clipboard_denial_manual_selection_fallback",
+      "pass": true,
+      "selection": {
+        "start": 0,
+        "end": 31,
+        "length": 31,
+        "focused": true
+      }
+    },
+    {
+      "name": "mobile_no_horizontal_overflow_and_submission_anchor",
+      "pass": true,
+      "viewport": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "anchorY": 95.5
+    }
+  ],
+  "globalConsoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "failedResponses": [
+    {
+      "url": "http://127.0.0.1:4185/api/visits/heartbeat",
+      "status": 404
+    }
+  ],
+  "pageErrors": [],
+  "staticLinks": [
+    {
+      "href": "/connectors/connector-clawd.tar.gz",
+      "status": 200,
+      "contentType": ""
+    },
+    {
+      "href": "/connectors/connector-clawd/connector.json",
+      "status": 200,
+      "contentType": "application/json",
+      "scopes": [
+        "read"
+      ]
+    },
+    {
+      "href": "/connectors/connector-clawd/docs/tools.json",
+      "status": 200,
+      "contentType": "application/json",
+      "tools": 27
+    },
+    {
+      "href": "/connectors/connector-clawd/docs/connector-submission.md",
+      "status": 200,
+      "contentType": "text/markdown"
+    },
+    {
+      "href": "/connectors/connector-birdeye.tar.gz",
+      "status": 200,
+      "contentType": ""
+    },
+    {
+      "href": "/connectors/connector-birdeye/connector.json",
+      "status": 200,
+      "contentType": "application/json",
+      "scopes": [
+        "read"
+      ]
+    },
+    {
+      "href": "/connectors/connector-birdeye/docs/tools.json",
+      "status": 200,
+      "contentType": "application/json",
+      "tools": 1
+    },
+    {
+      "href": "/connectors/connector-birdeye/docs/connector-submission.md",
+      "status": 200,
+      "contentType": "text/markdown"
+    },
+    {
+      "href": "/connectors/manifest.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "href": "/SKILL.md",
+      "status": 200,
+      "contentType": "text/html",
+      "productionAliasCheckRequired": true,
+      "previewFallbackDocument": "/skill.md"
+    },
+    {
+      "href": "/clawd-skills.tar.gz",
+      "status": 200,
+      "contentType": ""
+    },
+    {
+      "href": "/clawd-skills-manifest.json",
+      "status": 200,
+      "contentType": "application/json",
+      "version": "3.15.1"
+    },
+    {
+      "href": "/connectors/",
+      "status": 200,
+      "contentType": "text/html"
+    }
+  ],
+  "pass": true
+}

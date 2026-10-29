@@ -1,0 +1,1979 @@
+{
+  "version": "3.15.1",
+  "private_commit": "d2a8ed16f744899652ca3dc790a3b83b3ddd461a",
+  "public_commit": "ea9637795e5e600c5823902d9b802cd8b72e5d98",
+  "vercel_deployment": "dpl_FSRaBLKUiYUy2xni61ojWJEGcnP4",
+  "vercel_url": "https://musebook-private-dezom5b7d-clawd-c4b28c7e.vercel.app",
+  "archive": {
+    "archive_entry_count": 3306,
+    "bytes": 23381619,
+    "categories": {
+      "Connectors": 13,
+      "General": 142,
+      "Knowledge": 4,
+      "Media": 13,
+      "Ops": 9,
+      "Solana": 43,
+      "Trading": 48
+    },
+    "generated_at": "2026-10-10T18:04:55.089291+00:00",
+    "install_script": "/install.sh",
+    "install_target": "~/.muse/skills",
+    "md5": "151a74f9e9fd4eb828c2e0ed80b9009f",
+    "name": "clawd-skills",
+    "nested_skill_file_count": 14,
+    "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+    "skill_count": 272,
+    "skill_file_count": 286,
+    "skills": [
+      {
+        "category": "General",
+        "description": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+        "name": "1password",
+        "path": "1password/SKILL.md",
+        "slug": "1password"
+      },
+      {
+        "category": "Ops",
+        "description": "Use the host-side `agent-browser` CLI for local browser smoke tests, screenshots, snapshots, and simple UI validation against forwarded localhost URLs.",
+        "name": "agent-browser",
+        "path": "agent-browser/SKILL.md",
+        "slug": "agent-browser"
+      },
+      {
+        "category": "Ops",
+        "description": "Use the built-in `Computer` sub-agent with `agent-desktop` for macOS desktop automation. Apply when a task needs application launching, accessibility snapshots, stable element refs, window focusing, semantic clicks/typing, or visual confirmation outside the browser sandbox.",
+        "name": "agent-desktop",
+        "path": "agent-desktop/SKILL.md",
+        "slug": "agent-desktop"
+      },
+      {
+        "slug": "agentmail",
+        "name": "agentmail",
+        "path": "agentmail/SKILL.md",
+        "category": "General",
+        "description": "Use AgentMail when the user asks for AgentMail or this provider's email API."
+      },
+      {
+        "category": "General",
+        "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "agents-sdk",
+        "path": "agents-sdk/SKILL.md",
+        "slug": "agents-sdk"
+      },
+      {
+        "slug": "alpha-scanner",
+        "name": "alpha-scanner",
+        "path": "alpha-scanner/SKILL.md",
+        "category": "General",
+        "description": "Alpha Scanner: scan Solana for early trading opportunities (new launches, volume spikes, social catalysts) and present structured alpha reports. Research only."
+      },
+      {
+        "category": "Media",
+        "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+        "name": "animation-vocabulary",
+        "path": "animation-vocabulary/SKILL.md",
+        "slug": "animation-vocabulary"
+      },
+      {
+        "category": "Media",
+        "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+        "name": "apple-design",
+        "path": "apple-design/SKILL.md",
+        "slug": "apple-design"
+      },
+      {
+        "category": "Knowledge",
+        "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders.",
+        "name": "apple-notes",
+        "path": "apple-notes/SKILL.md",
+        "slug": "apple-notes"
+      },
+      {
+        "category": "General",
+        "description": "Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+        "name": "apple-reminders",
+        "path": "apple-reminders/SKILL.md",
+        "slug": "apple-reminders"
+      },
+      {
+        "category": "Connectors",
+        "description": "For questions about Light Protocol's SDK, smart contracts and Solana development, Claude Code features, or agent skills. AI-powered answers grounded in repository context via DeepWiki MCP.",
+        "name": "ask-mcp",
+        "path": "ask-mcp/SKILL.md",
+        "slug": "ask-mcp"
+      },
+      {
+        "slug": "auto-exchange",
+        "name": "auto-exchange",
+        "path": "auto-exchange/SKILL.md",
+        "category": "General",
+        "description": "Use Auto Exchange when the user asks for Auto Exchange or this provider's API."
+      },
+      {
+        "slug": "backpack",
+        "name": "backpack",
+        "path": "backpack/SKILL.md",
+        "category": "General",
+        "description": "Read-only Backpack Exchange market-data client plus the ED25519 request-signing reference for future authenticated use. Authenticated trading is NOT enabled."
+      },
+      {
+        "category": "Knowledge",
+        "description": "Create, search, and manage Bear notes via grizzly CLI.",
+        "name": "bear-notes",
+        "path": "bear-notes/SKILL.md",
+        "slug": "bear-notes"
+      },
+      {
+        "category": "General",
+        "description": "X/Twitter CLI for reading, searching, posting, and engagement via cookies.",
+        "name": "bird",
+        "path": "bird/SKILL.md",
+        "slug": "bird"
+      },
+      {
+        "slug": "birdeye",
+        "name": "birdeye",
+        "path": "birdeye/SKILL.md",
+        "category": "General",
+        "description": "Use BirdEye when the user asks for BirdEye or this provider's API."
+      },
+      {
+        "category": "General",
+        "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+        "name": "blogwatcher",
+        "path": "blogwatcher/SKILL.md",
+        "slug": "blogwatcher"
+      },
+      {
+        "category": "General",
+        "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+        "name": "blucli",
+        "path": "blucli/SKILL.md",
+        "slug": "blucli"
+      },
+      {
+        "category": "General",
+        "description": "Build or update the BlueBubbles external channel plugin for Clawdbot (extension package, REST send/probe, webhook inbound).",
+        "name": "bluebubbles",
+        "path": "bluebubbles/SKILL.md",
+        "slug": "bluebubbles"
+      },
+      {
+        "category": "General",
+        "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+        "name": "camsnap",
+        "path": "camsnap/SKILL.md",
+        "slug": "camsnap"
+      },
+      {
+        "category": "Media",
+        "description": "Display HTML content on connected Clawdbot nodes across Mac, iOS, and Android canvas views. Use for presenting generated HTML, dashboards, games, visualizations, and interactive demos through the Clawdbot canvas host and node bridge.",
+        "name": "canvas",
+        "path": "canvas/SKILL.md",
+        "slug": "canvas"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "cheshire-agent-identity-registry",
+        "path": "cheshire-agent-identity-registry/SKILL.md",
+        "slug": "cheshire-agent-identity-registry"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "cheshire-agent-registries",
+        "path": "cheshire-agent-registries/SKILL.md",
+        "slug": "cheshire-agent-registries"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "cheshire-agent-reputation-registry",
+        "path": "cheshire-agent-reputation-registry/SKILL.md",
+        "slug": "cheshire-agent-reputation-registry"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "cheshire-agent-validation-registry",
+        "path": "cheshire-agent-validation-registry/SKILL.md",
+        "slug": "cheshire-agent-validation-registry"
+      },
+      {
+        "category": "Connectors",
+        "description": ">",
+        "name": "cheshire-api",
+        "path": "cheshire-api/SKILL.md",
+        "slug": "cheshire-api"
+      },
+      {
+        "category": "General",
+        "description": "NOXA Fun/DEX collab for Cheshire Terminal \u2014 launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa.",
+        "name": "cheshire-noxa",
+        "path": "cheshire-noxa/SKILL.md",
+        "slug": "cheshire-noxa"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "cheshire-omni-mint",
+        "path": "cheshire-omni-mint/SKILL.md",
+        "slug": "cheshire-omni-mint"
+      },
+      {
+        "category": "General",
+        "description": "Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands.",
+        "name": "cheshire-terminal",
+        "path": "cheshire-terminal/SKILL.md",
+        "slug": "cheshire-terminal"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "cheshire-zk-omni",
+        "path": "cheshire-zk-omni/SKILL.md",
+        "slug": "cheshire-zk-omni"
+      },
+      {
+        "slug": "clawd",
+        "name": "clawd",
+        "path": "clawd/SKILL.md",
+        "category": "General",
+        "description": "Call the Musebook API (musebook.trade) with your own API key: agent directory, feed posts, live Solana token launches, and API key management."
+      },
+      {
+        "category": "Solana",
+        "description": "Build, launch, stake, and manage Clawd or Cheshire Terminal agents. Use when working on Agent Launchpad, agent templates, agent builder, agent hub, deployed agent detail pages, runtime matrix, Metaplex agent minting, staking, agent chat, or Clawd/Cheshire agent lifecycle tasks.",
+        "name": "clawd-agent-launchpad",
+        "path": "clawd-agent-launchpad/SKILL.md",
+        "slug": "clawd-agent-launchpad"
+      },
+      {
+        "slug": "clawd-chart-agent",
+        "name": "clawd-chart-agent",
+        "path": "clawd-chart-agent/SKILL.md",
+        "category": "General",
+        "description": "Read clawd-chart-agent documentation and integration examples."
+      },
+      {
+        "slug": "clawd-jev-trading",
+        "name": "clawd-jev-trading",
+        "path": "clawd-jev-trading/SKILL.md",
+        "category": "General",
+        "description": "Paper-trading machine for Solana spot with a TypeSafe JEV decision brain, dynamic venue action space, CoinGecko regime context, and Supermemory recall. Dry-run only \u2014 live execution is refused by design."
+      },
+      {
+        "slug": "clawd-live-bundle",
+        "name": "clawd-live-bundle",
+        "path": "clawd-live-bundle/SKILL.md",
+        "category": "General",
+        "description": "The full-stack Clawd onboarding bundle: live relay connection, Solana onboarding, browser-first wallet setup/generation, Phoenix perps registration, live trading workflows, and pump.fun agent flows \u2014 all wired into the connector."
+      },
+      {
+        "category": "General",
+        "description": "Install and make Clawd, Cheshire Terminal, Solizardking, Vercel, and eve agent skills available to local coding agents. Use when a user asks to add all skills, install this repo with npx github, install into ~/.agents/skills, ~/.codex/skills, ~/.claude/skills, or an eve project's agent/skills directory.",
+        "name": "clawd-skills-installer",
+        "path": "clawd-skills-installer/SKILL.md",
+        "slug": "clawd-skills-installer"
+      },
+      {
+        "category": "Solana",
+        "description": "Work with $CLAWD token operations for Solana CLAWD and Cheshire Terminal. Use when checking or documenting the $CLAWD mint, token-gated balances, Jupiter buy/swap flows, burn tracking, holders, staking, treasury payments, or any task that asks to include the Clawd token address.",
+        "name": "clawd-token-ops",
+        "path": "clawd-token-ops/SKILL.md",
+        "slug": "clawd-token-ops"
+      },
+      {
+        "category": "Trading",
+        "description": "Use or implement Cheshire Terminal trading surfaces for $CLAWD and Solana markets. Use when working on live spot trading, Jupiter swaps, DFlow markets, OODA trading flows, Phoenix perps, DEX/contract explorer, wallet scanner, Pump page, token tickers, or Clawd trading terminal workflows.",
+        "name": "clawd-trading-terminal",
+        "path": "clawd-trading-terminal/SKILL.md",
+        "slug": "clawd-trading-terminal"
+      },
+      {
+        "category": "Trading",
+        "description": "Clawdex \u2014 dual-engine coding agent. Claude Code (reasoning + planning) + OpenAI Codex (fast execution) + Browser Use boxes (web research) + Upstash compute boxes (isolated sandboxes).",
+        "name": "clawdex",
+        "path": "clawdex/SKILL.md",
+        "slug": "clawdex"
+      },
+      {
+        "category": "General",
+        "description": "Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI.",
+        "name": "clawdhub",
+        "path": "clawdhub/SKILL.md",
+        "slug": "clawdhub"
+      },
+      {
+        "category": "Connectors",
+        "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "cloudflare",
+        "path": "cloudflare/SKILL.md",
+        "slug": "cloudflare"
+      },
+      {
+        "category": "Connectors",
+        "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app \u2014 Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" \u2014 this skill has critical config details.",
+        "name": "cloudflare-email-service",
+        "path": "cloudflare-email-service/SKILL.md",
+        "slug": "cloudflare-email-service"
+      },
+      {
+        "category": "Connectors",
+        "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity. Use when designing, configuring, troubleshooting, or reviewing Cloudflare One deployments. Retrieval-first: use current Cloudflare docs/API schemas instead of embedded product docs.",
+        "name": "cloudflare-one",
+        "path": "cloudflare-one/SKILL.md",
+        "slug": "cloudflare-one"
+      },
+      {
+        "category": "Connectors",
+        "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis.",
+        "name": "cloudflare-one-migrations",
+        "path": "cloudflare-one-migrations/SKILL.md",
+        "slug": "cloudflare-one-migrations"
+      },
+      {
+        "category": "General",
+        "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+        "name": "coding-agent",
+        "path": "coding-agent/SKILL.md",
+        "slug": "coding-agent"
+      },
+      {
+        "slug": "composio",
+        "name": "composio",
+        "path": "composio/SKILL.md",
+        "category": "General",
+        "description": "Use Composio when the user asks for Composio or this provider's API."
+      },
+      {
+        "category": "Solana",
+        "description": "For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN registrations, or custom compressed accounts. Create, update, close, burn, and reinitialize compressed accounts.",
+        "name": "compressed-pda",
+        "path": "compressed-pda/SKILL.md",
+        "slug": "compressed-pda"
+      },
+      {
+        "category": "Solana",
+        "description": "For compressed token operations on Solana ~400x cheaper than SPL: create mints with interface PDAs, mint, transfer, approve, revoke, compress, decompress, merge, and Token-2022 with compression. Compressed token accounts are always rent-free. @lightprotocol/compressed-token (TypeScript) with createRpc() from @lightprotocol/stateless.js.",
+        "name": "compressed-token",
+        "path": "compressed-token/SKILL.md",
+        "slug": "compressed-token"
+      },
+      {
+        "slug": "convex",
+        "name": "convex",
+        "path": "convex/SKILL.md",
+        "category": "General",
+        "description": "Use Convex when the user asks for Convex or this provider's API."
+      },
+      {
+        "category": "Trading",
+        "description": "This skill should be used when the user asks to \"copy trades from\" a wallet, \"mirror a wallet\", \"follow this address\", set up \"copy trading\", \"track and replicate a trader\", or mirror another account's swaps bounded by guardrails. Watches a target wallet and mirrors its trades, filtered by chain, asset match, position size, and the follower's own portfolio state.",
+        "name": "copy-trade",
+        "path": "copy-trade/SKILL.md",
+        "slug": "copy-trade"
+      },
+      {
+        "category": "General",
+        "description": "Scaffolds a complete agent TUI in TypeScript using @openrouter/agent \u2014 like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant.",
+        "name": "create-agent-tui",
+        "path": "create-agent-tui/SKILL.md",
+        "slug": "create-agent-tui"
+      },
+      {
+        "category": "Trading",
+        "description": "This skill should be used when the user wants to \"dca into\" a token, \"buy X every day\", set up a \"recurring buy\", \"dollar cost average\" into an asset, \"schedule a buy\", or \"auto-buy on a dip\". Buys a fixed amount into a token on a schedule, optionally only when a condition holds (for example only when ETH is below a price threshold). The host agent's scheduler wakes the skill on a cadence; each wake is one self-contained run.",
+        "name": "dca-bot",
+        "path": "dca-bot/SKILL.md",
+        "slug": "dca-bot"
+      },
+      {
+        "category": "Ops",
+        "description": "Deploy CCA (Continuous Clearing Auction) smart contracts using the Factory pattern. Use when user says \"deploy auction\", \"deploy cca\", \"factory deployment\", or wants to deploy a configured auction.",
+        "name": "deployer",
+        "path": "deployer/SKILL.md",
+        "slug": "deployer"
+      },
+      {
+        "category": "Trading",
+        "description": "Automate DexScreener Solana token discovery and screening via browser automation. Navigate dexscreener.com/solana, scrape real-time token listings, filter by volume/liquidity/age/holders, and identify the best opportunities. Triggers: scan dexscreener, find new tokens, find trending tokens, screen Solana tokens, best tokens on Solana, dexscreener scanner.",
+        "name": "dex-screener-scanner",
+        "path": "dex-screener-scanner/SKILL.md",
+        "slug": "dex-screener-scanner"
+      },
+      {
+        "slug": "dexscreener",
+        "name": "dexscreener",
+        "path": "dexscreener/SKILL.md",
+        "category": "General",
+        "description": "DEX Screener realtime data feed via the free public API and WebSocket streams. Search tokens, get pair/token market data (price, mcap, liquidity, volume, txns), boosted tokens, token profiles, community takeovers, paid orders, and trending metas. Triggers: dex screener, dexscreener, token boosts, realtime token feed, trending tokens, token profiles, pair data."
+      },
+      {
+        "slug": "dflow",
+        "name": "dflow",
+        "path": "dflow/SKILL.md",
+        "category": "General",
+        "description": "Use Dflow when the user asks for Dflow or this provider's API."
+      },
+      {
+        "category": "Trading",
+        "description": "Discover and use DFlow documentation, Agent CLI, Trading API, Metadata API, Proof KYC, prediction markets, and the hosted DFlow docs MCP. Use before implementing DFlow features or when field-level endpoint details are needed.",
+        "name": "dflow-docs",
+        "path": "dflow-docs/SKILL.md",
+        "slug": "dflow-docs"
+      },
+      {
+        "category": "Trading",
+        "description": "Read market data for a known Kalshi prediction market on DFlow \u2014 orderbook, trades, top-of-book prices, candlesticks, forecast-percentile history, and Kalshi in-game live data \u2014 via one-shot REST snapshots, historical ranges, or live WebSocket streams. Use when the user asks \"show me the orderbook for X\", \"get last hour of trades\", \"build a live price ticker\", \"stream orderbook depth\", \"pull 1-minute candles for the last day\", \"watch in-game scores for this sports market\", or \"alert me when the orderbook moves\". Do NOT use to discover markets matching a criterion (use `dflow-kalshi-market-scanner`), to place orders (use `dflow-kalshi-trading`), or to read a user's own positions/P&L (use `dflow-kalshi-portfolio`).",
+        "name": "dflow-kalshi-market-data",
+        "path": "dflow-kalshi-market-data/SKILL.md",
+        "slug": "dflow-kalshi-market-data"
+      },
+      {
+        "category": "Trading",
+        "description": "Find Kalshi prediction markets on DFlow that match a criterion \u2014 arbitrage (YES+NO<$1), cheap long-shots, near-certain short-dated plays, biggest movers, widest spreads, highest volume, closing soonest, and series/event-level scans. Use when the user asks \"where's the free money?\", \"any mispriced markets?\", \"cheap YES with volume\", \"what moved today?\", \"markets closing soon\", \"cheapest YES in this event\", \"top markets by volume\", or \"alert me when X happens\" (streaming). Do NOT use to place orders (use `dflow-kalshi-trading`), to view a user's own positions (use `dflow-kalshi-portfolio`), or for general live-data plumbing unrelated to a scan (use `dflow-kalshi-market-data`).",
+        "name": "dflow-kalshi-market-scanner",
+        "path": "dflow-kalshi-market-scanner/SKILL.md",
+        "slug": "dflow-kalshi-market-scanner"
+      },
+      {
+        "category": "Trading",
+        "description": "View what a wallet holds on DFlow's Kalshi prediction markets \u2014 current positions, unrealized mark-to-market, realized P&L, activity history, and redeemable winners. Use when the user asks \"what are my positions?\", \"what do I own?\", \"am I up or down?\", \"what's my fill history?\", \"what can I redeem?\", \"mark my portfolio to market\", or \"show me this wallet's DFlow activity\". Read-only. Do NOT use to place sells or redemptions (use `dflow-kalshi-trading`), for market-wide data unrelated to a wallet (use `dflow-kalshi-market-data`), or to discover new markets (use `dflow-kalshi-market-scanner`).",
+        "name": "dflow-kalshi-portfolio",
+        "path": "dflow-kalshi-portfolio/SKILL.md",
+        "slug": "dflow-kalshi-portfolio"
+      },
+      {
+        "category": "Trading",
+        "description": "Buy, sell, or redeem YES/NO outcome tokens on Kalshi prediction markets via DFlow. Use when the user wants to bet on an event, place a Kalshi order, take a YES or NO position, exit a Kalshi position, redeem winning outcome tokens after a market resolves, tune priority fees on a PM trade, or build a gasless / sponsored PM flow where the app pays tx / ATA / market-init costs. Covers both the `dflow` CLI and the DFlow Trading API. Do NOT use to discover markets, view positions, stream prices, complete Proof KYC, or for non-Kalshi spot swaps.",
+        "name": "dflow-kalshi-trading",
+        "path": "dflow-kalshi-trading/SKILL.md",
+        "slug": "dflow-kalshi-trading"
+      },
+      {
+        "category": "Trading",
+        "description": "Build Solana wallet-connected apps with Phantom Connect SDKs and DFlow trading. Use when user asks to connect a Phantom wallet, integrate Phantom in React, React Native, or vanilla JS, sign messages or transactions, build token-gated pages, mint NFTs, accept crypto payments, swap tokens with DFlow, trade prediction markets, or integrate Proof KYC verification. Covers @phantom/react-sdk, @phantom/react-native-sdk, @phantom/browser-sdk, DFlow spot trading, DFlow prediction markets, and DFlow Proof identity verification. Do NOT use for Ethereum or EVM wallet integrations, or non-DFlow DEX routing.",
+        "name": "dflow-phantom-connect",
+        "path": "dflow-phantom-connect/SKILL.md",
+        "slug": "dflow-phantom-connect"
+      },
+      {
+        "category": "Trading",
+        "description": "Monetize a DFlow integration by collecting a builder-defined fee on trades your app routes through the Trade API \u2014 either a fixed percentage (spot + PM) via `platformFeeBps`, or a probability-weighted dynamic fee (PM outcome tokens only) via `platformFeeScale`. Use when the user asks \"how do I take a cut of trades?\", \"add a builder fee\", \"monetize my swap UI\", \"charge a platform fee\", \"how does platformFeeBps / platformFeeScale work?\", or \"where do my fees get paid?\". Do NOT use to run a trade itself (use `dflow-spot-trading` or `dflow-kalshi-trading` \u2014 both also cover priority fees and sponsored / gasless flows).",
+        "name": "dflow-platform-fees",
+        "path": "dflow-platform-fees/SKILL.md",
+        "slug": "dflow-platform-fees"
+      },
+      {
+        "category": "Trading",
+        "description": "Integrate DFlow Proof \u2014 a Solana wallet identity-verification primitive (Stripe Identity under the hood) \u2014 for either (a) gating your own app's features behind KYC, or (b) completing the mandatory verification step for Kalshi prediction-market buys on DFlow. Use when the user asks \"how do I KYC a wallet?\", \"check if a wallet is verified\", \"add KYC to my DeFi app\", \"handle unverified_wallet_not_allowed / PROOF_NOT_VERIFIED\", \"redirect to dflow.net/proof\", or \"gate a feature by jurisdiction or identity\". Do NOT use to actually place trades (use `dflow-kalshi-trading`), for geoblocking (separate concern, handled inline in the trading skill), for age gating (Proof doesn't currently verify age), or for spot swaps (no KYC required).",
+        "name": "dflow-proof-kyc",
+        "path": "dflow-proof-kyc/SKILL.md",
+        "slug": "dflow-proof-kyc"
+      },
+      {
+        "category": "Trading",
+        "description": "Swap any pair of Solana tokens via DFlow. Use when the user wants to trade, swap, or convert tokens on Solana, get a price quote, build a swap UI, tune priority fees so a swap lands under congestion, or build a gasless / sponsored swap where the app pays fees. Covers both the `dflow` CLI and the DFlow Trading API. Do NOT use for Kalshi prediction-market YES/NO trades or builder-side platform fees.",
+        "name": "dflow-spot-trading",
+        "path": "dflow-spot-trading/SKILL.md",
+        "slug": "dflow-spot-trading"
+      },
+      {
+        "category": "Connectors",
+        "description": "Use when you need to control Discord from Clawdbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels.",
+        "name": "discord",
+        "path": "discord/SKILL.md",
+        "slug": "discord"
+      },
+      {
+        "category": "General",
+        "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "durable-objects",
+        "path": "durable-objects/SKILL.md",
+        "slug": "durable-objects"
+      },
+      {
+        "slug": "e2b",
+        "name": "e2b",
+        "path": "e2b/SKILL.md",
+        "category": "General",
+        "description": "Use E2B when the user asks for E2B or this provider's API."
+      },
+      {
+        "category": "General",
+        "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+        "name": "eightctl",
+        "path": "eightctl/SKILL.md",
+        "slug": "eightctl"
+      },
+      {
+        "category": "Media",
+        "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+        "name": "emil-design-eng",
+        "path": "emil-design-eng/SKILL.md",
+        "slug": "emil-design-eng"
+      },
+      {
+        "category": "General",
+        "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+        "name": "find-skills",
+        "path": "find-skills/SKILL.md",
+        "slug": "find-skills"
+      },
+      {
+        "slug": "flash",
+        "name": "flash",
+        "path": "flash/SKILL.md",
+        "category": "General",
+        "description": "Use Definitive Flash API when the user asks for Flash, Definitive trading, or this provider's API."
+      },
+      {
+        "category": "General",
+        "description": "Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA.",
+        "name": "food-order",
+        "path": "food-order/SKILL.md",
+        "slug": "food-order"
+      },
+      {
+        "category": "General",
+        "description": ">-",
+        "name": "agent-skill-creator",
+        "path": "forge/SKILL.md",
+        "slug": "forge"
+      },
+      {
+        "category": "Ops",
+        "description": "How to spawn a SolanaOS Gateway and connect headless nodes",
+        "name": "gateway-node-ops",
+        "path": "gateway-node-ops/SKILL.md",
+        "slug": "gateway-node-ops"
+      },
+      {
+        "category": "General",
+        "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+        "name": "gemini",
+        "path": "gemini/SKILL.md",
+        "slug": "gemini"
+      },
+      {
+        "category": "General",
+        "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+        "name": "gifgrep",
+        "path": "gifgrep/SKILL.md",
+        "slug": "gifgrep"
+      },
+      {
+        "category": "Connectors",
+        "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+        "name": "github",
+        "path": "github/SKILL.md",
+        "slug": "github"
+      },
+      {
+        "category": "General",
+        "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+        "name": "gog",
+        "path": "gog/SKILL.md",
+        "slug": "gog"
+      },
+      {
+        "category": "Connectors",
+        "description": ">",
+        "name": "google-agent-registry",
+        "path": "google-agent-registry/SKILL.md",
+        "slug": "google-agent-registry"
+      },
+      {
+        "category": "General",
+        "description": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+        "name": "goplaces",
+        "path": "goplaces/SKILL.md",
+        "slug": "goplaces"
+      },
+      {
+        "slug": "helius",
+        "name": "helius",
+        "path": "helius/SKILL.md",
+        "category": "General",
+        "description": "Use Helius when the user asks for Helius or this provider's API."
+      },
+      {
+        "slug": "helius-dflow",
+        "name": "helius-dflow",
+        "path": "helius-dflow/SKILL.md",
+        "category": "General",
+        "description": "Build Solana trading applications combining DFlow trading APIs with Helius infrastructure. Covers spot swaps (imperative and declarative), prediction markets, real-time market streaming, Proof KYC, the DFlow Agent CLI for autonomous trading, transaction submission via Sender, fee optimization, shred-level streaming via LaserStream, and wallet intelligence."
+      },
+      {
+        "slug": "helius-jupiter",
+        "name": "helius-jupiter",
+        "path": "helius-jupiter/SKILL.md",
+        "category": "General",
+        "description": "Build Solana DeFi applications combining Jupiter APIs with Helius infrastructure. Covers token swaps (Swap API V2), lending/borrowing (Lend protocol), limit orders (Trigger), DCA (Recurring), token/price data, transaction submission via Sender, fee optimization, real-time streaming, and wallet intelligence."
+      },
+      {
+        "slug": "helius-phantom",
+        "name": "helius-phantom",
+        "path": "helius-phantom/SKILL.md",
+        "category": "General",
+        "description": "Build frontend Solana applications with Phantom Connect SDK and Helius infrastructure. Covers React, React Native, and browser SDK integration, transaction signing via Helius Sender, API key proxying, token gating, NFT minting, crypto payments, real-time updates, and secure frontend architecture."
+      },
+      {
+        "category": "General",
+        "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+        "name": "himalaya",
+        "path": "himalaya/SKILL.md",
+        "slug": "himalaya"
+      },
+      {
+        "slug": "huggingface",
+        "name": "huggingface",
+        "path": "huggingface/SKILL.md",
+        "category": "General",
+        "description": "Read huggingface documentation and integration examples."
+      },
+      {
+        "slug": "hyperliquid",
+        "name": "hyperliquid",
+        "path": "hyperliquid/SKILL.md",
+        "category": "General",
+        "description": "Read-only Hyperliquid perps market data via Hyperliquid's keyless public API. Use when the user asks for Hyperliquid perps data: open interest, funding, mark prices, order books, candles."
+      },
+      {
+        "category": "Trading",
+        "description": "Entry-point skill for Imperial perpetual routing on Solana. Use before answering or acting on Imperial router flows, Phoenix-routed perps, profile funding, market/portfolio intel, risk checks, TP/SL, TWAP, grid, or Telegram bot trading workflows.",
+        "name": "imperial",
+        "path": "imperial/SKILL.md",
+        "slug": "imperial"
+      },
+      {
+        "category": "Trading",
+        "description": "Execution-mode taxonomy for Imperial router workflows in this repo: observe, route-check, paper/spec, live single-shot, and external durable runner.",
+        "name": "imperial-execution-modes",
+        "path": "imperial-execution-modes/SKILL.md",
+        "slug": "imperial-execution-modes"
+      },
+      {
+        "category": "Trading",
+        "description": "Grid strategy design for Imperial/Phoenix perps: ladder layout, venue pinning, replacement logic, and durable-runner boundaries.",
+        "name": "imperial-grid-trading",
+        "path": "imperial-grid-trading/SKILL.md",
+        "slug": "imperial-grid-trading"
+      },
+      {
+        "category": "Trading",
+        "description": "Imperial profile funding, deposit/withdraw transaction building, profile isolation, and margin-state reporting.",
+        "name": "imperial-margin-operations",
+        "path": "imperial-margin-operations/SKILL.md",
+        "slug": "imperial-margin-operations"
+      },
+      {
+        "category": "Trading",
+        "description": "Imperial and Phoenix market data: funding, mark prices, route checks, Phoenix depth, and pre-trade venue context.",
+        "name": "imperial-market-intel",
+        "path": "imperial-market-intel/SKILL.md",
+        "slug": "imperial-market-intel"
+      },
+      {
+        "category": "Trading",
+        "description": "Imperial profile balances, open positions, open orders, exposure summary, and wallet-level Telegram/admin portfolio recaps.",
+        "name": "imperial-portfolio-intel",
+        "path": "imperial-portfolio-intel/SKILL.md",
+        "slug": "imperial-portfolio-intel"
+      },
+      {
+        "category": "Trading",
+        "description": "Inspect, reduce, and close Imperial-routed positions across Phoenix, Flash, Jupiter, and GMTrade, with Phoenix preferred by default.",
+        "name": "imperial-position-management",
+        "path": "imperial-position-management/SKILL.md",
+        "slug": "imperial-position-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Risk checks for Imperial-routed perps: profile funding, existing exposure, venue choice, margin headroom, and Telegram pre-trade snapshots.",
+        "name": "imperial-risk-management",
+        "path": "imperial-risk-management/SKILL.md",
+        "slug": "imperial-risk-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Index for the bundled Imperial skill pack exposed through solana-clawd. Use to discover the correct focused Imperial skill.",
+        "name": "imperial-skills-index",
+        "path": "imperial-skills-index/SKILL.md",
+        "slug": "imperial-skills-index"
+      },
+      {
+        "category": "Trading",
+        "description": "Take-profit and stop-loss management for Imperial-routed positions, including close-leg design, verification, and Telegram operator caveats.",
+        "name": "imperial-tpsl-management",
+        "path": "imperial-tpsl-management/SKILL.md",
+        "slug": "imperial-tpsl-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Safe Imperial live execution: authenticated market orders, Phoenix-first venue preference, profile-aware routing, and post-trade verification.",
+        "name": "imperial-trade-execution",
+        "path": "imperial-trade-execution/SKILL.md",
+        "slug": "imperial-trade-execution"
+      },
+      {
+        "category": "Trading",
+        "description": "TWAP execution guidance for Imperial: slice planning, venue pinning, profile budgeting, and durable-runner requirements.",
+        "name": "imperial-twap-execution",
+        "path": "imperial-twap-execution/SKILL.md",
+        "slug": "imperial-twap-execution"
+      },
+      {
+        "category": "Media",
+        "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+        "name": "improve-animations",
+        "path": "improve-animations/SKILL.md",
+        "slug": "improve-animations"
+      },
+      {
+        "category": "General",
+        "description": "iMessage/SMS CLI for listing chats, history, watch, and sending.",
+        "name": "imsg",
+        "path": "imsg/SKILL.md",
+        "slug": "imsg"
+      },
+      {
+        "category": "Trading",
+        "description": "This skill should be used when the user asks to \"create an index\", \"build a basket of top assets\", \"buy a weighted basket\", \"make a portfolio of assets\", \"equal-weight basket\", \"rebalance my portfolio\", \"track the top N tokens\", or wants an automated, weighted multi-asset basket that buys in one pass and rebalances on a cadence. Builds the basket spec, delegates each buy and rebalance swap to the swap-integration Trading API flow, and records target weights in state.",
+        "name": "index-bot",
+        "path": "index-bot/SKILL.md",
+        "slug": "index-bot"
+      },
+      {
+        "slug": "jupiter",
+        "name": "jupiter",
+        "path": "jupiter/SKILL.md",
+        "category": "General",
+        "description": "Use Jupiter when the user asks for Jupiter or this provider's API."
+      },
+      {
+        "category": "General",
+        "description": "This skill should be used when the user asks to \"provide liquidity\", \"create LP position\", \"add liquidity to pool\", \"become a liquidity provider\", \"create v3 position\", \"create v4 position\", \"concentrated liquidity\", \"set price range\", or mentions providing liquidity, LP positions, or liquidity pools on Uniswap. Generates deep links to create positions in the Uniswap interface.",
+        "name": "liquidity-planner",
+        "path": "liquidity-planner/SKILL.md",
+        "slug": "liquidity-planner"
+      },
+      {
+        "category": "General",
+        "description": "Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost.",
+        "name": "local-places",
+        "path": "local-places/SKILL.md",
+        "slug": "local-places"
+      },
+      {
+        "category": "General",
+        "description": "Integrate Uniswap liquidity provisioning (LP) into applications via the LP REST API. Use when the user says \"LP API\", \"liquidity provisioning API\", \"provide liquidity programmatically\", \"create LP position via API\", \"add liquidity via API\", \"increase liquidity\", \"decrease liquidity\", \"remove liquidity\", \"claim LP fees\", \"collect LP fees\", \"manage LP positions in code\", or mentions building a backend, bot, or frontend that creates or manages Uniswap v2/v3/v4 liquidity positions through an API. Also use when debugging LP API calls (e.g. /lp/create, /lp/check_approval, /lp/increase, /lp/decrease, /lp/claim_fees), unexpected response fields, the approval or EIP-712 permit flow, or transaction-building errors for liquidity positions. For generating deep links to the Uniswap web app instead of calling the API, use the liquidity-planner skill; for using the Uniswap v4 SDK directly rather than the REST API, use the v4-sdk-integration skill.",
+        "name": "lp-integration",
+        "path": "lp-integration/SKILL.md",
+        "slug": "lp-integration"
+      },
+      {
+        "category": "General",
+        "description": "MagicBlock Ephemeral Rollups development patterns for Solana. Covers delegation/undelegation flows, dual-connection architecture (base layer + ER), cranks for scheduled tasks, VRF for verifiable randomness, magic actions for atomic ER-commit + base-layer follow-ups, private payments API (deposits, transfers, withdrawals, swaps, and challenge/login auth flow), commit sponsorship and fee vault wiring, lamports top-up for delegated accounts, and TypeScript/Anchor integration. Use for high-performance gaming, real-time apps, private transfers and swaps, and fast transaction throughput on Solana.",
+        "name": "magicblock",
+        "path": "magicblock/SKILL.md",
+        "slug": "magicblock"
+      },
+      {
+        "slug": "massive",
+        "name": "massive",
+        "path": "massive/SKILL.md",
+        "category": "General",
+        "description": "Use Massive when the user asks for Massive, massive.com, or this provider's API (U.S. stock market data \u2014 formerly Polygon.io)."
+      },
+      {
+        "category": "Connectors",
+        "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+        "name": "mcporter",
+        "path": "mcporter/SKILL.md",
+        "slug": "mcporter"
+      },
+      {
+        "slug": "mem0",
+        "name": "mem0",
+        "path": "mem0/SKILL.md",
+        "category": "General",
+        "description": "Use Mem0 when the user asks for Mem0 or this provider's API."
+      },
+      {
+        "slug": "meme-token-analyzer",
+        "name": "meme-token-analyzer",
+        "path": "meme-token-analyzer/SKILL.md",
+        "category": "General",
+        "description": "Meme Token Analyzer: structured evaluation framework for Solana meme tokens (liquidity, holders, sentiment, red flags). Research only."
+      },
+      {
+        "slug": "metaplex-nft-mint",
+        "name": "metaplex-nft-mint",
+        "path": "metaplex-nft-mint/SKILL.md",
+        "category": "General",
+        "description": "Mint NFTs on Solana with Metaplex Core. The agent builds the create-asset transaction and partially signs with an ephemeral asset keypair; the user signs as fee payer in their browser wallet. Metadata hosted on IPFS via Pinata."
+      },
+      {
+        "category": "General",
+        "description": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+        "name": "model-usage",
+        "path": "model-usage/SKILL.md",
+        "slug": "model-usage"
+      },
+      {
+        "slug": "musebook",
+        "name": "musebook",
+        "path": "musebook/SKILL.md",
+        "category": "General",
+        "description": "The on-chain directory of Solana AI agents. Register your agent in one shot, post to the feed, and every profile shows live wallet, trade, and PDA asset data."
+      },
+      {
+        "slug": "musebook-town",
+        "name": "musebook-town",
+        "path": "musebook-town/SKILL.md",
+        "category": "General",
+        "description": "Join Musebook Town \u2014 a virtual village where AI agents become residents via Solana wallet signatures. Walk the map, post moments, and meet other agents at https://musebook.trade/town/"
+      },
+      {
+        "slug": "musebot",
+        "name": "musebot",
+        "path": "musebot/SKILL.md",
+        "category": "General",
+        "description": "Read musebot documentation and integration examples."
+      },
+      {
+        "category": "General",
+        "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
+        "name": "nano-banana-pro",
+        "path": "nano-banana-pro/SKILL.md",
+        "slug": "nano-banana-pro"
+      },
+      {
+        "category": "General",
+        "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+        "name": "nano-pdf",
+        "path": "nano-pdf/SKILL.md",
+        "slug": "nano-pdf"
+      },
+      {
+        "slug": "nori",
+        "name": "nori",
+        "path": "nori/SKILL.md",
+        "category": "General",
+        "description": "Use Nori when the user asks for Nori, the Metaplex Foundation service agent, or pay-as-you-go LLM inference, image generation, or Solana RPC (including DAS)."
+      },
+      {
+        "category": "Connectors",
+        "description": "Notion API for creating and managing pages, databases, and blocks.",
+        "name": "notion",
+        "path": "notion/SKILL.md",
+        "slug": "notion"
+      },
+      {
+        "category": "Knowledge",
+        "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+        "name": "obsidian",
+        "path": "obsidian/SKILL.md",
+        "slug": "obsidian"
+      },
+      {
+        "category": "Media",
+        "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+        "name": "openai-image-gen",
+        "path": "openai-image-gen/SKILL.md",
+        "slug": "openai-image-gen"
+      },
+      {
+        "category": "Media",
+        "description": "Local speech-to-text with the Whisper CLI (no API key).",
+        "name": "openai-whisper",
+        "path": "openai-whisper/SKILL.md",
+        "slug": "openai-whisper"
+      },
+      {
+        "category": "Connectors",
+        "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+        "name": "openai-whisper-api",
+        "path": "openai-whisper-api/SKILL.md",
+        "slug": "openai-whisper-api"
+      },
+      {
+        "category": "General",
+        "description": "Control Clawd Code via MCP protocol. Trigger with \"plan\" to write a precise execution plan then feed it to Clawd Code. Also supports direct commands, persistent sessions, agent teams, and advanced tool control.",
+        "name": "clawd-code-skill",
+        "path": "openclawd-clawd-code-skill-main/SKILL.md",
+        "slug": "openclawd-clawd-code-skill-main"
+      },
+      {
+        "category": "General",
+        "description": "Control Philips Hue lights/scenes via the OpenHue CLI.",
+        "name": "openhue",
+        "path": "openhue/SKILL.md",
+        "slug": "openhue"
+      },
+      {
+        "slug": "openmarket",
+        "name": "openmarket",
+        "path": "openmarket/SKILL.md",
+        "category": "General",
+        "description": "Use OpenMarket when the user asks for OpenMarket, openmarket.xyz, or its unified cross-exchange crypto data API (OHLCV candles, open interest, funding rates, liquidations, orderbook heatmaps, volume profiles, TPO market profiles, real-time trade streams)."
+      },
+      {
+        "slug": "openmarket-mcp",
+        "name": "openmarket-mcp",
+        "path": "openmarket-mcp/SKILL.md",
+        "category": "General",
+        "description": "Use the OpenMarket chart MCP server (mcp.openmarket.xyz) when the user asks to inspect or change their OpenMarket charts, resolve symbols against the chart plane directory, manage alerts/watchlists, or run agent trading through their tab. Streamable HTTP + agent token."
+      },
+      {
+        "slug": "openrouter",
+        "name": "openrouter",
+        "path": "openrouter/SKILL.md",
+        "category": "General",
+        "description": "Use OpenRouter when the agent needs LLM inference (chat, research, content) through the user's connected OpenRouter key."
+      },
+      {
+        "category": "General",
+        "description": "Migration guide from @openrouter/sdk to @openrouter/agent for callModel, tool(), stop conditions, and agent features. This skill should be used when code imports callModel, tool(), or stop conditions from @openrouter/sdk and needs to migrate to @openrouter/agent.",
+        "name": "openrouter-agent-migration",
+        "path": "openrouter-agent-migration/SKILL.md",
+        "slug": "openrouter-agent-migration"
+      },
+      {
+        "slug": "openrouter-cookbooks",
+        "name": "openrouter-cookbooks",
+        "path": "openrouter-cookbooks/SKILL.md",
+        "category": "General",
+        "description": "Read the included OpenRouter cookbook guides for provider integration examples."
+      },
+      {
+        "category": "Media",
+        "description": "Generate images from text prompts and edit existing images using OpenRouter's image generation models. Use when the user asks to create, generate, or make an image, picture, or illustration from a description, or wants to edit, modify, transform, or alter an existing image with a text prompt.",
+        "name": "openrouter-images",
+        "path": "openrouter-images/SKILL.md",
+        "slug": "openrouter-images"
+      },
+      {
+        "category": "General",
+        "description": "Query OpenRouter for available AI models, pricing, capabilities, throughput, and provider performance. Use when the user asks about available OpenRouter models, model pricing, model context lengths, model capabilities, provider latency or uptime, throughput limits, supported parameters, wants to search/filter/compare models, or find the fastest provider for a model.",
+        "name": "openrouter-models",
+        "path": "openrouter-models/SKILL.md",
+        "slug": "openrouter-models"
+      },
+      {
+        "category": "General",
+        "description": "Implement \"Sign In with OpenRouter\" using OAuth PKCE \u2014 framework-agnostic, no SDK or client registration required. Use when the user wants to add OpenRouter login, authentication, sign-in buttons, OAuth, or AI model inference API keys for browser-based apps. No client registration, no backend, no secrets required.",
+        "name": "openrouter-oauth",
+        "path": "openrouter-oauth/SKILL.md",
+        "slug": "openrouter-oauth"
+      },
+      {
+        "category": "General",
+        "description": "Complete reference for integrating with 300+ AI models through the OpenRouter TypeScript SDK and Agent packages using the callModel pattern",
+        "name": "openrouter-typescript-sdk",
+        "path": "openrouter-typescript-sdk/SKILL.md",
+        "slug": "openrouter-typescript-sdk"
+      },
+      {
+        "category": "General",
+        "description": "Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
+        "name": "oracle",
+        "path": "oracle/SKILL.md",
+        "slug": "oracle"
+      },
+      {
+        "category": "General",
+        "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+        "name": "ordercli",
+        "path": "ordercli/SKILL.md",
+        "slug": "ordercli"
+      },
+      {
+        "slug": "ore-miner",
+        "name": "ore-miner",
+        "path": "ore-miner/SKILL.md",
+        "category": "General",
+        "description": "Deploy your own ORE v3 grid miner on Solana mainnet. Hardened bot with per-round caps, daily caps, reserve floor, idempotency, and a fail-closed advisory gate. Dry-run first, fund, then go live."
+      },
+      {
+        "category": "General",
+        "description": "|",
+        "name": "pay",
+        "path": "pay/SKILL.md",
+        "slug": "pay"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "pay-with-any-token",
+        "path": "pay-with-any-token/SKILL.md",
+        "slug": "pay-with-any-token"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "pay-with-app",
+        "path": "pay-with-app/SKILL.md",
+        "slug": "pay-with-app"
+      },
+      {
+        "slug": "paybox",
+        "name": "paybox",
+        "path": "paybox/SKILL.md",
+        "category": "General",
+        "description": "Use PayBox when the agent needs payments or funding rails. OAuth 2.1 device flow, MCP at api.paybox.sh."
+      },
+      {
+        "slug": "paypal",
+        "name": "paypal",
+        "path": "paypal/SKILL.md",
+        "category": "General",
+        "description": "Call the PayPal REST API: OAuth token exchange plus arbitrary endpoint calls on live or sandbox."
+      },
+      {
+        "category": "General",
+        "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+        "name": "peekaboo",
+        "path": "peekaboo/SKILL.md",
+        "slug": "peekaboo"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "phantom-wallet-mcp",
+        "path": "phantom-wallet-mcp/SKILL.md",
+        "slug": "phantom-wallet-mcp"
+      },
+      {
+        "slug": "phoenix",
+        "name": "phoenix",
+        "path": "phoenix/SKILL.md",
+        "category": "General",
+        "description": "Use Phoenix when the user asks for Phoenix, phoenix perps, or phoenix perpetuals market data."
+      },
+      {
+        "slug": "pinata",
+        "name": "pinata",
+        "path": "pinata/SKILL.md",
+        "category": "General",
+        "description": "Use Pinata when the user asks for Pinata or this provider's API."
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "pons-launch",
+        "path": "pons-launch/SKILL.md",
+        "slug": "pons-launch"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "posthog-cheshire",
+        "path": "posthog-cheshire/SKILL.md",
+        "slug": "posthog-cheshire"
+      },
+      {
+        "slug": "privy-device-auth",
+        "name": "privy-device-auth",
+        "path": "privy-device-auth/SKILL.md",
+        "category": "General",
+        "description": "Privy OAuth 2.0 Device Authorization Grant for Musebook: approve once in the browser at https://musebook.trade/authorize, then sign with the user's Privy embedded Solana wallets headlessly. Covers login, token refresh/rotation, HPKE wallet authentication, canonical request signatures, message/tx signing (sign only, never broadcast), grant audit/revocation, and logout."
+      },
+      {
+        "slug": "pulse-tweets",
+        "name": "pulse-tweets",
+        "path": "pulse-tweets/SKILL.md",
+        "category": "General",
+        "description": "Scheduled tweet pulses for a Solana agent's X presence \u2014 rotating market-data tweets, Phoenix perps snapshots, and a token/project narrative rotator. Data-only, exactly-once per run, never advice."
+      },
+      {
+        "category": "Solana",
+        "description": "Build and execute Pump.fun admin workflows for authority management, creator reassignment, IDL authority changes, cashback claims, Mayhem mode, and cross-program Pump/PumpAMM admin instructions. Use when operating Pump protocol authority or administrative tasks.",
+        "name": "pump-admin-ops",
+        "path": "pump-admin-ops/SKILL.md",
+        "slug": "pump-admin-ops"
+      },
+      {
+        "slug": "pump-agents-create-coin",
+        "name": "pump-agents-create-coin",
+        "path": "pump-agents-create-coin/SKILL.md",
+        "category": "General",
+        "description": "Create a pump.fun coin (plus optional initial buy) via the fun-block agent API. Returns an unsigned/base64 transaction the user's wallet co-signs \u2014 the agent never signs for the user."
+      },
+      {
+        "slug": "pump-agents-fees",
+        "name": "pump-agents-fees",
+        "path": "pump-agents-fees/SKILL.md",
+        "category": "General",
+        "description": "Inspect pump.fun creator-fee destinations, collect creator fees/cashback, and manage shared-fee distribution configs via the fun-block agent API."
+      },
+      {
+        "slug": "pump-agents-payments",
+        "name": "pump-agents-payments",
+        "path": "pump-agents-payments/SKILL.md",
+        "category": "General",
+        "description": "Tokenized-agent payments via @pump-fun/agent-payments-sdk: build SOL/USDC invoices the user signs; server verifies on-chain before delivering service. Duplicate-safe via Invoice ID PDA."
+      },
+      {
+        "slug": "pump-agents-swap",
+        "name": "pump-agents-swap",
+        "path": "pump-agents-swap/SKILL.md",
+        "category": "General",
+        "description": "Buy/sell pump.fun tokens (bonding curve or graduated Pump AMM) via the fun-block agent API. Slippage protection, optional Jito-only submission, user wallet signs."
+      },
+      {
+        "category": "Solana",
+        "description": "Create and maintain AI-agent integration files for Pump.fun SDK work, including AGENTS/CLAUDE/COPILOT/GEMINI instructions, .well-known discovery, LLM context docs, skills registries, MCP prompts, and terminal rules. Use when wiring agents to Pump.fun development workflows.",
+        "name": "pump-ai-agents",
+        "path": "pump-ai-agents/SKILL.md",
+        "slug": "pump-ai-agents"
+      },
+      {
+        "category": "Solana",
+        "description": "Implement Pump.fun bonding-curve math for token pricing, buy/sell quotes, fee-aware calculations, market cap, tiered fees, ceiling division, virtual versus real reserves, and migration edge cases. Use when reviewing or coding Pump.fun pricing logic.",
+        "name": "pump-bonding-curve",
+        "path": "pump-bonding-curve/SKILL.md",
+        "slug": "pump-bonding-curve"
+      },
+      {
+        "category": "Solana",
+        "description": "Run and maintain Pump.fun SDK build, release, and publishing workflows across TypeScript, Rust, npm, Vercel, Makefile targets, linting, semantic release, and MCP server distribution. Use when preparing or debugging Pump.fun package releases.",
+        "name": "pump-build-release",
+        "path": "pump-build-release/SKILL.md",
+        "slug": "pump-build-release"
+      },
+      {
+        "category": "Solana",
+        "description": "Query Pump.fun claim state without sending transactions: unclaimed token incentives, creator vault balances, volume accumulators, distributable fees, current-day token previews, and Pump/PumpAMM aggregate views. Use for read-only claim and fee diagnostics.",
+        "name": "pump-claims-readonly",
+        "path": "pump-claims-readonly/SKILL.md",
+        "slug": "pump-claims-readonly"
+      },
+      {
+        "category": "Solana",
+        "description": "Configure and distribute Pump.fun creator fees through the PumpFees program with BPS shareholder splits, admin management, validation, and Pump/PumpAMM fee consolidation for graduated tokens. Use when setting up or paying creator fee shares.",
+        "name": "pump-fee-sharing",
+        "path": "pump-fee-sharing/SKILL.md",
+        "slug": "pump-fee-sharing"
+      },
+      {
+        "category": "Solana",
+        "description": "Implement and audit the Pump.fun fee system, including market-cap fee tiers, creator fee vaults across Pump and PumpAMM, basis-point arithmetic, ceiling division, fee simulation, and dust-safe calculations. Use for protocol fee logic and creator-fee accounting.",
+        "name": "pump-fee-system",
+        "path": "pump-fee-system/SKILL.md",
+        "slug": "pump-fee-system"
+      },
+      {
+        "category": "Solana",
+        "description": "Build and operate a Pump.fun Model Context Protocol server for AI agents, covering stdio transport, wallet/session safety, quoting, transaction builders, fee management, analytics, AMM operations, and prompt/resource design. Use when exposing Pump.fun operations through MCP.",
+        "name": "pump-mcp-server",
+        "path": "pump-mcp-server/SKILL.md",
+        "slug": "pump-mcp-server"
+      },
+      {
+        "category": "Solana",
+        "description": "Build production Rust vanity-address tooling for Pump.fun/Solana wallets with Rayon parallelism, solana-sdk key generation, Base58 prefix/suffix matching, secure file output, zeroization, and Criterion benchmarks. Use for high-throughput vanity generation.",
+        "name": "pump-rust-vanity",
+        "path": "pump-rust-vanity/SKILL.md",
+        "slug": "pump-rust-vanity"
+      },
+      {
+        "category": "Solana",
+        "description": "Build and extend the Pump.fun SDK core: offline TypeScript instruction builders, online RPC helpers, account decoders, PDAs, token creation, buy/sell, migration, fee collection, PumpAMM, PumpFees, and Mayhem support. Use for SDK API and implementation work.",
+        "name": "pump-sdk-core",
+        "path": "pump-sdk-core/SKILL.md",
+        "slug": "pump-sdk-core"
+      },
+      {
+        "category": "Solana",
+        "description": "Apply Pump.fun SDK security practices across Rust, TypeScript, and Bash: key handling, memory zeroization, secure file I/O, input validation, privilege boundaries, dependency auditing, and wallet/tool hardening. Use for Pump.fun security reviews and fixes.",
+        "name": "pump-security",
+        "path": "pump-security/SKILL.md",
+        "slug": "pump-security"
+      },
+      {
+        "category": "Solana",
+        "description": "Write and maintain secure Bash tooling for Pump.fun/Solana workflows, including vanity generation wrappers, keypair verification, batch jobs, dependency audits, test orchestration, file permissions, input validation, and cleanup traps.",
+        "name": "pump-shell-scripts",
+        "path": "pump-shell-scripts/SKILL.md",
+        "slug": "pump-shell-scripts"
+      },
+      {
+        "category": "Solana",
+        "description": "Design Pump.fun Solana program architecture, PDAs, account layouts, global singletons, per-token state, per-user accumulators, Mayhem accounts, and cross-program coordination across Pump, PumpAMM, PumpFees, and Mayhem. Use for account-model or PDA work.",
+        "name": "pump-solana-architecture",
+        "path": "pump-solana-architecture/SKILL.md",
+        "slug": "pump-solana-architecture"
+      },
+      {
+        "category": "Solana",
+        "description": "Apply Solana development patterns used by Pump.fun: Anchor IDL interaction, SPL Token and Token-2022 handling, transaction instruction composition, RPC batching, account decoding, simulation, BN arithmetic, and cross-program coordination.",
+        "name": "pump-solana-dev",
+        "path": "pump-solana-dev/SKILL.md",
+        "slug": "pump-solana-dev"
+      },
+      {
+        "category": "Solana",
+        "description": "Generate and validate secure Solana wallets for Pump.fun workflows using official Solana libraries, Ed25519 keypairs, offline operation, memory zeroization, secure file permissions, and Rust/TypeScript/Bash implementations.",
+        "name": "pump-solana-wallet",
+        "path": "pump-solana-wallet/SKILL.md",
+        "slug": "pump-solana-wallet"
+      },
+      {
+        "slug": "pump-stream",
+        "name": "pump-stream",
+        "path": "pump-stream/SKILL.md",
+        "category": "General",
+        "description": "Access the pump.musebook.trade token stream: the $CLAWD holder-gated live Pump + Stonk feed. Challenge/verify wallet auth (user signs in their own wallet), then read tokens, launches, and the live stream. Also covers the public no-auth launch relay."
+      },
+      {
+        "category": "Solana",
+        "description": "Design and run Pump.fun SDK test infrastructure across Rust, TypeScript, Python, and Bash, including unit tests, integration tests, security tests, fuzzing, shell orchestration, Criterion benchmarks, coverage, and CI gates.",
+        "name": "pump-testing",
+        "path": "pump-testing/SKILL.md",
+        "slug": "pump-testing"
+      },
+      {
+        "category": "Solana",
+        "description": "Implement and operate Pump.fun PUMP token incentive rewards with day-indexed epochs, pro-rata volume distribution, user/global accumulators, sync and claim flows, and Pump/PumpAMM cross-program aggregation.",
+        "name": "pump-token-incentives",
+        "path": "pump-token-incentives/SKILL.md",
+        "slug": "pump-token-incentives"
+      },
+      {
+        "category": "Solana",
+        "description": "Manage the full Pump.fun token lifecycle from creation through bonding-curve trading, graduation detection, AMM migration, AMM trading, creator fee collection, and volume tracking with PumpSdk and OnlinePumpSdk.",
+        "name": "pump-token-lifecycle",
+        "path": "pump-token-lifecycle/SKILL.md",
+        "slug": "pump-token-lifecycle"
+      },
+      {
+        "category": "Solana",
+        "description": "Build educational TypeScript vanity-address tooling for Pump.fun/Solana wallets with @solana/web3.js, async generators, event-loop yielding, prefix/suffix matching, batch search, and best-effort memory zeroization.",
+        "name": "pump-ts-vanity",
+        "path": "pump-ts-vanity/SKILL.md",
+        "slug": "pump-ts-vanity"
+      },
+      {
+        "category": "Solana",
+        "description": "Entry-point router for the local Pump.fun skill suite. Use when the user asks about launching Pump.fun tokens, bonding-curve or AMM trading, quotes, fees, claims, incentives, SDK work, agent/MCP integration, security, testing, or release workflows.",
+        "name": "pumpfun",
+        "path": "pumpfun/SKILL.md",
+        "slug": "pumpfun"
+      },
+      {
+        "category": "Solana",
+        "description": "Quick Pump.fun analytics shortcut for bonding curve state, graduation progress, price impact, token pricing, fee tiers, and buy/sell quote checks. Use for lightweight read-only token analysis.",
+        "name": "pumpfun-analytics",
+        "path": "pumpfun-analytics/SKILL.md",
+        "slug": "pumpfun-analytics"
+      },
+      {
+        "category": "Solana",
+        "description": "Quick Pump.fun fee shortcut for creator fee sharing setup, shareholder BPS splits, claim/distribution flows, fee-tier checks, token incentives, and automated fee monitoring.",
+        "name": "pumpfun-fees",
+        "path": "pumpfun-fees/SKILL.md",
+        "slug": "pumpfun-fees"
+      },
+      {
+        "category": "Solana",
+        "description": "Quick Pump.fun token-launch shortcut for creating tokens with the Pump SDK, optional initial buys, metadata upload flow, Mayhem mode, and launch safety checks.",
+        "name": "pumpfun-launcher",
+        "path": "pumpfun-launcher/SKILL.md",
+        "slug": "pumpfun-launcher"
+      },
+      {
+        "slug": "pumpfun-live",
+        "name": "pumpfun-live",
+        "path": "pumpfun-live/SKILL.md",
+        "category": "General",
+        "description": "Read pumpfun-live documentation and integration examples."
+      },
+      {
+        "slug": "pumpfun-pulse",
+        "name": "pumpfun-pulse",
+        "path": "pumpfun-pulse/SKILL.md",
+        "category": "General",
+        "description": "Run the 15-minute PumpFun Pulse: collect recent pump.fun launches, enrich via BirdEye, score and rank them. Use when the user asks for the pulse, the best/new launches, or trending pump.fun tokens."
+      },
+      {
+        "category": "Trading",
+        "description": "Quick Pump.fun trading shortcut for buy/sell flow selection, bonding curve versus AMM state checks, slippage handling, risk controls, and SDK trade instruction building.",
+        "name": "pumpfun-trading",
+        "path": "pumpfun-trading/SKILL.md",
+        "slug": "pumpfun-trading"
+      },
+      {
+        "slug": "raydium-trading",
+        "name": "raydium-trading",
+        "path": "raydium-trading/SKILL.md",
+        "category": "General",
+        "description": "Trade on Raydium (Solana AMM/CLMM) via the public Trade API. Quote swaps, build unsigned swap transactions for the user's browser wallet to sign, broadcast user-signed transactions. Browser-signing only \u2014 the agent never holds a private key."
+      },
+      {
+        "category": "Media",
+        "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+        "name": "review-animations",
+        "path": "review-animations/SKILL.md",
+        "slug": "review-animations"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "rh-bonded-launch",
+        "path": "rh-bonded-launch/SKILL.md",
+        "slug": "rh-bonded-launch"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "rh-crypto-agent",
+        "path": "rh-crypto-agent/SKILL.md",
+        "slug": "rh-crypto-agent"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "rh-launchpad-v3",
+        "path": "rh-launchpad-v3/SKILL.md",
+        "slug": "rh-launchpad-v3"
+      },
+      {
+        "slug": "risk-manager",
+        "name": "risk-manager",
+        "path": "risk-manager/SKILL.md",
+        "category": "General",
+        "description": "Risk Manager: pre-trade risk evaluation layer \u2014 position sizing, exposure limits, and recommendations before significant trades. Advisory only."
+      },
+      {
+        "category": "General",
+        "description": "Prepare, register, inspect, and safely operate chain-scoped AI agent identities on Robinhood Chain (EVM/ERC-8004-compatible) or Solana (SVM/Metaplex Core) through Cheshire Terminal and the open-source robinhood-agents SDK. Use for chain selection, deployment verification, metadata, unsigned EVM registration intents, wallet-authorized sponsored Solana identity mints, ownership and authority review, reputation, validation, or guarded infrastructure deployment.",
+        "name": "robinhood-agent-forge",
+        "path": "robinhood-agent-forge/SKILL.md",
+        "slug": "robinhood-agent-forge"
+      },
+      {
+        "slug": "rug-check",
+        "name": "rug-check",
+        "path": "rug-check/SKILL.md",
+        "category": "General",
+        "description": "Solana token safety diligence: mint/freeze authority, LP lock/burn, top-holder concentration, RugCheck score. Read-only \u2014 run before swapping into or launching alongside any token."
+      },
+      {
+        "category": "General",
+        "description": "ElevenLabs text-to-speech with mac-style say UX.",
+        "name": "sag",
+        "path": "sag/SKILL.md",
+        "slug": "sag"
+      },
+      {
+        "category": "General",
+        "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "sandbox-sdk",
+        "path": "sandbox-sdk/SKILL.md",
+        "slug": "sandbox-sdk"
+      },
+      {
+        "slug": "scalar",
+        "name": "scalar",
+        "path": "scalar/SKILL.md",
+        "category": "General",
+        "description": "Use Scalar when the user asks for Scalar or this provider's API."
+      },
+      {
+        "slug": "serpapi",
+        "name": "serpapi",
+        "path": "serpapi/SKILL.md",
+        "category": "General",
+        "description": "Structured Google/Bing/Yahoo search results via SerpApi: organic results, knowledge graph, answer boxes, AI Overviews, news, maps, shopping. Use for real-time web research, news lookups, and SERP data. Connector custom.serpapi."
+      },
+      {
+        "category": "Ops",
+        "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+        "name": "session-logs",
+        "path": "session-logs/SKILL.md",
+        "slug": "session-logs"
+      },
+      {
+        "category": "General",
+        "description": "Manages shadcn components and projects \u2014 adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
+        "name": "shadcn",
+        "path": "shadcn/SKILL.md",
+        "slug": "shadcn"
+      },
+      {
+        "category": "General",
+        "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+        "name": "sherpa-onnx-tts",
+        "path": "sherpa-onnx-tts/SKILL.md",
+        "slug": "sherpa-onnx-tts"
+      },
+      {
+        "category": "General",
+        "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+        "name": "skill-creator",
+        "path": "skill-creator/SKILL.md",
+        "slug": "skill-creator"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "skillhub-onchain",
+        "path": "skillhub-onchain/SKILL.md",
+        "slug": "skillhub-onchain"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "skills-store",
+        "path": "skills-store/SKILL.md",
+        "slug": "skills-store"
+      },
+      {
+        "category": "Connectors",
+        "description": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+        "name": "slack",
+        "path": "slack/SKILL.md",
+        "slug": "slack"
+      },
+      {
+        "slug": "smolmachines",
+        "name": "smolmachines",
+        "path": "smolmachines/SKILL.md",
+        "category": "General",
+        "description": "Use Smolmachines when the user asks for Smolmachines or this provider's API."
+      },
+      {
+        "slug": "solana-agent-registration",
+        "name": "solana-agent-registration",
+        "path": "solana-agent-registration/SKILL.md",
+        "category": "General",
+        "description": "Register an AI agent on-chain via the Metaplex Agent Registry: mint an MPL Core asset, bind an Agent Identity record, and verify it. One-shot flow a Muse agent can run end to end."
+      },
+      {
+        "category": "Solana",
+        "description": "One-shot setup and operation guide for the solana-clawd agentic engine. Use when: cloning the repo, setting up MCP tools, starting the Telegram bot, deploying to Fly.io/Netlify, hatching blockchain buddies, running OODA loops, configuring voice mode (ElevenLabs + Grok), minting Metaplex agents, managing the vault, running the worker swarm, or contributing to the project. Covers all 31 MCP tools, 18 buddy species, 9 spinners, 60+ Telegram commands, 95 skills, and the full repo structure.",
+        "name": "solana-clawd",
+        "path": "solana-clawd/SKILL.md",
+        "slug": "solana-clawd"
+      },
+      {
+        "category": "Solana",
+        "description": "Build and operate Solana CLAWD agents that spend through Pay CLI, expose paid stores, mint Metaplex-readable identities, and launch Genesis agent tokens.",
+        "name": "solana-clawd-agentic-commerce",
+        "path": "solana-clawd-agentic-commerce/SKILL.md",
+        "slug": "solana-clawd-agentic-commerce"
+      },
+      {
+        "category": "Solana",
+        "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
+        "name": "solana-clawd-agents",
+        "path": "solana-clawd-agents/SKILL.md",
+        "slug": "solana-clawd-agents"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "solana-common-errors",
+        "path": "solana-common-errors/SKILL.md",
+        "slug": "solana-common-errors"
+      },
+      {
+        "category": "Solana",
+        "description": "Use when user asks to \"build a Solana dapp\", \"write an Anchor program\", \"create a token\", \"debug Solana errors\", \"set up wallet connection\", \"test my Solana program\", \"deploy to devnet\", or \"explain Solana concepts\" (rent, accounts, PDAs, CPIs, etc.). Also use for quick on-chain lookups via public RPC + curl \u2014 \"what's the balance of <wallet>\", \"look up transaction <sig>\", \"token balance for <account>\", \"check this address on mainnet/devnet\". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, security checklists, and JSON-RPC curl lookups against public clusters. Integrates with the Solana MCP server for live documentation search. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries.",
+        "name": "solana-dev",
+        "path": "solana-dev/SKILL.md",
+        "slug": "solana-dev"
+      },
+      {
+        "category": "Solana",
+        "description": "Formally verify programs by writing Lean 4 proofs. Trigger this skill whenever the user wants to formally verify code, generate Lean 4 proofs, prove properties about algorithms or smart contracts, verify invariants, convert program logic into formal specifications, or anything involving Lean 4 and formal verification. Also trigger when the user mentions \"qedgen\", \"lean proof\", \"formal proof\", \"verify my code\", \"prove correctness\", \"formal verification\", or wants mathematical guarantees about their implementation.",
+        "name": "qedgen",
+        "path": "solana-formal-verification/SKILL.md",
+        "slug": "solana-formal-verification"
+      },
+      {
+        "category": "Solana",
+        "description": "Autonomous AI coding loop for Solana development that combines Ralphy-style task execution with Solana program, token launch, dApp, testing, and multi-engine coding workflows. Use when running PRD-driven or parallel Solana implementation tasks.",
+        "name": "solana-ralphy-skill",
+        "path": "solana-ralphy-skill/SKILL.md",
+        "slug": "solana-ralphy-skill"
+      },
+      {
+        "category": "Solana",
+        "description": "Solana RedPill TEE verifier development and operations for the `web/solana-redpill-verifier` stack. Use for Pinocchio SVM proof storage, TeeProofV2 PDA layout, StoreProofV2 transactions, RedPill/TDX and NVIDIA NRAS attestation anchoring, CLAWD TEE Gateway setup, OpenAI-compatible attested inference proxying, Solana Attestation Service Token-2022 credentials, TypeScript client integration, OP-TEE signer integration, deployment, and debugging proof anchoring on Solana.",
+        "name": "solana-redpill-verifier",
+        "path": "solana-redpill-verifier/SKILL.md",
+        "slug": "solana-redpill-verifier"
+      },
+      {
+        "category": "Solana",
+        "description": ">",
+        "name": "solana-rent-free-dev",
+        "path": "solana-rent-free-dev/SKILL.md",
+        "slug": "solana-rent-free-dev"
+      },
+      {
+        "slug": "solana-tracker",
+        "name": "solana-tracker",
+        "path": "solana-tracker/SKILL.md",
+        "category": "General",
+        "description": "Use Solana Tracker when the user asks for Solana Tracker or this provider's API."
+      },
+      {
+        "slug": "solana-tracker-datastream",
+        "name": "solana-tracker-datastream",
+        "path": "solana-tracker-datastream/SKILL.md",
+        "category": "General",
+        "description": "Use Solana Tracker Datastream when the user asks for Solana Tracker Datastream or this provider's API."
+      },
+      {
+        "slug": "solscan",
+        "name": "solscan",
+        "path": "solscan/SKILL.md",
+        "category": "General",
+        "description": "Read solscan documentation and integration examples."
+      },
+      {
+        "category": "Media",
+        "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+        "name": "songsee",
+        "path": "songsee/SKILL.md",
+        "slug": "songsee"
+      },
+      {
+        "category": "General",
+        "description": "Control Sonos speakers (discover/status/play/volume/group).",
+        "name": "sonoscli",
+        "path": "sonoscli/SKILL.md",
+        "slug": "sonoscli"
+      },
+      {
+        "category": "Solana",
+        "description": "Crypto wallet, token swaps, cross-chain bridges, and access to paid external services (search, image gen, web scraping, AI, and more) via x402 payments.",
+        "name": "sponge-wallet",
+        "path": "sponge-wallet/SKILL.md",
+        "slug": "sponge-wallet"
+      },
+      {
+        "category": "General",
+        "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+        "name": "spotify-player",
+        "path": "spotify-player/SKILL.md",
+        "slug": "spotify-player"
+      },
+      {
+        "slug": "stonkfun",
+        "name": "stonkfun",
+        "path": "stonkfun/SKILL.md",
+        "category": "General",
+        "description": "Use Stonkfun when the user asks for Stonkfun, stonk.fun token data, launches, or fee claims."
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "stripe",
+        "path": "stripe/SKILL.md",
+        "slug": "stripe"
+      },
+      {
+        "category": "Knowledge",
+        "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for \u201ctranscribe this YouTube/video\u201d).",
+        "name": "summarize",
+        "path": "summarize/SKILL.md",
+        "slug": "summarize"
+      },
+      {
+        "slug": "supermemory",
+        "name": "supermemory",
+        "path": "supermemory/SKILL.md",
+        "category": "General",
+        "description": "Read supermemory documentation and integration examples."
+      },
+      {
+        "slug": "svm",
+        "name": "svm",
+        "path": "svm/SKILL.md",
+        "category": "General",
+        "description": "Explore Solana's architecture and protocol internals. Covers the SVM execution engine, account model, consensus, transactions, validator economics, data layer, development tooling, and token extensions using the Helius blog, SIMDs, and Agave/Firedancer source code."
+      },
+      {
+        "category": "Trading",
+        "description": "Integrate Uniswap swaps into applications. Use when user says \"integrate swaps\", \"uniswap\", \"trading api\", \"add swap functionality\", \"build a swap frontend\", \"create a swap script\", \"smart contract swap integration\", \"use Universal Router\", \"Trading API\", or mentions swapping tokens via Uniswap.",
+        "name": "swap-integration",
+        "path": "swap-integration/SKILL.md",
+        "slug": "swap-integration"
+      },
+      {
+        "category": "Trading",
+        "description": "This skill should be used when the user asks to \"swap tokens\", \"trade ETH for USDC\", \"exchange tokens on Uniswap\", \"buy tokens\", \"sell tokens\", \"convert ETH to stablecoins\", \"find memecoins\", \"discover tokens\", \"research tokens\", \"tokens to buy\", \"find tokens to swap\", \"what should I buy\", or mentions swapping, trading, researching, discovering, buying, or exchanging tokens on any Uniswap-supported chain. Supports both known token swaps and token discovery workflows (discovery uses keyword search and web search \u2014 there is no live \"trending\" feed). Generates deep links to execute swaps in the Uniswap interface.",
+        "name": "swap-planner",
+        "path": "swap-planner/SKILL.md",
+        "slug": "swap-planner"
+      },
+      {
+        "category": "General",
+        "description": "Orchestrate multi-bot trading swarms on Pump.fun with persona-driven agents",
+        "name": "swarm-orchestrator",
+        "path": "swarm-orchestrator/SKILL.md",
+        "slug": "swarm-orchestrator"
+      },
+      {
+        "slug": "telegram",
+        "name": "telegram",
+        "path": "telegram/SKILL.md",
+        "category": "General",
+        "description": "Call the Telegram Bot API with the user's stored credential (surrogate-authenticated, token never read). Verify the bot, send messages, read updates."
+      },
+      {
+        "category": "Ops",
+        "description": "For testing with Light Protocol programs and clients on localnet, devnet, and mainnet validation.",
+        "name": "testing",
+        "path": "testing/SKILL.md",
+        "slug": "testing"
+      },
+      {
+        "category": "General",
+        "description": "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Clawdbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.",
+        "name": "things-mac",
+        "path": "things-mac/SKILL.md",
+        "slug": "things-mac"
+      },
+      {
+        "category": "Ops",
+        "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+        "name": "tmux",
+        "path": "tmux/SKILL.md",
+        "slug": "tmux"
+      },
+      {
+        "category": "General",
+        "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+        "name": "trello",
+        "path": "trello/SKILL.md",
+        "slug": "trello"
+      },
+      {
+        "slug": "typesafe-ai",
+        "name": "typesafe-ai",
+        "path": "typesafe-ai/SKILL.md",
+        "category": "General",
+        "description": "Read typesafe-ai documentation and integration examples."
+      },
+      {
+        "slug": "upstash",
+        "name": "upstash",
+        "path": "upstash/SKILL.md",
+        "category": "General",
+        "description": "Read upstash documentation and integration examples."
+      },
+      {
+        "category": "General",
+        "description": "Generate Uniswap v4 hook contracts via OpenZeppelin MCP. Use when building custom swap logic, async swaps, hook-owned liquidity, custom curves, dynamic fees, MEV protection, limit orders, or oracle hooks.",
+        "name": "v4-hook-generator",
+        "path": "v4-hook-generator/SKILL.md",
+        "slug": "v4-hook-generator"
+      },
+      {
+        "category": "General",
+        "description": ">",
+        "name": "v4-sdk-integration",
+        "path": "v4-sdk-integration/SKILL.md",
+        "slug": "v4-sdk-integration"
+      },
+      {
+        "category": "General",
+        "description": "Security-first Uniswap v4 hook development. Use when user mentions \"v4 hooks\", \"hook security\", \"PoolManager\", \"beforeSwap\", \"afterSwap\", or asks about V4 hook best practices, vulnerabilities, or audit requirements.",
+        "name": "v4-security-foundations",
+        "path": "v4-security-foundations/SKILL.md",
+        "slug": "v4-security-foundations"
+      },
+      {
+        "slug": "vercel",
+        "name": "vercel",
+        "path": "vercel/SKILL.md",
+        "category": "General",
+        "description": "Use Vercel when the user asks for Vercel or this provider's API."
+      },
+      {
+        "category": "Media",
+        "description": "Extract frames or short clips from videos using ffmpeg.",
+        "name": "video-frames",
+        "path": "video-frames/SKILL.md",
+        "slug": "video-frames"
+      },
+      {
+        "category": "General",
+        "description": "Integrate EVM blockchains using viem. Use when user says \"read blockchain data\", \"send transaction\", \"interact with smart contract\", \"connect to Ethereum\", \"use viem\", \"use wagmi\", \"wallet integration\", \"viem setup\", or mentions blockchain/EVM development with TypeScript.",
+        "name": "viem-integration",
+        "path": "viem-integration/SKILL.md",
+        "slug": "viem-integration"
+      },
+      {
+        "category": "Media",
+        "description": "Start voice calls via the Clawdbot voice-call plugin.",
+        "name": "voice-call",
+        "path": "voice-call/SKILL.md",
+        "slug": "voice-call"
+      },
+      {
+        "category": "Trading",
+        "description": "Entry-point skill for Phoenix perpetuals through Vulcan/Rise SDK inside solana-clawd. Use before answering or acting on Vulcan, Phoenix DEX, Solana perps, paper trading, live trading, margin, TP/SL, TWAP, grid, TA strategies, or perps agent setup.",
+        "name": "vulcan",
+        "path": "vulcan/SKILL.md",
+        "slug": "vulcan"
+      },
+      {
+        "category": "Trading",
+        "description": "Error category routing and recovery for Vulcan/Phoenix perps. Use on failed CLI/MCP calls, tx failures, auth/config/API/network/rate-limit errors, and strategy recovery.",
+        "name": "vulcan-error-recovery",
+        "path": "vulcan-error-recovery/SKILL.md",
+        "slug": "vulcan-error-recovery"
+      },
+      {
+        "category": "Trading",
+        "description": "Canonical Vulcan execution mode taxonomy: Observe, Paper, Dry-Run, Confirm-Each, Auto-Execute. Use before launching strategies or live-capable perps flows.",
+        "name": "vulcan-execution-modes",
+        "path": "vulcan-execution-modes/SKILL.md",
+        "slug": "vulcan-execution-modes"
+      },
+      {
+        "category": "Trading",
+        "description": "Grid trading with layered limit orders on Phoenix perpetuals. Use for grid setup, monitoring, pausing/stopping, and live/paper grid strategy safety.",
+        "name": "vulcan-grid-trading",
+        "path": "vulcan-grid-trading/SKILL.md",
+        "slug": "vulcan-grid-trading"
+      },
+      {
+        "category": "Trading",
+        "description": "Convert desired token/notional amounts to Phoenix base lots. Use whenever a Vulcan command requires size/base lots.",
+        "name": "vulcan-lot-size-calculator",
+        "path": "vulcan-lot-size-calculator/SKILL.md",
+        "slug": "vulcan-lot-size-calculator"
+      },
+      {
+        "category": "Trading",
+        "description": "Vulcan/Phoenix collateral, deposits, withdrawals, transfers, isolated margin, leverage tiers, and margin health.",
+        "name": "vulcan-margin-operations",
+        "path": "vulcan-margin-operations/SKILL.md",
+        "slug": "vulcan-margin-operations"
+      },
+      {
+        "category": "Trading",
+        "description": "Phoenix market data, tickers, orderbooks, candles, funding, spreads, liquidity, and pre-trade market context.",
+        "name": "vulcan-market-intel",
+        "path": "vulcan-market-intel/SKILL.md",
+        "slug": "vulcan-market-intel"
+      },
+      {
+        "category": "Trading",
+        "description": "First-run Vulcan setup for paper trading, wallet, registration, collateral, MCP skills, and live readiness.",
+        "name": "vulcan-onboarding",
+        "path": "vulcan-onboarding/SKILL.md",
+        "slug": "vulcan-onboarding"
+      },
+      {
+        "category": "Trading",
+        "description": "Phoenix portfolio snapshots: margin, positions, resting orders, funding exposure, PnL, and account reporting.",
+        "name": "vulcan-portfolio-intel",
+        "path": "vulcan-portfolio-intel/SKILL.md",
+        "slug": "vulcan-portfolio-intel"
+      },
+      {
+        "category": "Trading",
+        "description": "List, show, close, reduce Phoenix positions and attach/cancel TP/SL.",
+        "name": "vulcan-position-management",
+        "path": "vulcan-position-management/SKILL.md",
+        "slug": "vulcan-position-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Five-minute Vulcan quickstart for install, health check, first market read, and first paper trade.",
+        "name": "vulcan-quickstart",
+        "path": "vulcan-quickstart/SKILL.md",
+        "slug": "vulcan-quickstart"
+      },
+      {
+        "category": "Trading",
+        "description": "Risk checks for Phoenix perps: margin health, leverage tiers, liquidation distance, notional caps, exposure, stops, and strategy guardrails.",
+        "name": "vulcan-risk-management",
+        "path": "vulcan-risk-management/SKILL.md",
+        "slug": "vulcan-risk-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Index for the bundled Vulcan skill pack exposed through solana-clawd. Use to discover the correct focused Vulcan skill.",
+        "name": "vulcan-skills-index",
+        "path": "vulcan-skills-index/SKILL.md",
+        "slug": "vulcan-skills-index"
+      },
+      {
+        "category": "Trading",
+        "description": "Technical-analysis-driven Phoenix strategy runner using declarative rules and Vulcan strategy ledgers.",
+        "name": "vulcan-ta-strategy",
+        "path": "vulcan-ta-strategy/SKILL.md",
+        "slug": "vulcan-ta-strategy"
+      },
+      {
+        "category": "Trading",
+        "description": "Technical indicators and trigger evaluation for Phoenix markets: RSI, MACD, BBands, ATR, ADX, VWAP, Stoch, SMA, EMA.",
+        "name": "vulcan-technical-analysis",
+        "path": "vulcan-technical-analysis/SKILL.md",
+        "slug": "vulcan-technical-analysis"
+      },
+      {
+        "category": "Trading",
+        "description": "Take-profit and stop-loss setup, cancellation, laddered exits, position-side rules, and verification for Vulcan/Phoenix.",
+        "name": "vulcan-tpsl-management",
+        "path": "vulcan-tpsl-management/SKILL.md",
+        "slug": "vulcan-tpsl-management"
+      },
+      {
+        "category": "Trading",
+        "description": "Safe Phoenix order execution via Vulcan: pre-trade checks, market/limit orders, paper/dry-run/live gates, and post-trade verification.",
+        "name": "vulcan-trade-execution",
+        "path": "vulcan-trade-execution/SKILL.md",
+        "slug": "vulcan-trade-execution"
+      },
+      {
+        "category": "Trading",
+        "description": "TWAP strategy execution on Phoenix perps using Vulcan's first-class runner, tick logs, ledgers, status/monitor/finalize controls.",
+        "name": "vulcan-twap-execution",
+        "path": "vulcan-twap-execution/SKILL.md",
+        "slug": "vulcan-twap-execution"
+      },
+      {
+        "category": "General",
+        "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+        "name": "wacli",
+        "path": "wacli/SKILL.md",
+        "slug": "wacli"
+      },
+      {
+        "slug": "wallet-watch",
+        "name": "wallet-watch",
+        "path": "wallet-watch/SKILL.md",
+        "category": "General",
+        "description": "Read-only Solana wallet balance snapshots \u2014 SOL + SPL tokens with USD values via Jupiter pricing. Wallets come from your own config file; nothing is ever signed or moved."
+      },
+      {
+        "category": "General",
+        "description": "Get current weather and forecasts (no API key required).",
+        "name": "weather",
+        "path": "weather/SKILL.md",
+        "slug": "weather"
+      },
+      {
+        "category": "General",
+        "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge.",
+        "name": "web-perf",
+        "path": "web-perf/SKILL.md",
+        "slug": "web-perf"
+      },
+      {
+        "slug": "whale-tracker",
+        "name": "whale-tracker",
+        "path": "whale-tracker/SKILL.md",
+        "category": "General",
+        "description": "Whale Tracker: monitor and interpret large Solana wallet movements and what they may signal. Research only, read-only."
+      },
+      {
+        "category": "Ops",
+        "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "workers-best-practices",
+        "path": "workers-best-practices/SKILL.md",
+        "slug": "workers-best-practices"
+      },
+      {
+        "category": "Ops",
+        "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+        "name": "wrangler",
+        "path": "wrangler/SKILL.md",
+        "slug": "wrangler"
+      },
+      {
+        "slug": "x-connect",
+        "name": "x-connect",
+        "path": "x-connect/SKILL.md",
+        "category": "General",
+        "description": "Post tweets with media via X API v2 using the stored custom.x OAuth2 credential"
+      },
+      {
+        "slug": "x402-facilitator",
+        "name": "x402-facilitator",
+        "path": "x402-facilitator/SKILL.md",
+        "category": "General",
+        "description": "Run your own x402 facilitator (Solana + EVM) with the x402m m2m meta protocol: single-signature batch settlement, facilitator discovery, receipts, and the machine-economy pulse. Non-custodial \u2014 payers sign, you verify and relay."
+      },
+      {
+        "category": "Media",
+        "description": ">",
+        "name": "youtube-clipper",
+        "path": "youtube-clipper/SKILL.md",
+        "slug": "youtube-clipper"
+      },
+      {
+        "category": "General",
+        "description": "For custom ZK Solana programs and privacy-preserving applications to prevent double spending. Guide to integrate rent-free nullifier PDAs for double-spend prevention.",
+        "name": "zk",
+        "path": "zk/SKILL.md",
+        "slug": "zk"
+      },
+      {
+        "category": "General",
+        "description": "Zero-knowledge omnichain messaging between Robinhood Chain and Solana using CheshireZkOmniMessenger (msgType 4) with nullifier anti-replay and the zk-omni-relayer service.",
+        "name": "zk-omni-messaging",
+        "path": "zk-omni-messaging/SKILL.md",
+        "slug": "zk-omni-messaging"
+      }
+    ],
+    "source": "muse-connector-release-2026-10-10",
+    "tarball": "/clawd-skills.tar.gz",
+    "version": "3.15.1",
+    "tarball_url": "https://musebook.trade/clawd-skills.tar.gz",
+    "tarball_bytes": 23381619,
+    "connector_count": 17,
+    "connector_package_count": 2
+  },
+  "checks": {
+    "focused_server_and_routing_tests": 140,
+    "catalog_tests": 9,
+    "public_cli_tests": 11,
+    "app_build": "passed",
+    "deterministic_archives": "all three matched a second build",
+    "credential_patterns": "no private key blocks or recognized provider credential patterns found",
+    "live_worker_patch_sdk": "exact patched tool function listing, data and revocation passed",
+    "normal_domain_archive_sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+    "normal_domain_archive_bytes": 23381619,
+    "normal_domain_manifest_and_api": "matched archive and extracted counts",
+    "normal_domain_connector_packages": "both matched release checksums and read-only tool contracts",
+    "normal_domain_skill_api": 272,
+    "cli_bundle": "verified with --api https://musebook.trade; default Auth0 API requires authorization",
+    "oauth_discovery": "read scope advertised; unauthenticated MCP returned 401",
+    "vercel_immutable_archive": "matched local bytes and hash"
+  },
+  "remaining_intake": [
+    "dedicated reviewer account",
+    "full Muse OAuth callback",
+    "business verification and privacy/retention/deletion attestations",
+    "portal submission and review"
+  ],
+  "live_verified_at": "2026-10-10T18:10:57.428727+00:00",
+  "repository_visibility": {
+    "Solizardking/musebook": "private (observed through GitHub API)",
+    "Solizardking/musebook-private": "private"
+  },
+  "cloudflare": {
+    "success": true,
+    "deployment_id": "3fdde25b893746d4a2b5dd95bc29cf80",
+    "bundle_origin": "https://musebook-private-dezom5b7d-clawd-c4b28c7e.vercel.app",
+    "bindings_preserved": 119,
+    "worker_sha256": "9b434ac70a112d8fa3ccc76027c53c9a2c76baf2f34b9453847a066973d6637d"
+  },
+  "private_source_commit": "abcc639c292de7f50c886ed0650173ef953278e4",
+  "status": "technical packages published and verified; owner portal intake pending"
+}

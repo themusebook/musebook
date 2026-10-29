@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-10T19:10:07.235Z",
+  "finishedAt": "2026-10-10T19:11:02.805Z",
+  "outcome": "Public rendering, clipboard controls, release parity and download checks passed. Runtime service degradation is listed separately.",
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:06:49.290Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+    "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "normalDnsReleaseChecks": [
+    {
+      "url": "https://musebook.trade/release.json",
+      "status": 200,
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js",
+      "verified": true
+    },
+    {
+      "url": "https://terminal.musebook.trade/release.json",
+      "status": 200,
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js",
+      "verified": true
+    }
+  ],
+  "summary": {
+    "routesPassed": 20,
+    "copyControlsPassed": 20,
+    "clipboardDenialFallbackPassed": true,
+    "downloadHashesPassed": 4,
+    "pageErrors": 0,
+    "sameOriginStaticAssetFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "mobileNavigationPassed": true
+  },
+  "scope": {
+    "canonicalOrigin": "https://musebook.trade",
+    "terminalOrigin": "https://terminal.musebook.trade",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "browser": "isolated headless Chrome via frozen Playwright",
+    "browserSignedOut": true,
+    "walletConnected": false,
+    "nonReadRequestsBlocked": 150,
+    "allowedPublicMcpPosts": [
+      "initialize",
+      "tools/list",
+      "notifications/initialized"
+    ],
+    "githubAccess": "Authenticated read verified; repository remains private. Unauthenticated 404 is expected."
+  },
+  "routes": [
+    {
+      "name": "desktop-home",
+      "route": "/",
+      "status": 200,
+      "title": "Musebook - Solana agent network",
+      "bodyLength": 19378,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Musebook",
+        "$CLAWD",
+        "Bring your intelligence.Give it an on-chain world.",
+        "Agents on Solana",
+        "Clawd's Launch Tank",
+        "Solana markets",
+        "Musebook Town",
+        "The agent directory",
+        "Your trading desk",
+        "Find your next destination",
+        "Recently registered"
+      ]
+    },
+    {
+      "name": "desktop-connectors",
+      "route": "/connectors/",
+      "status": 200,
+      "title": "\u26a1 Connectors \u2014 Musebook \ud83e\udd9e",
+      "bodyLength": 12660,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "\u26a1 Connectors",
+        "On-chain \u00d7 off-chain, one wallet policy",
+        "The live bundle \u2014 relay, wallets, registration, trading",
+        "Every connector \u2014 what you can do now",
+        "Platform capabilities",
+        "Financial trading, the one-shot way"
+      ]
+    },
+    {
+      "name": "desktop-connector",
+      "route": "/connector/",
+      "status": 200,
+      "title": "Muse connectors - Musebook",
+      "bodyLength": 5953,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Solana research, connected to Muse",
+        "Useful answers with read-only access",
+        "Connector packages",
+        "Reviewer connection workflow",
+        "Copy into the submission form",
+        "Full developer skill pack"
+      ]
+    },
+    {
+      "name": "desktop-skills",
+      "route": "/skills/",
+      "status": 200,
+      "title": "Skills - Musebook",
+      "bodyLength": 66683,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Bring your intelligence.Give it an on-chain world.",
+        "Install the whole agent skill library in one shot.",
+        "Skill catalog"
+      ]
+    },
+    {
+      "name": "desktop-terminal",
+      "route": "/terminal/",
+      "status": 200,
+      "title": "Terminal - Musebook",
+      "bodyLength": 2391,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Musebook Terminal"
+      ]
+    },
+    {
+      "name": "desktop-docs",
+      "route": "/docs/",
+      "status": 200,
+      "title": "Docs - Musebook",
+      "bodyLength": 60012,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Musebook Docs \ud83e\udd9e",
+        "Agentic layer: architecture and status",
+        "Metaplex launchpad",
+        "Metaplex agents and wallet transactions",
+        "Token Metadata asset management",
+        "RWA issuance and pairing drafts",
+        "DAS and Genesis discovery",
+        "Claim creator rewards",
+        "Clawd coin decisions",
+        "Jupiter prediction trading",
+        "Realtime site launch receipts",
+        "WebMCP browser tools",
+        "Clawd Research and account MCP",
+        "MCP server"
+      ]
+    },
+    {
+      "name": "desktop-whitepaper",
+      "route": "/whitepaper/",
+      "status": 200,
+      "title": "Whitepaper - Musebook",
+      "bodyLength": 35563,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Whitepaper",
+        "Clawd Agentic Layer Whitepaper",
+        "Clawd Agentic Layer",
+        "Research Architecture and Implementation Report",
+        "Shared agent funds and persistent desks",
+        "Nori as the primary fund service agent"
+      ]
+    },
+    {
+      "name": "desktop-research",
+      "route": "/research/clawd-agentic-layer-v0.6.html",
+      "status": 200,
+      "title": "Clawd Agentic Layer v0.6",
+      "bodyLength": 34923,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Clawd Agentic Layer",
+        "Research Architecture and Implementation Report",
+        "Shared agent funds and persistent desks",
+        "Nori as the primary fund service agent"
+      ]
+    },
+    {
+      "name": "desktop-plugin",
+      "route": "/plugin/",
+      "status": 200,
+      "title": "Musebook plugin - Musebook",
+      "bodyLength": 2879,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Bring Musebook into your agent workspace.",
+        "Live Clawd feed",
+        "Connect your workspace",
+        "Start with the live feed",
+        "Download details & support"
+      ]
+    },
+    {
+      "name": "desktop-cli",
+      "route": "/cli/",
+      "status": 200,
+      "title": "CLI - Musebook",
+      "bodyLength": 4049,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Musebook CLI",
+        "Install",
+        "Quickstart",
+        "Command reference",
+        "Point at a different API",
+        "Keep going"
+      ]
+    },
+    {
+      "name": "desktop-terminal-host",
+      "route": "https://terminal.musebook.trade/",
+      "status": 200,
+      "title": "Terminal - Musebook",
+      "bodyLength": 2207,
+      "viewportWidth": 1440,
+      "contentWidth": 1440,
+      "headings": [
+        "Musebook Terminal"
+      ]
+    },
+    {
+      "name": "mobile-home",
+      "route": "/",
+      "status": 200,
+      "title": "Musebook - Solana agent network",
+      "bodyLength": 20243,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Musebook",
+        "$CLAWD",
+        "Bring your intelligence.Give it an on-chain world.",
+        "Agents on Solana",
+        "Clawd's Launch Tank",
+        "Solana markets",
+        "Musebook Town",
+        "The agent directory",
+        "Your trading desk",
+        "Find your next destination",
+        "Recently registered"
+      ]
+    },
+    {
+      "name": "mobile-connectors",
+      "route": "/connectors/",
+      "status": 200,
+      "title": "\u26a1 Connectors \u2014 Musebook \ud83e\udd9e",
+      "bodyLength": 12585,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "\u26a1 Connectors",
+        "On-chain \u00d7 off-chain, one wallet policy",
+        "The live bundle \u2014 relay, wallets, registration, trading",
+        "Every connector \u2014 what you can do now",
+        "Platform capabilities",
+        "Financial trading, the one-shot way"
+      ]
+    },
+    {
+      "name": "mobile-connector",
+      "route": "/connector/",
+      "status": 200,
+      "title": "Muse connectors - Musebook",
+      "bodyLength": 5878,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Solana research, connected to Muse",
+        "Useful answers with read-only access",
+        "Connector packages",
+        "Reviewer connection workflow",
+        "Copy into the submission form",
+        "Full developer skill pack"
+      ]
+    },
+    {
+      "name": "mobile-skills",
+      "route": "/skills/",
+      "status": 200,
+      "title": "Skills - Musebook",
+      "bodyLength": 66608,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Bring your intelligence.Give it an on-chain world.",
+        "Install the whole agent skill library in one shot.",
+        "Skill catalog"
+      ]
+    },
+    {
+      "name": "mobile-terminal",
+      "route": "/terminal/",
+      "status": 200,
+      "title": "Terminal - Musebook",
+      "bodyLength": 1920,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Musebook Terminal"
+      ]
+    },
+    {
+      "name": "mobile-docs",
+      "route": "/docs/",
+      "status": 200,
+      "title": "Docs - Musebook",
+      "bodyLength": 59929,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Musebook Docs \ud83e\udd9e",
+        "Agentic layer: architecture and status",
+        "Metaplex launchpad",
+        "Metaplex agents and wallet transactions",
+        "Token Metadata asset management",
+        "RWA issuance and pairing drafts",
+        "DAS and Genesis discovery",
+        "Claim creator rewards",
+        "Clawd coin decisions",
+        "Jupiter prediction trading",
+        "Realtime site launch receipts",
+        "WebMCP browser tools",
+        "Clawd Research and account MCP",
+        "MCP server"
+      ]
+    },
+    {
+      "name": "mobile-whitepaper",
+      "route": "/whitepaper/",
+      "status": 200,
+      "title": "Whitepaper - Musebook",
+      "bodyLength": 35488,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Whitepaper",
+        "Clawd Agentic Layer Whitepaper",
+        "Clawd Agentic Layer",
+        "Research Architecture and Implementation Report",
+        "Shared agent funds and persistent desks",
+        "Nori as the primary fund service agent"
+      ]
+    },
+    {
+      "name": "mobile-cli",
+      "route": "/cli/",
+      "status": 200,
+      "title": "CLI - Musebook",
+      "bodyLength": 3974,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Musebook CLI",
+        "Install",
+        "Quickstart",
+        "Command reference",
+        "Point at a different API",
+        "Keep going"
+      ]
+    },
+    {
+      "name": "mobile-terminal-host",
+      "route": "https://terminal.musebook.trade/",
+      "status": 200,
+      "title": "Terminal - Musebook",
+      "bodyLength": 1711,
+      "viewportWidth": 390,
+      "contentWidth": 390,
+      "headings": [
+        "Musebook Terminal"
+      ]
+    }
+  ],
+  "copyControls": [
+    {
+      "label": "Copy Production MCP endpoint",
+      "verified": true,
+      "chars": 31
+    },
+    {
+      "label": "Copy Authentication",
+      "verified": true,
+      "chars": 43
+    },
+    {
+      "label": "Copy Requested scopes",
+      "verified": true,
+      "chars": 4
+    },
+    {
+      "label": "Copy Tool classification",
+      "verified": true,
+      "chars": 64
+    },
+    {
+      "label": "Copy Authorization endpoint",
+      "verified": true,
+      "chars": 38
+    },
+    {
+      "label": "Copy Token endpoint",
+      "verified": true,
+      "chars": 34
+    },
+    {
+      "label": "Copy Client registration endpoint",
+      "verified": true,
+      "chars": 37
+    },
+    {
+      "label": "Copy Protected resource metadata",
+      "verified": true,
+      "chars": 68
+    },
+    {
+      "label": "Copy Product URL",
+      "verified": true,
+      "chars": 32
+    },
+    {
+      "label": "Copy Privacy and terms URLs",
+      "verified": true,
+      "chars": 59
+    },
+    {
+      "label": "Copy Clawd overview",
+      "verified": true,
+      "chars": 222
+    },
+    {
+      "label": "Copy Clawd example requests",
+      "verified": true,
+      "chars": 108
+    },
+    {
+      "label": "Copy Clawd package URL",
+      "verified": true,
+      "chars": 56
+    },
+    {
+      "label": "Copy Clawd tool documentation",
+      "verified": true,
+      "chars": 65
+    },
+    {
+      "label": "Copy BirdEye overview",
+      "verified": true,
+      "chars": 253
+    },
+    {
+      "label": "Copy BirdEye example requests",
+      "verified": true,
+      "chars": 142
+    },
+    {
+      "label": "Copy BirdEye package URL",
+      "verified": true,
+      "chars": 58
+    },
+    {
+      "label": "Copy BirdEye tool documentation",
+      "verified": true,
+      "chars": 67
+    },
+    {
+      "label": "Copy Full tarball SHA-256",
+      "verified": true,
+      "chars": 64
+    },
+    {
+      "label": "Copy Download and checksum command",
+      "verified": true,
+      "chars": 109
+    }
+  ],
+  "clipboardDenialFallback": {
+    "verified": true,
+    "text": "Product URL\nCopy\n\nText selected. Use your browser\u2019s Copy command.",
+    "selected": true,
+    "focused": true
+  },
+  "downloads": [
+    {
+      "label": "Download Clawd",
+      "filename": "connector-clawd.tar.gz",
+      "bytes": 156127,
+      "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4",
+      "verified": true
+    },
+    {
+      "label": "Download BirdEye",
+      "filename": "connector-birdeye.tar.gz",
+      "bytes": 8707,
+      "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059",
+      "verified": true
+    },
+    {
+      "label": "Download full tarball",
+      "filename": "clawd-skills.tar.gz",
+      "bytes": 23381619,
+      "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+      "verified": true
+    }
+  ],
+  "cliPackage": {
+    "version": "1.2.0",
+    "filename": "musebook-1.2.0.tgz",
+    "bytes": 132561,
+    "sha256": "d68ec5bf37678c23665a1c9839e3eca7c71c4d0e06a9b0a44595e22007dd6487",
+    "githubHref": "https://github.com/Solizardking/musebook",
+    "privateRepository": true,
+    "authenticatedPackageSourceSha": "76c385391413491da768caea8736a1310a93f53f",
+    "githubAccess": "authenticated private repository read succeeded; unauthenticated 404 is expected",
+    "verified": true
+  },
+  "mobileNavigation": {
+    "verified": true,
+    "destination": "/connector/"
+  },
+  "failures": [],
+  "pageErrors": [],
+  "sameOriginStaticAssetFailures": [],
+  "runtimeServiceFailures": [
+    {
+      "path": "/api/agents/solana",
+      "status": 503,
+      "observations": 3
+    },
+    {
+      "path": "/api/town/state",
+      "status": 502,
+      "observations": 3
+    },
+    {
+      "path": "/api/trade/market",
+      "status": 503,
+      "observations": 2
+    },
+    {
+      "path": "/api/v1/agents",
+      "status": 500,
+      "observations": 3
+    },
+    {
+      "path": "/api/v1/live-agents",
+      "status": 500,
+      "observations": 3
+    }
+  ],
+  "externalResourceFailures": [
+    {
+      "viewport": "desktop",
+      "url": "https://ipfs.io/ipfs/QmagL8sBiMxrR1E2Q9Lu58jdjiaaMRUtLpNJiBKwFw4T4C",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    },
+    {
+      "viewport": "desktop",
+      "url": "https://ipfs.io/ipfs/bafkreibblesb6iqzx4h4jb7nmz32beo36jjbbpifjm2yvljhprkvp7bfse",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+    }
+  ],
+  "smokeGuard": {
+    "note": "POST heartbeat, analytics, Cloudflare reporting and anonymous identification were deliberately blocked. Their generated 503s are excluded from runtime service failures. No browser OAuth, wallet or signing action was submitted.",
+    "blockedRequests": [
+      {
+        "method": "POST",
+        "endpoint": "https://analytics.google.com/g/collect",
+        "observations": 23
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://kv.better-auth.com/projects/[redacted]/identify",
+        "observations": 68
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://musebook.trade/api/visits/heartbeat",
+        "observations": 25
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://musebook.trade/cdn-cgi/challenge-platform/[redacted]",
+        "observations": 3
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://musebook.trade/cdn-cgi/rum",
+        "observations": 23
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://stats.g.doubleclick.net/g/collect",
+        "observations": 2
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://terminal.musebook.trade/api/visits/heartbeat",
+        "observations": 2
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://terminal.musebook.trade/cdn-cgi/challenge-platform/[redacted]",
+        "observations": 2
+      },
+      {
+        "method": "POST",
+        "endpoint": "https://terminal.musebook.trade/cdn-cgi/rum",
+        "observations": 2
+      }
+    ],
+    "guardedHeartbeat503s": 27
+  },
+  "consoleErrorSummary": [
+    {
+      "message": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "observations": 150
+    },
+    {
+      "message": "Failed to load resource: the server responded with a status of 503 ()",
+      "observations": 5
+    },
+    {
+      "message": "Failed to load resource: the server responded with a status of 500 ()",
+      "observations": 6
+    },
+    {
+      "message": "Failed to load resource: the server responded with a status of 502 ()",
+      "observations": 3
+    },
+    {
+      "message": "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+      "observations": 2
+    },
+    {
+      "message": "Failed to load resource: the server responded with a status of 401 ()",
+      "observations": 3
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "desktop-home.png",
+      "bytes": 426810,
+      "sha256": "35fd41cc2c8fb0100a5d7c1e4db52ba8e53adbeec7be2ead80650ed07ca2f959"
+    },
+    {
+      "file": "desktop-connector.png",
+      "bytes": 836108,
+      "sha256": "1f9139faf8f4fca03058c0af5c688b76ad99232e28ed3236804a7e317ece53ac"
+    },
+    {
+      "file": "desktop-terminal-host.png",
+      "bytes": 249419,
+      "sha256": "5724d53fab58fd56c1ec4982ffadf6de5462c192586d8499094f001736baa83d"
+    },
+    {
+      "file": "mobile-home.png",
+      "bytes": 125021,
+      "sha256": "10f4b324acfd0029a673df39e3fdd1f219759780e5f04dc86c69b4f5d928e7cf"
+    }
+  ]
+}

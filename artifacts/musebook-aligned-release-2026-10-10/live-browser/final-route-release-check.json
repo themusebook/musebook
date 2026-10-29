@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10T19:33:02Z",
+  "normalDns": true,
+  "readOnly": true,
+  "expectedRelease": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "artifactComparison": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-10T19:32:52Z",
+    "baselineBrowserRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:06:49.290Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "baselineBrowserStartedAt": "2026-10-10T19:10:07.235Z",
+    "baselineBrowserFinishedAt": "2026-10-10T19:11:02.805Z",
+    "release": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:29:44.179Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+      "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "filesCompared": 1097,
+    "changedFiles": [
+      "_redirects",
+      "agentic-layer.md",
+      "clawd-agentic-layer-whitepaper.pdf",
+      "downloads/manifest.json",
+      "downloads/musebook-1.2.0.tgz",
+      "release.json",
+      "research/clawd-agentic-layer-v0.6.pdf",
+      "research/manifest.json"
+    ],
+    "removedFiles": [],
+    "addedFiles": [],
+    "assetsCompared": 274,
+    "changedAssets": [],
+    "addedAssets": [],
+    "removedAssets": [],
+    "compiledHtmlJsCssAndAllAssetsCompared": 926,
+    "compiledHtmlJsCssAndAllAssetsUnchanged": true,
+    "unexpectedCompiledChanges": [],
+    "broadBrowserEvidenceCarriedForward": true,
+    "passed": true
+  },
+  "previousBroadBrowserEvidenceCarriedForward": true,
+  "checks": [
+    {
+      "kind": "release",
+      "url": "https://musebook.trade/release.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 334,
+      "sha256": "a84372eba173aa77f6da81afd11c7ed3d2793869ad5769eadaa81a63bc616d33",
+      "release": {
+        "schemaVersion": 1,
+        "builtAt": "2026-10-10T19:29:44.179Z",
+        "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+        "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+        "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+        "entry": "/assets/index-BazqlYN_.js"
+      },
+      "passed": true
+    },
+    {
+      "kind": "release",
+      "url": "https://terminal.musebook.trade/release.json",
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 334,
+      "sha256": "a84372eba173aa77f6da81afd11c7ed3d2793869ad5769eadaa81a63bc616d33",
+      "release": {
+        "schemaVersion": 1,
+        "builtAt": "2026-10-10T19:29:44.179Z",
+        "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+        "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+        "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+        "entry": "/assets/index-BazqlYN_.js"
+      },
+      "passed": true
+    },
+    {
+      "kind": "skill-page",
+      "url": "https://terminal.musebook.trade/SKILL.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 119409,
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "passed": true
+    },
+    {
+      "kind": "skill-page",
+      "url": "https://terminal.musebook.trade/skill.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 119409,
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "passed": true
+    },
+    {
+      "kind": "skill-canonical",
+      "url": "https://musebook.trade/SKILL.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 121273,
+      "sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b",
+      "passed": true
+    },
+    {
+      "kind": "pdf",
+      "url": "https://musebook.trade/clawd-agentic-layer-whitepaper.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 2681278,
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "passed": true
+    },
+    {
+      "kind": "pdf",
+      "url": "https://musebook.trade/clawd-agentic-layer-whitepaper.pdf?download=1",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 2681278,
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "passed": true
+    },
+    {
+      "kind": "cli",
+      "url": "https://musebook.trade/downloads/musebook-1.2.0.tgz",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 132536,
+      "sha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5",
+      "passed": true
+    },
+    {
+      "kind": "entry",
+      "url": "https://musebook.trade/assets/index-BazqlYN_.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 243773,
+      "sha256": "2f6116b50f6ba0653f186692f85288df816c7df02fe8cd852f107f2562fce2fd",
+      "passed": true
+    },
+    {
+      "kind": "entry",
+      "url": "https://terminal.musebook.trade/assets/index-BazqlYN_.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "bytes": 243773,
+      "sha256": "2f6116b50f6ba0653f186692f85288df816c7df02fe8cd852f107f2562fce2fd",
+      "passed": true
+    },
+    {
+      "kind": "shell",
+      "url": "https://musebook.trade/connector/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 6122,
+      "sha256": "83dadf88d0b11b7fc23784016e50adc223d89215f40ac31e2972fa889be7d434",
+      "passed": true
+    },
+    {
+      "kind": "shell",
+      "url": "https://terminal.musebook.trade/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 6604,
+      "sha256": "258834b502e0ffaaa2fd7f55a8170d09c8095d43868d0fa0a7b6b184416eb38c",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

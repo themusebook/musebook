@@ -1,0 +1,26 @@
+--- bin/stonk_pulse.py	2026-09-30 00:48:18.871340645 +0000
++++ /tmp/stonk_pulse_new.py	2026-10-08 18:00:29.687044183 +0000
+@@ -18,6 +18,9 @@
+ import sys
+ import urllib.request
+ 
++sys.path.insert(0, "/home/hatch/workspace/skills/x-connect/bin")
++from tweet import sanitize_tokens  # noqa: E402
++
+ API = "https://www.stonkfun.xyz/api/public/v1"
+ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ STATE_PATH = os.path.join(BASE, "state", "stonk_pulse_state.json")
+@@ -116,6 +119,13 @@
+     seen = set(state.get("seen_mints", []))
+     new = [t for t in tokens if t.get("mint") not in seen]
+ 
++    # Surgical slur screen (2026-10-08): drop tokens whose name/symbol trips
++    # the blocklist instead of letting one bad name veto the whole post in
++    # post.py (which screens the composed text and refuses the entire tweet).
++    # Reuses tweet.py's sanitize_tokens so the screen lives in one place;
++    # drops are logged to stderr for auditability.
++    new = sanitize_tokens(new)
++
+     # rank: newest first (the API already returns sort=newest), then
+     # graduation progress, mcap, 24h volume as tiebreaks
+     def rank_key(t):

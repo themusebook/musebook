@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-10T18:24:22.444Z",
+  "homepage": "https://musebook.trade/",
+  "documentRequests": [
+    "https://musebook.trade/",
+    "https://musebook.trade/connector/",
+    "https://musebook.trade/connector"
+  ],
+  "pageErrors": [],
+  "connectorNavigationScripts": [
+    "musebook-connector-document-navigation"
+  ],
+  "footerHref": "/connector/",
+  "finalUrl": "https://musebook.trade/connector",
+  "connectorDocumentRequests": [
+    "https://musebook.trade/connector/",
+    "https://musebook.trade/connector"
+  ],
+  "heading": "Solana research, connected to Muse",
+  "copyControls": 20,
+  "pass": true
+}

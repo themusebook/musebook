@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-10T19:32:55.787130+00:00",
+  "url": "https://musebook.trade/api/agents/solana",
+  "method": "GET",
+  "status": 503,
+  "content_type": "application/json",
+  "bytes": 74,
+  "sha256": "cafd7c9ec3d038054e2839961baf67fe89b572057c5f5f6b751cddde1483af98",
+  "remote_mutations": 0,
+  "response_body_published": false,
+  "json_keys": [
+    "coverage",
+    "error"
+  ],
+  "sanitized_error_category": "agent_indexer_unavailable",
+  "das_search_assets_success_verified": false,
+  "passed": false,
+  "limitations": [
+    "Public indexed agent-feed reads only; no registration, signatures, payments or transactions tested."
+  ]
+}

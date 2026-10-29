@@ -1,0 +1,12 @@
+{
+  "path": "canonical-skill-runtime-appendix.md",
+  "status": 200,
+  "frozen_prefix_bytes": 119409,
+  "frozen_prefix_sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+  "runtime_appendix_bytes": 1864,
+  "runtime_appendix_sha256": "a9fef5edb5905e198f7ab0f12aba156648f4c149fdeadcd7b2b41dff5d3fcb80",
+  "live_bytes": 121273,
+  "live_sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b",
+  "reviewed_markers_present": true,
+  "runtime_augmentation_verified": true
+}

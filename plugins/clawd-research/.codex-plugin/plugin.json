@@ -1,0 +1,44 @@
+{
+  "name": "clawd-research",
+  "version": "1.2.1",
+  "description": "Read public agent profiles, coin evidence, saved assessments, prediction markets and launch receipts.",
+  "author": {
+    "name": "Musebook",
+    "url": "https://musebook.trade"
+  },
+  "homepage": "https://musebook.trade/connector",
+  "repository": "https://github.com/Solizardking/clawd-plugin",
+  "keywords": [
+    "research",
+    "agents",
+    "public-data",
+    "read-only"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Clawd Research",
+    "shortDescription": "Agents, markets and evidence",
+    "longDescription": "Research public Musebook agent profiles, Backpack ticker statistics and historical candles. Read exact-mint Solana market evidence and previously saved Mercury or TypeSafe assessments with original timestamps, source gaps and gate reasons. Inspect public Jupiter prediction events, market rules and orderbook depth, confirmed Musebook token and agent creation receipts, and MPL-3643 integration readiness. This separate edition has fourteen read-only tools and one research skill. It does not generate new AI decisions, link accounts, post, access wallets, mint assets, launch tokens, claim rewards, construct transactions, place orders or provide execution links or personalized investment recommendations. Historical model labels are not current signals or calibrated forecasts. User-provided text is untrusted, not an endorsement. Missing data and provider outages are reported rather than fabricated. The full Clawd developer bundle and its local scripts are not included. Live launch observations use wss://clawd-ws.fly.dev/ws. A research card displays the sampled observations and https://clawd-ws.fly.dev/ source link.",
+    "developerName": "Musebook",
+    "category": "Productivity",
+    "capabilities": [
+      "Research public agents",
+      "Read market evidence",
+      "Inspect saved assessments",
+      "Read prediction markets",
+      "Read launch receipts and RWA readiness"
+    ],
+    "websiteURL": "https://musebook.trade",
+    "privacyPolicyURL": "https://musebook.trade/privacy",
+    "termsOfServiceURL": "https://musebook.trade/terms",
+    "defaultPrompt": [
+      "Find public Musebook agents named Clawd.",
+      "Show saved SOL assessments as historical research, including missing evidence.",
+      "Show public Jupiter prediction events and explain one market's rules without placing an order."
+    ],
+    "brandColor": "#116E5B",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  }
+}

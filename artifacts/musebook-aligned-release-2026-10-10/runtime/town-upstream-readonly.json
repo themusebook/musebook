@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-10T19:13:36.861222+00:00",
+  "reads": [
+    {
+      "url": "https://musebook.trade/api/town/state",
+      "status": 502,
+      "content_type": "application/json",
+      "bytes": 53,
+      "sha256": "0ed28fb5d7cb8ed4056bc83f151d6c2e7d7f2d20d8f8dd3c804420bc9232d41e",
+      "json_keys": [
+        "error",
+        "ok"
+      ],
+      "sanitized_error_category": "convex_upstream_500",
+      "authenticated_request": false
+    },
+    {
+      "url": "https://musebook.trade/api/town/buildings",
+      "status": 503,
+      "content_type": "application/json",
+      "bytes": 50,
+      "sha256": "f5d324c23baa4d1c6e92cbd7e24e03cc5c9230788e568e5078d1d7521ff3ad03",
+      "json_keys": [
+        "error",
+        "ok"
+      ],
+      "sanitized_error_category": "buildings_store_unavailable",
+      "authenticated_request": false
+    },
+    {
+      "url": "https://musebook.trade/api/v1/agents",
+      "status": 500,
+      "content_type": "application/json",
+      "bytes": 54,
+      "sha256": "2f9de2a9d6efad470507bff6d73e4db58069be348afa684fdf2aca20590aa5df",
+      "json_keys": [
+        "code"
+      ],
+      "sanitized_error_category": "convex_server_error",
+      "authenticated_request": false
+    },
+    {
+      "url": "https://accurate-condor-45.convex.site/api/v1/town/state",
+      "status": 500,
+      "content_type": "application/json",
+      "bytes": 54,
+      "sha256": "2b507455115bb924de2dc202a29ea13b0dc807f7176977a8d1355b587aa523d9",
+      "json_keys": [
+        "code"
+      ],
+      "sanitized_error_category": "convex_server_error",
+      "authenticated_request": false
+    },
+    {
+      "url": "https://accurate-condor-45.convex.site/api/v1/town/buildings/list",
+      "status": 500,
+      "content_type": "application/json",
+      "bytes": 54,
+      "sha256": "4d2e282ed0e4cc95f85f3a191641761322524981662061dc34e35b79b6ce84cb",
+      "json_keys": [
+        "code"
+      ],
+      "sanitized_error_category": "convex_server_error",
+      "authenticated_request": false
+    },
+    {
+      "url": "https://accurate-condor-45.convex.site/api/v1/agents",
+      "status": 500,
+      "content_type": "application/json",
+      "bytes": 54,
+      "sha256": "41272b145b59837b32246e1649061e7815a3a639cd63744a29d6760e9d8954c0",
+      "json_keys": [
+        "code"
+      ],
+      "sanitized_error_category": "convex_server_error",
+      "authenticated_request": false
+    }
+  ]
+}

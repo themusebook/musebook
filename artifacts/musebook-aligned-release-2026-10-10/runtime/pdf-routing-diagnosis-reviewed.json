@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-10T19:22:36.635089+00:00",
+  "canonical_pdf_path": "/clawd-agentic-layer-whitepaper.pdf",
+  "frozen_pdf": {
+    "bytes": 2681278,
+    "sha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5"
+  },
+  "before": {
+    "canonical_status": 404,
+    "content_type": "application/pdf",
+    "bytes": 21,
+    "sha256": "c8d3eae160a892e32837db3dcae515e843e5383fef52b8141940c8bcf8b6d59f"
+  },
+  "root_cause": {
+    "matched_existing_route_pattern": "musebook.trade/clawd-agent*",
+    "matched_worker": "musebook-clawd-agent",
+    "main_proxy_route_pattern": "musebook.trade/*",
+    "old_pdf_worker_has_active_routes": false
+  },
+  "existing_main_proxy_proof": [
+    {
+      "app_proxy": "vercel",
+      "bytes": 2681278,
+      "content_type": "application/pdf",
+      "passed": true,
+      "sha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+      "status": 200,
+      "url": "https://www.musebook.trade/clawd-agentic-layer-whitepaper.pdf"
+    },
+    {
+      "app_proxy": "vercel",
+      "bytes": 2681278,
+      "content_type": "application/pdf",
+      "passed": true,
+      "sha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+      "status": 200,
+      "url": "https://www.musebook.trade/clawd-agentic-layer-whitepaper.pdf?download=1"
+    }
+  ],
+  "reviewed_existing_proxy_function": {
+    "name": "handleMusebookAppProxy",
+    "bytes": 3308,
+    "sha256": "dcb2d34908eee5b045070722aff61e3fa8269f62360de2dfb93b5d5698474a2a",
+    "named_pdf_path_uses_generic_app_release_upstream": true,
+    "pdf_rejected_by_connector_asset_js_css_selector": true
+  },
+  "repair_plan": {
+    "method": "POST",
+    "endpoint": "/zones/d15e5da3754f431aff2ad97bdbbde17f/workers/routes",
+    "body": {
+      "pattern": "musebook.trade/clawd-agentic-layer-whitepaper.pdf*",
+      "script": "musebook-proxy"
+    },
+    "plan_sha256": "e00dfc871f86e38337a42abe8bc6a3d3c59238154578a8822c4a1d46fcb127c4",
+    "existing_routes_modified": 0,
+    "worker_source_or_bindings_modified": 0
+  },
+  "official_matching_docs": "https://developers.cloudflare.com/workers/configuration/routing/routes/",
+  "remote_mutations_by_auditor": 0
+}

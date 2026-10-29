@@ -1,0 +1,805 @@
+{
+  "checked_at": "2026-10-10T19:32:00.249295+00:00",
+  "expected_release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "origins": [
+    "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app"
+  ],
+  "checks": [
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/",
+      "method": "GET",
+      "kind": "route",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/",
+      "bytes": 6008,
+      "sha256": "822f458b72c482a70a187faf4a0f8381545dc029911166bd1c3baaaa8d5b4082",
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/SKILL.md",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/SKILL.md",
+      "bytes": 119409,
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "expected": {
+        "bytes": 119409,
+        "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/agentic-layer.md",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/agentic-layer.md",
+      "bytes": 28753,
+      "sha256": "43b197e65962a6c9f937711ced153d4413d658e02658c31c387bac76a1a09c47",
+      "expected": {
+        "bytes": 28753,
+        "sha256": "43b197e65962a6c9f937711ced153d4413d658e02658c31c387bac76a1a09c47"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/api-dfXBYGhH.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/api-dfXBYGhH.js",
+      "bytes": 1353,
+      "sha256": "f7461f364d3ac3d704a06ba2c8287f7905a8d98a9b7641d479f32a5e8e3e2518",
+      "expected": {
+        "bytes": 1353,
+        "sha256": "f7461f364d3ac3d704a06ba2c8287f7905a8d98a9b7641d479f32a5e8e3e2518"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/button-FCepmPaI.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/button-FCepmPaI.js",
+      "bytes": 2895,
+      "sha256": "42e26c72b9e2d129013b6234c74a90bb5cd3786def1ac23ef1d477d1a11b3ddc",
+      "expected": {
+        "bytes": 2895,
+        "sha256": "42e26c72b9e2d129013b6234c74a90bb5cd3786def1ac23ef1d477d1a11b3ddc"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/config-Ce-nl0Ny.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/config-Ce-nl0Ny.js",
+      "bytes": 630,
+      "sha256": "223bda7fd80be76057da3f787018c1968c602cba949c6e172d504c5aa49ffe8e",
+      "expected": {
+        "bytes": 630,
+        "sha256": "223bda7fd80be76057da3f787018c1968c602cba949c6e172d504c5aa49ffe8e"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/dist-DHHLUJ2u.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/dist-DHHLUJ2u.js",
+      "bytes": 25131,
+      "sha256": "682eb743dfef0db21dbfb5eb060fe65410d672c842d9efc7605113d44b69ba52",
+      "expected": {
+        "bytes": 25131,
+        "sha256": "682eb743dfef0db21dbfb5eb060fe65410d672c842d9efc7605113d44b69ba52"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/errors-Cbrm5Sqt.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/errors-Cbrm5Sqt.js",
+      "bytes": 906,
+      "sha256": "27f4ed86970ec40a9baf1212cf163bbfbbaf16a3d149fa76dc7155185cf04e4e",
+      "expected": {
+        "bytes": 906,
+        "sha256": "27f4ed86970ec40a9baf1212cf163bbfbbaf16a3d149fa76dc7155185cf04e4e"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/index-AnKQamc0.css",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/index-AnKQamc0.css",
+      "bytes": 276428,
+      "sha256": "fec8d391817a7a69a4f6f915a48f25779b5c9c3867b9607ed62d3863c86191ea",
+      "expected": {
+        "bytes": 276428,
+        "sha256": "fec8d391817a7a69a4f6f915a48f25779b5c9c3867b9607ed62d3863c86191ea"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/index-BazqlYN_.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/index-BazqlYN_.js",
+      "bytes": 243773,
+      "sha256": "2f6116b50f6ba0653f186692f85288df816c7df02fe8cd852f107f2562fce2fd",
+      "expected": {
+        "bytes": 243773,
+        "sha256": "2f6116b50f6ba0653f186692f85288df816c7df02fe8cd852f107f2562fce2fd"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/privy-AngrjO_P.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/privy-AngrjO_P.js",
+      "bytes": 3433,
+      "sha256": "5db45b9d4fc69904fc7081afa58fa617861fbd6d6d6594448e14c683f402498b",
+      "expected": {
+        "bytes": 3433,
+        "sha256": "5db45b9d4fc69904fc7081afa58fa617861fbd6d6d6594448e14c683f402498b"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/rolldown-runtime-C0FnF6B9.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/rolldown-runtime-C0FnF6B9.js",
+      "bytes": 1291,
+      "sha256": "e0a79ad36c6ca1ffbc796c80aa5661803a9d1bc684e29d1587f48b4ba9a82714",
+      "expected": {
+        "bytes": 1291,
+        "sha256": "e0a79ad36c6ca1ffbc796c80aa5661803a9d1bc684e29d1587f48b4ba9a82714"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/store-D-bujtkn.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/store-D-bujtkn.js",
+      "bytes": 562,
+      "sha256": "1465e1d1838872110731f5e7308c2a7392fd14494da25f7733994b9e91fc0bec",
+      "expected": {
+        "bytes": 562,
+        "sha256": "1465e1d1838872110731f5e7308c2a7392fd14494da25f7733994b9e91fc0bec"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-anchor-BkYocdAK.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-anchor-BkYocdAK.js",
+      "bytes": 508982,
+      "sha256": "b4c7d5790f4935d978b8b8da7df01015cb2cbbe15e2de03b67fdbc7083e55f1f",
+      "expected": {
+        "bytes": 508982,
+        "sha256": "b4c7d5790f4935d978b8b8da7df01015cb2cbbe15e2de03b67fdbc7083e55f1f"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-auth-z5yKCm0z.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-auth-z5yKCm0z.js",
+      "bytes": 89503,
+      "sha256": "9e97701a91e408335f146f49d9379e2440502c109f3b5a4576e845dcc15cbabe",
+      "expected": {
+        "bytes": 89503,
+        "sha256": "9e97701a91e408335f146f49d9379e2440502c109f3b5a4576e845dcc15cbabe"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-charts-CMmzS3kq.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-charts-CMmzS3kq.js",
+      "bytes": 333556,
+      "sha256": "cf6bcb8bebe63e41d58a4c2637405b3fddf8742281bdaae74574c61a709c1ec1",
+      "expected": {
+        "bytes": 333556,
+        "sha256": "cf6bcb8bebe63e41d58a4c2637405b3fddf8742281bdaae74574c61a709c1ec1"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-motion-Dw_N1cAs.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-motion-Dw_N1cAs.js",
+      "bytes": 127644,
+      "sha256": "de23da15ab669f15e1db18a4861027a33495ef454c93c02ce577272df7583c42",
+      "expected": {
+        "bytes": 127644,
+        "sha256": "de23da15ab669f15e1db18a4861027a33495ef454c93c02ce577272df7583c42"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-pixi-D3tYC1mg.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-pixi-D3tYC1mg.js",
+      "bytes": 705471,
+      "sha256": "4e7f0c5ea3e682f6c2d0103c18e28235f0770081715695e04beb5bfccebe9e5c",
+      "expected": {
+        "bytes": 705471,
+        "sha256": "4e7f0c5ea3e682f6c2d0103c18e28235f0770081715695e04beb5bfccebe9e5c"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-react-BNfUVPUg.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-react-BNfUVPUg.js",
+      "bytes": 245859,
+      "sha256": "db5536e55e02de345cfbb9e0ab1b58aea9216a9ba0c43f1eb9a0155de0ee0bb9",
+      "expected": {
+        "bytes": 245859,
+        "sha256": "db5536e55e02de345cfbb9e0ab1b58aea9216a9ba0c43f1eb9a0155de0ee0bb9"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/vendor-ui-p5hsKK71.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/vendor-ui-p5hsKK71.js",
+      "bytes": 206343,
+      "sha256": "0c84974ce82779d315f2d0d1a66ece70a51f2d5513ffc091567ab6e986859c89",
+      "expected": {
+        "bytes": 206343,
+        "sha256": "0c84974ce82779d315f2d0d1a66ece70a51f2d5513ffc091567ab6e986859c89"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/assets/wallet-DjXExz2A.js",
+      "method": "GET",
+      "kind": "app-asset",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/assets/wallet-DjXExz2A.js",
+      "bytes": 7200,
+      "sha256": "b682b5481eb4e2645e47a6ec626e4fe56ab3223a16d08a3c50c54c832d155d6d",
+      "expected": {
+        "bytes": 7200,
+        "sha256": "b682b5481eb4e2645e47a6ec626e4fe56ab3223a16d08a3c50c54c832d155d6d"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/clawd-agentic-layer-whitepaper.pdf",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/pdf",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/clawd-agentic-layer-whitepaper.pdf",
+      "bytes": 2681278,
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "expected": {
+        "bytes": 2681278,
+        "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/clawd-skills-manifest.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/clawd-skills-manifest.json",
+      "bytes": 98761,
+      "sha256": "05bcb82f1bf95a947f427fa27bcda20b61a709dd522cfaa384df2f6c6ef8ab2a",
+      "expected": {
+        "bytes": 98761,
+        "sha256": "05bcb82f1bf95a947f427fa27bcda20b61a709dd522cfaa384df2f6c6ef8ab2a"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/clawd-skills.tar.gz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/gzip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/clawd-skills.tar.gz",
+      "bytes": 23381619,
+      "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+      "expected": {
+        "bytes": 23381619,
+        "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/cli/",
+      "method": "GET",
+      "kind": "route",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/cli",
+      "bytes": 6008,
+      "sha256": "822f458b72c482a70a187faf4a0f8381545dc029911166bd1c3baaaa8d5b4082",
+      "redirects": [
+        {
+          "status": 308,
+          "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/cli/",
+          "target": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/cli"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/connectors/connector-birdeye.tar.gz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/gzip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/connectors/connector-birdeye.tar.gz",
+      "bytes": 8707,
+      "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059",
+      "expected": {
+        "bytes": 8707,
+        "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/connectors/connector-clawd.tar.gz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/gzip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/connectors/connector-clawd.tar.gz",
+      "bytes": 156127,
+      "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4",
+      "expected": {
+        "bytes": 156127,
+        "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/connectors/manifest.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/connectors/manifest.json",
+      "bytes": 617,
+      "sha256": "39e62d503eaff63d3a3a85c7c7fc03f02d6580fb2909dcec71c4fb07ade2b01c",
+      "expected": {
+        "bytes": 617,
+        "sha256": "39e62d503eaff63d3a3a85c7c7fc03f02d6580fb2909dcec71c4fb07ade2b01c"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/docs/",
+      "method": "GET",
+      "kind": "route",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/docs",
+      "bytes": 6008,
+      "sha256": "822f458b72c482a70a187faf4a0f8381545dc029911166bd1c3baaaa8d5b4082",
+      "redirects": [
+        {
+          "status": 308,
+          "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/docs/",
+          "target": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/docs"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/downloads/manifest.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/downloads/manifest.json",
+      "bytes": 547,
+      "sha256": "09332633e559e10bf8b79ca8ae970bade3f1e11d570a7a724d4813517a6c475e",
+      "expected": {
+        "bytes": 547,
+        "sha256": "09332633e559e10bf8b79ca8ae970bade3f1e11d570a7a724d4813517a6c475e"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/downloads/musebook-1.2.0.tgz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/downloads/musebook-1.2.0.tgz",
+      "bytes": 132536,
+      "sha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5",
+      "expected": {
+        "bytes": 132536,
+        "sha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/downloads/musebook-sdk-1.5.0.tgz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/downloads/musebook-sdk-1.5.0.tgz",
+      "bytes": 45119,
+      "sha256": "10aa06c688680cdcf2aba4a475c390829f7c001c440a5cf68f5a5e67ef7f782f",
+      "expected": {
+        "bytes": 45119,
+        "sha256": "10aa06c688680cdcf2aba4a475c390829f7c001c440a5cf68f5a5e67ef7f782f"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/downloads/musebook-tui-0.1.2.tgz",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/downloads/musebook-tui-0.1.2.tgz",
+      "bytes": 25847,
+      "sha256": "05b6b0afab4b118de1b96bfe9c60aae5202e18e78ebd143b311d3dff11fdce7e",
+      "expected": {
+        "bytes": 25847,
+        "sha256": "05b6b0afab4b118de1b96bfe9c60aae5202e18e78ebd143b311d3dff11fdce7e"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/install-clawd.sh",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/x-shellscript; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/install-clawd.sh",
+      "bytes": 2156,
+      "sha256": "881874af5f5425f33001cba4c9a51fd1e3b0792bf071e16de697f6e50a2b5aa8",
+      "expected": {
+        "bytes": 2156,
+        "sha256": "881874af5f5425f33001cba4c9a51fd1e3b0792bf071e16de697f6e50a2b5aa8"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/install-cli.sh",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/x-sh",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/install-cli.sh",
+      "bytes": 1040,
+      "sha256": "235170d307286b71927f56aa5aeb724c5b75f36c34e8a3ad5d3f902df65973f5",
+      "expected": {
+        "bytes": 1040,
+        "sha256": "235170d307286b71927f56aa5aeb724c5b75f36c34e8a3ad5d3f902df65973f5"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/install.sh",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/x-sh",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/install.sh",
+      "bytes": 17860,
+      "sha256": "4d082d4afe62bffad852a2af3e428a61841db34b8c8914780f6fe0b4c1ccc38a",
+      "expected": {
+        "bytes": 17860,
+        "sha256": "4d082d4afe62bffad852a2af3e428a61841db34b8c8914780f6fe0b4c1ccc38a"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/llms.txt",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/llms.txt",
+      "bytes": 24174,
+      "sha256": "56fc5fb2fa150e70fb92ddacdb6d429573a0ce9b53bdf80e95c54040e62340fc",
+      "expected": {
+        "bytes": 24174,
+        "sha256": "56fc5fb2fa150e70fb92ddacdb6d429573a0ce9b53bdf80e95c54040e62340fc"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/openapi.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/openapi.json",
+      "bytes": 1029932,
+      "sha256": "3e57f19ca0599ee55e56fbe7827dbb5cd8e4fdb14be71d942bf7abd44c62eb79",
+      "expected": {
+        "bytes": 1029932,
+        "sha256": "3e57f19ca0599ee55e56fbe7827dbb5cd8e4fdb14be71d942bf7abd44c62eb79"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/plugins/clawd-plugin.zip",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/zip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/plugins/clawd-plugin.zip",
+      "bytes": 26160278,
+      "sha256": "2491b0ba6904aed552cc5da612865d14ab457154fbf2ded6a550620ace0e46fc",
+      "expected": {
+        "bytes": 26160278,
+        "sha256": "2491b0ba6904aed552cc5da612865d14ab457154fbf2ded6a550620ace0e46fc"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/plugins/clawd-research-plugin.zip",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/zip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/plugins/clawd-research-plugin.zip",
+      "bytes": 1013116,
+      "sha256": "68fef7e925c96167abddc68c59f0ee09d8b4273bcd0d2de6fd4ae4ee756454f0",
+      "expected": {
+        "bytes": 1013116,
+        "sha256": "68fef7e925c96167abddc68c59f0ee09d8b4273bcd0d2de6fd4ae4ee756454f0"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/plugins/manifest.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/plugins/manifest.json",
+      "bytes": 1127,
+      "sha256": "b9d70100227d164a6a523f27ffd4393100aed02a15f49a973af7afb36e2ae026",
+      "expected": {
+        "bytes": 1127,
+        "sha256": "b9d70100227d164a6a523f27ffd4393100aed02a15f49a973af7afb36e2ae026"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/plugins/musebook-plugin.zip",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/zip",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/plugins/musebook-plugin.zip",
+      "bytes": 1008808,
+      "sha256": "e90ca181c16e13f2e9980c1b8bbd60282d8f51ec77d568ea4f3fc706956835a5",
+      "expected": {
+        "bytes": 1008808,
+        "sha256": "e90ca181c16e13f2e9980c1b8bbd60282d8f51ec77d568ea4f3fc706956835a5"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/release.json",
+      "method": "GET",
+      "kind": "release",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/release.json",
+      "bytes": 334,
+      "sha256": "a84372eba173aa77f6da81afd11c7ed3d2793869ad5769eadaa81a63bc616d33",
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/research/clawd-agentic-layer-v0.6.html",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/clawd-agentic-layer-v0.6",
+      "bytes": 2142897,
+      "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1",
+      "redirects": [
+        {
+          "status": 308,
+          "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/clawd-agentic-layer-v0.6.html",
+          "target": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/clawd-agentic-layer-v0.6"
+        }
+      ],
+      "expected": {
+        "bytes": 2142897,
+        "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/research/clawd-agentic-layer-v0.6.md",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/clawd-agentic-layer-v0.6.md",
+      "bytes": 36638,
+      "sha256": "c05255a5d1117b6f6cff2434800da7473e767ac58ea06c1c8e5ddaee56298c70",
+      "expected": {
+        "bytes": 36638,
+        "sha256": "c05255a5d1117b6f6cff2434800da7473e767ac58ea06c1c8e5ddaee56298c70"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/research/clawd-agentic-layer-v0.6.pdf",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/pdf",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/clawd-agentic-layer-v0.6.pdf",
+      "bytes": 2681278,
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "expected": {
+        "bytes": 2681278,
+        "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/research/manifest.json",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/research/manifest.json",
+      "bytes": 226,
+      "sha256": "1f029ab242673c6ea558ddead762bf79a48ad2e5428ce7bdbd29a424bbadf35c",
+      "expected": {
+        "bytes": 226,
+        "sha256": "1f029ab242673c6ea558ddead762bf79a48ad2e5428ce7bdbd29a424bbadf35c"
+      },
+      "passed": true
+    },
+    {
+      "origin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "path": "/skill.md",
+      "method": "GET",
+      "kind": "download-or-document",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "url": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app/skill.md",
+      "bytes": 119409,
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "expected": {
+        "bytes": 119409,
+        "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7"
+      },
+      "passed": true
+    }
+  ],
+  "dns": [
+    {
+      "host": "musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+      "addresses": [
+        "216.198.79.67",
+        "64.29.17.67"
+      ],
+      "passed": true
+    }
+  ],
+  "requests_are_get_head_only": true,
+  "unsigned_post_denials_not_executed": true,
+  "runtime_augmentation_verified": null,
+  "passed": true,
+  "check_count": 48,
+  "failed_count": 0
+}

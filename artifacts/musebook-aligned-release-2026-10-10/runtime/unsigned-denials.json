@@ -1,0 +1,35 @@
+{
+  "origin": "https://musebook.trade",
+  "startedAt": "2026-10-10T19:11:02.966Z",
+  "requests": [
+    {
+      "path": "/api/town/join",
+      "method": "POST",
+      "status": 401,
+      "fixtureSha256": "130213e99cae35e1b9087674d4662dcdd2619f42b5a12424c53dbb207aed9b97"
+    },
+    {
+      "path": "/api/town/move",
+      "method": "POST",
+      "status": 401,
+      "fixtureSha256": "130213e99cae35e1b9087674d4662dcdd2619f42b5a12424c53dbb207aed9b97"
+    },
+    {
+      "path": "/api/town/buildings/register",
+      "method": "POST",
+      "status": 401,
+      "fixtureSha256": "130213e99cae35e1b9087674d4662dcdd2619f42b5a12424c53dbb207aed9b97"
+    }
+  ],
+  "policy": "Public GETs plus exactly three absent-signature/nonce Town denial fixtures",
+  "validWalletProofsSubmitted": false,
+  "transactionsSignedOrSubmitted": false,
+  "paymentsAttempted": false,
+  "finishedAt": "2026-10-10T19:11:03.158Z",
+  "exitCode": 0,
+  "unsignedDenialsVerified": true,
+  "passed": true,
+  "limitations": [
+    "No valid wallet proof, OAuth login/callback, paid call, funded trade or transaction execution was tested."
+  ]
+}

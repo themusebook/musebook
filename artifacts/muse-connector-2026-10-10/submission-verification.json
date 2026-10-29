@@ -1,0 +1,282 @@
+{
+  "deployment": {
+    "success": true,
+    "deployment_id": "9b650d59351c45e8bc3a2446ab06d4ab",
+    "connector_origin": "https://musebook-private-59ey5lm4t-clawd-c4b28c7e.vercel.app",
+    "bindings_preserved": 120,
+    "binding_asset_bytes": [
+      4787,
+      1755
+    ],
+    "worker_sha256": "d5dd84f3bf4af0037ba1ee0c0211b99015c85d424cc239827c5f5dbfc74e8b77",
+    "revision": "3e51caedbc0085091a9200f3f94fbf907d8161d7",
+    "sourceHash": "d20835b20bca0addbc4a5333fd7b847affae91a4125222e6f2301bf8f31e4964",
+    "entry": "/assets/index-DXpZNb0_.js"
+  },
+  "vercel_release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T18:22:14.793Z",
+    "revision": "3e51caedbc0085091a9200f3f94fbf907d8161d7",
+    "sourceHash": "d20835b20bca0addbc4a5333fd7b847affae91a4125222e6f2301bf8f31e4964",
+    "artifactHash": "6cb99629a521ec46ef12c50bb6de8543e3943302bb5947fff3eecabf87c1eac1",
+    "entry": "/assets/index-DXpZNb0_.js"
+  },
+  "public_routes": [
+    {
+      "path": "/SKILL.md",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "bytes": 121273,
+      "sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b"
+    },
+    {
+      "path": "/skill.md",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "bytes": 121273,
+      "sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b"
+    },
+    {
+      "path": "/connector",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6157,
+      "sha256": "598a979509b48a05a2e44f9ff2e586704cf8819868e4f2af48378230f3198f7d"
+    },
+    {
+      "path": "/connector/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6157,
+      "sha256": "598a979509b48a05a2e44f9ff2e586704cf8819868e4f2af48378230f3198f7d"
+    },
+    {
+      "path": "/connector/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6157,
+      "sha256": "598a979509b48a05a2e44f9ff2e586704cf8819868e4f2af48378230f3198f7d"
+    },
+    {
+      "path": "/connectors/submission.md",
+      "status": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "bytes": 10986,
+      "sha256": "694dddcab62c41da33aa99ffa19a98007a8a502aa695e75d8c4d3b8d9851dc4b"
+    },
+    {
+      "path": "/connectors/connector-clawd/docs/tools.json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 114684,
+      "sha256": "16adebd9d7cfc837b228bba956cf2dcf767d1d4363de53441a70c5d79f191bf6"
+    },
+    {
+      "path": "/connectors/connector-birdeye/docs/tools.json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2678,
+      "sha256": "9bdc65c2bee0d04b60e9c28765d6016178dccc8293333f202bda817055cc9b31"
+    },
+    {
+      "path": "/connectors/connector-clawd/assets/clawd-icon-512.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 140425,
+      "sha256": "b2a83e8e231fda743a40d9b858829b43ed04d271e2d35d86148fb77ccfee67db"
+    },
+    {
+      "path": "/api/bundle",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 813,
+      "sha256": "b43c028ebfdaaba64b84221563da96adf02b65e9073224511a83f14e50dbeba0"
+    },
+    {
+      "path": "/clawd-skills-manifest.json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 98761,
+      "sha256": "05bcb82f1bf95a947f427fa27bcda20b61a709dd522cfaa384df2f6c6ef8ab2a"
+    }
+  ],
+  "assets": {
+    "checked_assets": 218,
+    "all_200_correct_types": true
+  },
+  "bundle_auth": {
+    "archive_bytes": 23381619,
+    "archive_sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+    "protected_mcp_unauthenticated_status": 401,
+    "authenticated_callback_verified": false
+  },
+  "remaining": [
+    "Dedicated reviewer account and secure access instructions",
+    "Complete actual Muse OAuth consent and callback",
+    "Business authority and authorized brand assets",
+    "Owner-confirmed support, incident response, storage, sharing, retention and deletion answers"
+  ],
+  "submitted": false,
+  "approved": false,
+  "browser": {
+    "url": "https://musebook.trade/connector/",
+    "checkedAt": "2026-10-10T18:23:52.587Z",
+    "checks": [
+      {
+        "name": "submission_page_swap_launcher_absent",
+        "pass": true
+      },
+      {
+        "name": "desktop_content_counts_hash_and_copy_buttons",
+        "pass": true,
+        "copyButtons": 20,
+        "viewport": {
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      },
+      {
+        "name": "clipboard_copy_mcp_endpoint",
+        "pass": true,
+        "value": "https://musebook.trade/mcp-auth"
+      },
+      {
+        "name": "clipboard_denial_manual_selection_fallback",
+        "pass": true,
+        "selection": {
+          "start": 0,
+          "end": 31,
+          "length": 31,
+          "focused": true
+        }
+      },
+      {
+        "name": "mobile_no_horizontal_overflow_and_submission_anchor",
+        "pass": true,
+        "viewport": {
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "anchorY": 95.5
+      }
+    ],
+    "globalConsoleErrors": [],
+    "failedResponses": [],
+    "pageErrors": [],
+    "staticLinks": [
+      {
+        "href": "/connectors/connector-clawd.tar.gz",
+        "status": 200,
+        "contentType": "application/gzip"
+      },
+      {
+        "href": "/connectors/connector-clawd/connector.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "scopes": [
+          "read"
+        ]
+      },
+      {
+        "href": "/connectors/connector-clawd/docs/tools.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "tools": 27
+      },
+      {
+        "href": "/connectors/connector-clawd/docs/connector-submission.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "href": "/connectors/connector-birdeye.tar.gz",
+        "status": 200,
+        "contentType": "application/gzip"
+      },
+      {
+        "href": "/connectors/connector-birdeye/connector.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "scopes": [
+          "read"
+        ]
+      },
+      {
+        "href": "/connectors/connector-birdeye/docs/tools.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "tools": 1
+      },
+      {
+        "href": "/connectors/connector-birdeye/docs/connector-submission.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "href": "/connectors/manifest.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8"
+      },
+      {
+        "href": "/SKILL.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8"
+      },
+      {
+        "href": "/clawd-skills.tar.gz",
+        "status": 200,
+        "contentType": "application/gzip"
+      },
+      {
+        "href": "/clawd-skills-manifest.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "version": "3.15.1"
+      },
+      {
+        "href": "/connectors/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8"
+      }
+    ],
+    "pass": true,
+    "skillAliases": [
+      {
+        "path": "/SKILL.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 121273,
+        "sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b"
+      },
+      {
+        "path": "/skill.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 121273,
+        "sha256": "7bbbc17393009b5fad98d49019e0fea8dd643d4a0f492928f15b0eeb4bf51a3b"
+      }
+    ]
+  },
+  "navigation": {
+    "checkedAt": "2026-10-10T18:24:22.444Z",
+    "homepage": "https://musebook.trade/",
+    "documentRequests": [
+      "https://musebook.trade/",
+      "https://musebook.trade/connector/",
+      "https://musebook.trade/connector"
+    ],
+    "pageErrors": [],
+    "connectorNavigationScripts": [
+      "musebook-connector-document-navigation"
+    ],
+    "footerHref": "/connector/",
+    "finalUrl": "https://musebook.trade/connector",
+    "connectorDocumentRequests": [
+      "https://musebook.trade/connector/",
+      "https://musebook.trade/connector"
+    ],
+    "heading": "Solana research, connected to Muse",
+    "copyControls": 20,
+    "pass": true
+  }
+}

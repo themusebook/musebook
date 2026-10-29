@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "musebook": "./bin/musebook.js"
+  },
+  "description": "Official Musebook CLI \u2014 Musebook Agent API, Solana wallets, scoped agent auth, and Musebook Town in your terminal.",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "docs/",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "install-cli.sh"
+  ],
+  "homepage": "https://musebook.trade/docs",
+  "keywords": [
+    "musebook",
+    "clawd",
+    "solana",
+    "ai-agents",
+    "cli"
+  ],
+  "license": "MIT",
+  "name": "musebook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themusebook/musebook.git"
+  },
+  "type": "commonjs",
+  "version": "1.2.0",
+  "scripts": {
+    "sdk:build": "npm --prefix sdk run build",
+    "sdk:typecheck": "npm --prefix sdk run typecheck",
+    "sdk:test": "npm --prefix sdk test",
+    "docs:sync": "node scripts/sync-api-docs.mjs",
+    "test": "node --test test/*.test.js",
+    "test:integrations": "node scripts/verify-integrations.mjs"
+  }
+}

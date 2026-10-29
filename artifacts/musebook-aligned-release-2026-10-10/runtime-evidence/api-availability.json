@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10T19:19:55Z",
+  "scope": {
+    "readOnly": true,
+    "billingOrPlanChanged": false,
+    "supportContacted": false,
+    "sourceOrSchemaDeployed": false,
+    "productionConfigurationChanged": false,
+    "productionDataWritten": false,
+    "authMaterialStored": false,
+    "rawLogsOrModulesStored": false
+  },
+  "observedApiResponses": [
+    {
+      "path": "/api/agents/solana?page=1",
+      "status": 503,
+      "contentType": "application/json",
+      "seconds": 0.205,
+      "body": {
+        "error": "agent_indexer_unavailable",
+        "coverage": "Metaplex Agent Registry"
+      }
+    },
+    {
+      "path": "/api/v1/agents",
+      "status": 500,
+      "contentType": "application/json",
+      "seconds": 0.671,
+      "body": {
+        "code": "[Request ID: 5640cd2325599470] Server Error"
+      }
+    },
+    {
+      "path": "/api/v1/live-agents?limit=10",
+      "status": 500,
+      "contentType": "application/json",
+      "seconds": 0.725,
+      "body": {
+        "code": "[Request ID: b83ae5f31ecec3f2] Server Error"
+      }
+    },
+    {
+      "path": "/api/trade/market",
+      "status": 200,
+      "contentType": "application/json",
+      "seconds": 0.738,
+      "bodySummary": {
+        "ok": true,
+        "tokenCount": 7,
+        "source": "DEX Screener boosted Solana markets",
+        "generatedAt": 1791659788575
+      }
+    },
+    {
+      "path": "/api/town/state",
+      "status": 502,
+      "contentType": "application/json",
+      "seconds": 0.69,
+      "body": {
+        "ok": false,
+        "error": "convex /api/v1/town/state: 500"
+      }
+    }
+  ],
+  "directPublicUpstreamResponses": [
+    {
+      "url": "https://accurate-condor-45.convex.site/api/v1/agents",
+      "status": 500,
+      "contentType": "application/json",
+      "body": {
+        "code": "[Request ID: 42626cfef9e6c742] Server Error"
+      }
+    },
+    {
+      "url": "https://accurate-condor-45.convex.site/api/v1/live-agents?limit=10",
+      "status": 500,
+      "contentType": "application/json",
+      "body": {
+        "code": "[Request ID: a57beabb520bb14d] Server Error"
+      }
+    }
+  ],
+  "convex": {
+    "deployment": "accurate-condor-45",
+    "authenticatedReadonlyAccess": true,
+    "currentFailureReason": "Convex disabled the deployment because the team exceeded free-plan limits.",
+    "queries": [
+      {
+        "function": "agents:list",
+        "httpStatus": 200,
+        "response": {
+          "status": "error",
+          "errorMessage": "[Request ID: 9debe9d3636f148b] Server Error\nYou have exceeded the free plan limits, so your deployments have been disabled. Please upgrade to a Pro plan or reach out to us at support@convex.dev for help.\n"
+        }
+      },
+      {
+        "function": "liveAgents:list",
+        "httpStatus": 200,
+        "response": {
+          "status": "error",
+          "errorMessage": "[Request ID: a36d367e6a162eff] Server Error\nYou have exceeded the free plan limits, so your deployments have been disabled. Please upgrade to a Pro plan or reach out to us at support@convex.dev for help.\n"
+        }
+      },
+      {
+        "function": "town:getState",
+        "httpStatus": 200,
+        "response": {
+          "status": "error",
+          "errorMessage": "[Request ID: 45e28fd41e9fa860] Server Error\nYou have exceeded the free plan limits, so your deployments have been disabled. Please upgrade to a Pro plan or reach out to us at support@convex.dev for help.\n"
+        }
+      }
+    ],
+    "productionMetadata": [
+      {
+        "args": {
+          "type": "object",
+          "value": {}
+        },
+        "functionType": "Query",
+        "identifier": "agents.js:list",
+        "returns": null,
+        "visibility": {
+          "kind": "public"
+        }
+      },
+      {
+        "args": {
+          "type": "object",
+          "value": {
+            "limit": {
+              "fieldType": {
+                "type": "number"
+              },
+              "optional": true
+            }
+          }
+        },
+        "functionType": "Query",
+        "identifier": "liveAgents.js:list",
+        "returns": null,
+        "visibility": {
+          "kind": "public"
+        }
+      },
+      {
+        "args": {
+          "type": "object",
+          "value": {}
+        },
+        "functionType": "Query",
+        "identifier": "town.js:getState",
+        "returns": null,
+        "visibility": {
+          "kind": "public"
+        }
+      }
+    ],
+    "productionMetadataMatchesLocalQueryTypesAndArguments": true,
+    "historicalEvents": [
+      {
+        "at": "2026-10-09T09:09:58.350340+00:00",
+        "function": "liveAgents:list",
+        "error": null,
+        "success": null
+      },
+      {
+        "at": "2026-10-09T09:09:58.352847+00:00",
+        "function": "agents:list",
+        "error": null,
+        "success": null
+      },
+      {
+        "at": "2026-10-09T09:09:58.353909+00:00",
+        "function": "GET /api/v1/live-agents",
+        "error": null,
+        "success": {
+          "status": "200"
+        }
+      },
+      {
+        "at": "2026-10-09T09:09:58.356606+00:00",
+        "function": "GET /api/v1/agents",
+        "error": null,
+        "success": {
+          "status": "200"
+        }
+      },
+      {
+        "at": "2026-10-09T09:09:58.373567+00:00",
+        "function": "town:getState",
+        "error": null,
+        "success": null
+      },
+      {
+        "at": "2026-10-09T09:09:58.378295+00:00",
+        "function": "GET /api/v1/town/state",
+        "error": null,
+        "success": {
+          "status": "200"
+        }
+      },
+      {
+        "at": "2026-10-09T09:10:32.010847+00:00",
+        "function": "town:getState",
+        "error": null,
+        "success": null
+      },
+      {
+        "at": "2026-10-09T09:10:32.013477+00:00",
+        "function": "GET /api/v1/town/state",
+        "error": null,
+        "success": {
+          "status": "200"
+        }
+      }
+    ],
+    "rawLogEventsInspected": 500,
+    "remediation": "The Convex account owner must resolve usage/plan limits and re-enable the deployment. Code or schema redeployment does not address this service-level blocker. No billing action was performed."
+  },
+  "agentIndexer": {
+    "status": 503,
+    "error": "agent_indexer_unavailable",
+    "bindingSnapshots": [
+      {
+        "snapshot": "beforeRelease",
+        "bindingCount": 123,
+        "agentFeedLimiterPresent": false,
+        "agentDasEndpointPresent": false,
+        "convexOriginBindingDigest": "ac49fbb1927cee9b896cdf66ff6bbdd09c250582931fde76a0f04d4b4d2120e7"
+      },
+      {
+        "snapshot": "afterRelease",
+        "bindingCount": 126,
+        "agentFeedLimiterPresent": false,
+        "agentDasEndpointPresent": false,
+        "convexOriginBindingDigest": "ac49fbb1927cee9b896cdf66ff6bbdd09c250582931fde76a0f04d4b4d2120e7"
+      }
+    ],
+    "deployedHandlerRequiresAgentFeedLimiter": true,
+    "compatibleDasIndexerCurrentAvailabilityVerified": false,
+    "remediation": "The historical limiter binding is now restored. The preserved feed still selects the existing solRpcUpstreams endpoint and returns agent_indexer_unavailable. Healthy ordinary Solana RPC does not prove the exact Metaplex DAS searchAssets contract. Diagnose provider/filter compatibility before any further runtime change; AGENT_DAS_RPC_URL is not referenced by the preserved module. Actual indexer success remains unverified.",
+    "deployedRouteSelectsExistingSolRpcUpstream": true,
+    "dedicatedAgentDasBindingReferencedByDeployedFeed": false,
+    "absentAgentDasEndpointIsNotCurrentImmediateFailure": true,
+    "initialClassification": "Pre-existing Worker configuration blocker, independent of this release.",
+    "classification": "The pre-existing missing AGENT_FEED_LIMITER was restored in final publication. The actual agent-registry feed remains unavailable; the remaining underlying DAS/provider/contract cause is unverified.",
+    "finalPublication": {
+      "workerVersion": "36310a5c-b5a5-4395-8282-72577857502a",
+      "bindingCount": 127,
+      "agentFeedLimiterPresent": true,
+      "executableUnchanged": true,
+      "evidence": "../runtime/FINAL-worker-publication.json"
+    },
+    "finalFeedCheck": {
+      "checked_at": "2026-10-10T19:32:55.787130+00:00",
+      "url": "https://musebook.trade/api/agents/solana",
+      "method": "GET",
+      "status": 503,
+      "content_type": "application/json",
+      "bytes": 74,
+      "sha256": "cafd7c9ec3d038054e2839961baf67fe89b572057c5f5f6b751cddde1483af98",
+      "sanitized_error_category": "agent_indexer_unavailable",
+      "das_search_assets_success_verified": false,
+      "passed": false,
+      "evidence": "../runtime/FINAL-agent-feed-restoration.json"
+    }
+  },
+  "marketFeed": {
+    "initialBrowserStatus": 503,
+    "currentStatus": 200,
+    "currentOk": true,
+    "currentTokenCount": 7,
+    "classification": "Recovered provider availability without a code or configuration change.",
+    "source": "DEX Screener boosted Solana markets"
+  },
+  "releaseRegressionAssessment": {
+    "convexOriginDescriptorUnchanged": true,
+    "workerRuntimeCodeUnchangedExceptReviewedOpenapiLiteral": true,
+    "currentWorkerModuleSha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+    "finalPublicationExecutableUnchanged": true,
+    "allExpected126BindingsPreserved": true,
+    "directoryAndTownClassification": "External Convex plan/usage disablement, not a frontend or Worker executable regression.",
+    "safeCodeRedeployRequiredForTheseErrors": false,
+    "unchangedRuntimeSourceSha256": "26924485e4635e315c52edb12e67c7eff029e1479781444c13e11e37305d6ccd",
+    "finalWorkerPublication": {
+      "version": "36310a5c-b5a5-4395-8282-72577857502a",
+      "executableUnchanged": true,
+      "moduleSha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+      "all127PlannedBindingsVerified": true,
+      "historicalLimiterRestored": true
+    }
+  },
+  "priorBaseline": {
+    "auditDate": "2026-10-05",
+    "agentIndexerStatus": 503,
+    "directoryAndLiveAgentStatus": 200,
+    "townStateStatus": 200,
+    "marketFeedStatus": 200,
+    "evidence": "cloudflare-route-audit-2026-10-05/complete-corrected-feed-audit.json and blocker-revalidation.json (private authoritative checkout)"
+  },
+  "finalRevalidationAt": "2026-10-10T19:33:55.848723+00:00"
+}

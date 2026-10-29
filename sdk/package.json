@@ -1,0 +1,94 @@
+{
+  "author": "Musebook",
+  "description": "Typed Musebook API and read-only WebMCP clients: agents, launches, predictions, Metaplex, creator rewards, RWA drafts, receipts, owner-reviewed handoffs, the agent indexer and directory snapshot, skill and agent catalogs, and the Musebook Social API.",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./webmcp": {
+      "import": {
+        "types": "./dist/webmcp.d.ts",
+        "default": "./dist/webmcp.js"
+      },
+      "require": {
+        "types": "./dist/cjs/webmcp.d.ts",
+        "default": "./dist/cjs/webmcp.js"
+      }
+    },
+    "./ows": {
+      "import": {
+        "types": "./dist/ows.d.ts",
+        "default": "./dist/ows.js"
+      },
+      "require": {
+        "types": "./dist/cjs/ows.d.ts",
+        "default": "./dist/cjs/ows.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "musebook",
+    "clawd",
+    "solana",
+    "ai-agents",
+    "sdk",
+    "x402"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "name": "@musebook/sdk",
+  "repository": {
+    "directory": "sdk",
+    "type": "git",
+    "url": "git+https://github.com/themusebook/musebook.git"
+  },
+  "homepage": "https://github.com/themusebook/musebook#readme",
+  "bugs": {
+    "url": "https://github.com/themusebook/musebook/issues"
+  },
+  "scripts": {
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node scripts/fixup.mjs",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm test",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:types": "tsc -p scripts/tsconfig.types.json",
+    "test": "npm run build && npm run typecheck && npm run test:types && node --test scripts/*.test.mjs",
+    "test:live": "node scripts/live-smoke.mjs"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "1.5.0",
+  "devDependencies": {
+    "@open-wallet-standard/core": "1.4.3",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "@open-wallet-standard/core": "1.4.3"
+  },
+  "peerDependenciesMeta": {
+    "@open-wallet-standard/core": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "plan_sha256": "518541577b8570633265dc8e580baf6d9e777f1856a9376416bdb866a493948b",
+  "previous_route_only_plan_sha256": "f63adb9ffd9b28cbb4a07b3f9baeab67818b8a164212c1edde89562ae809c801",
+  "before_binding_count": 126,
+  "planned_binding_count": 127,
+  "added_bindings": [
+    {
+      "name": "AGENT_FEED_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1006",
+      "simple": {
+        "limit": 60,
+        "period": 60
+      }
+    }
+  ],
+  "actual_changed_variables": [
+    "MUSEBOOK_APP_RELEASE_UPSTREAM",
+    "MUSEBOOK_BUNDLE_UPSTREAM",
+    "MUSEBOOK_CONNECTOR_UPSTREAM",
+    "MUSEBOOK_PAYMENT_APP_UPSTREAM"
+  ],
+  "removed_bindings": [],
+  "unexpected_changes": [],
+  "executable_unchanged": true,
+  "module_sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+  "asset_manifest_unchanged_vs_route_only_plan": true,
+  "asset_content_unchanged_vs_route_only_plan": true,
+  "asset_count": 49,
+  "asset_bytes": 36254863,
+  "secret_binding_count": 83,
+  "named_handlers_preserved_in_upload": [
+    {
+      "name": "BackpackConnectedAccount",
+      "handlers": [
+        "class"
+      ]
+    },
+    {
+      "name": "BackpackMcpEvents",
+      "handlers": [
+        "class"
+      ]
+    },
+    {
+      "name": "MusebookMcpEvents",
+      "handlers": [
+        "class"
+      ]
+    },
+    {
+      "name": "OreComputer",
+      "handlers": [
+        "class"
+      ]
+    },
+    {
+      "name": "PumpStreamMcpEvents",
+      "handlers": [
+        "class"
+      ]
+    },
+    {
+      "name": "SvmBatchFacilitator",
+      "handlers": [
+        "class"
+      ]
+    }
+  ],
+  "runtime_metadata_sha256": "e377ffa85d3c7ee301a51b26b1d9c677a98d2f73353343e7ff1e562dc8948390",
+  "cron_sha256": "3bc6f0c4792ae6ccc50c1fe9dd3fbcac646d4679b90c90a74be001bf04dc7496",
+  "historical_descriptor_verification": {
+    "historical_version_id": "a17e9a8c-7c26-4509-839e-6a5717029e1e",
+    "exact_descriptor": {
+      "name": "AGENT_FEED_LIMITER",
+      "type": "ratelimit",
+      "namespace_id": "1006",
+      "simple": {
+        "limit": 60,
+        "period": 60
+      }
+    },
+    "module_references_verified": true,
+    "existing_rpc_fallback_binding_names": [
+      "SOLANA_RPC_URL",
+      "RPC_URL",
+      "HELIUS_RPC_URL"
+    ],
+    "existing_binding_already_exact": false,
+    "new_resources_provisioned": 0,
+    "secret_values_requested": false,
+    "das_search_assets_success_verified": false
+  },
+  "remote_mutations": 0,
+  "planned_only": true
+}

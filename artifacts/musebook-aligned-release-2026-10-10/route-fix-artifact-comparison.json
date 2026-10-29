@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "previousRelease": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:06:49.290Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+    "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:16:35.466Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "88a7c82f7f4ed97c3632c50627e4943133bd1b19a906b742707ee8ef6246b2eb",
+    "artifactHash": "2e41768e88acbee0d5148dbb2f6f45c417e62c4cc4fd0c9dd70e0bd5948c15c6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "filesCompared": 1097,
+  "changedFiles": [
+    "_redirects",
+    "release.json"
+  ],
+  "compiledHtmlJsCssPackagesUnchanged": true
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "frontend": {
+    "tests": 525,
+    "passed": 525,
+    "failed": 0,
+    "testedReleaseArtifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "finalCompiledFilesIdentical": true,
+    "carryForwardEvidence": "live-browser/final-artifact-comparison.json",
+    "testedReleaseSourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "freshFullSuite": true
+  },
+  "finalRouteAndReleaseTests": {
+    "tests": 28,
+    "passed": 28,
+    "failed": 0
+  },
+  "cloudflareBoundaryTests": {
+    "tests": 97,
+    "passed": 97,
+    "failed": 0
+  },
+  "githubCliTests": {
+    "tests": 11,
+    "passed": 11,
+    "failed": 0
+  },
+  "githubLibraryTests": {
+    "tests": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "candidateVerification": {
+    "checks": 48,
+    "passed": 48,
+    "failed": 0
+  },
+  "productionGetHeadVerification": {
+    "checks": 1068,
+    "passed": 1068,
+    "failed": 0,
+    "origins": [
+      "https://musebook.trade",
+      "https://musebook-private.vercel.app",
+      "https://terminal.musebook.trade",
+      "https://1d01c558.musebook-3al.pages.dev"
+    ],
+    "normalSystemDns": true
+  },
+  "fullBackendSmoke": "Town state fails because Convex disabled the deployment after free-plan limits were exceeded.",
+  "documentationAndResearchFocusedTests": {
+    "tests": 25,
+    "passed": 25,
+    "failed": 0
+  },
+  "finalRouteAndReleaseChecks": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "productionBackendLimitations": {
+    "convexDeploymentDisabledByFreePlanLimits": true,
+    "onchainAgentFeedStatus": 503,
+    "remainingFeedCauseUnverified": true,
+    "additionalSourceOnlyApiContracts": 7
+  }
+}

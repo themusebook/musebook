@@ -1,0 +1,59 @@
+{
+  "duration_target": 33.4,
+  "bpm_detected": 117.45383522727273,
+  "beat_alignment_max_error_seconds": 0.015374149659862724,
+  "exports": [
+    {
+      "file": "musebook-beatsync-landscape.mp4",
+      "duration": 33.421029,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "sample_rate": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000"
+        }
+      ],
+      "full_decode": "passed",
+      "volume": [
+        "[Parsed_volumedetect_0 @ 0x8ef45df80] mean_volume: -19.3 dB",
+        "[Parsed_volumedetect_0 @ 0x8ef45df80] max_volume: -5.3 dB"
+      ],
+      "sha256": "193b07ea7b270758b8ca1bdd838528247e9e57d028089efa01d56076a2ead127"
+    },
+    {
+      "file": "musebook-beatsync-vertical.mp4",
+      "duration": 33.421029,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1080,
+          "height": 1920,
+          "sample_rate": null
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "width": null,
+          "height": null,
+          "sample_rate": "48000"
+        }
+      ],
+      "full_decode": "passed",
+      "volume": [
+        "[Parsed_volumedetect_0 @ 0xacf00a280] mean_volume: -19.3 dB",
+        "[Parsed_volumedetect_0 @ 0xacf00a280] max_volume: -5.3 dB"
+      ],
+      "sha256": "0db47ebab2296161efa2871cd180bffcd7b914995be7958545193c3ecce0a384"
+    }
+  ]
+}

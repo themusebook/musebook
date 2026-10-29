@@ -1,0 +1,40 @@
+{
+ "allowed_hosts": [
+  "public-api.birdeye.so"
+ ],
+ "api_base": "https://public-api.birdeye.so",
+ "auth": {
+  "chain_header": "x-chain: solana",
+  "credential": "custom.birdeye",
+  "header": "X-API-KEY",
+  "scheme": "X-API-KEY request header",
+  "storage": "Secure Vault via authd surrogate exchange — the raw key is never printed, logged, or persisted"
+ },
+ "bot_bootstrap": "MUSEBOT.md",
+ "default_chain": "solana",
+ "description": "BirdEye market data inside Muse: Solana token prices, OHLCV, 30m tape (trades/buys/sells/wallets), token overview, trending, meme launches, pair overview, search, and wallet PnL — through one authenticated connector.",
+ "display_name": "BirdEye",
+ "docs": "https://docs.birdeye.so",
+ "homepage": "https://birdeye.so",
+ "name": "birdeye",
+ "plan_notes": "Some endpoints (token_security, token_creation_info, token/meta-data, token/fee, blockchain-metrics, smart-money) return 401 on lower-tier keys. The skill documents per-endpoint availability and degrades honestly instead of retry-looping.",
+ "rate_limits": "Pace calls (~1.2s apart) with backoff on 429. Prefer one token_overview call per mint; it carries the full 30m tape.",
+ "skill": {
+  "cli": "birdeye/birdeye.py",
+  "name": "birdeye",
+  "path": "birdeye/SKILL.md",
+  "version": "1.0.0"
+ },
+ "slug": "birdeye",
+ "version": "1.1.0",
+ "mcp": {
+  "auth": "oauth2",
+  "url": "https://musebook.trade/mcp-auth",
+  "authorization_endpoint": "https://musebook.trade/oauth/authorize",
+  "token_endpoint": "https://musebook.trade/oauth/token",
+  "scopes": [
+   "read"
+  ],
+  "note": "Access BirdEye market data through our own musebook.trade OAuth (mcp-auth) — sign in once with your Solana wallet. Direct X-API-KEY auth to public-api.birdeye.so remains available via the custom.birdeye connector."
+ }
+}

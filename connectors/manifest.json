@@ -1,0 +1,21 @@
+{
+  "version": "3.15.1",
+  "packages": [
+    {
+      "name": "connector-clawd",
+      "version": "3.15.1",
+      "url": "https://musebook.trade/connectors/connector-clawd.tar.gz",
+      "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4",
+      "bytes": 156127,
+      "archive_entry_count": 13
+    },
+    {
+      "name": "connector-birdeye",
+      "version": "1.2.0",
+      "url": "https://musebook.trade/connectors/connector-birdeye.tar.gz",
+      "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059",
+      "bytes": 8707,
+      "archive_entry_count": 11
+    }
+  ]
+}

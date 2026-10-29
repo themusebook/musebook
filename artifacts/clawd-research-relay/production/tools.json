@@ -1,0 +1,2850 @@
+[
+  {
+    "name": "stream_launches",
+    "description": "Sample public launch observations from wss://clawd-ws.fly.dev/ws for 5\u201325 seconds. Source website: https://clawd-ws.fly.dev/. Returns unverified observations, not confirmed receipts. No replay or transaction execution.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "seconds": {
+          "default": 5,
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 25
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "stream": {
+          "type": "string"
+        },
+        "listened_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "requested_seconds": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 25
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "launches": {
+          "maxItems": 250,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mint": {
+                "type": "string"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "symbol": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "creator": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "marketCapSol": {
+                "anyOf": [
+                  {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "description": "Provider decimal value; strings retain exact precision."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "uri": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "twitter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "created_at": {
+                "type": [
+                  "string",
+                  "number",
+                  "null"
+                ]
+              },
+              "price_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "price_change_24h_pct": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "mcap_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "liquidity_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "volume_24h_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "quote_generated_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "mint"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Source and research limitation, not execution authorization."
+        },
+        "site": {
+          "type": "string",
+          "const": "https://clawd-ws.fly.dev/"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "stream",
+        "listened_seconds",
+        "requested_seconds",
+        "count",
+        "launches",
+        "note",
+        "site",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "render_clawd_launches",
+    "description": "Show a Clawd launch observation card with the source link https://clawd-ws.fly.dev/. First call stream_launches, then pass its returned structuredContent unchanged. This tool only displays supplied observations.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "stream": {
+          "type": "string"
+        },
+        "listened_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "requested_seconds": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 25
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "launches": {
+          "maxItems": 250,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mint": {
+                "type": "string"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "symbol": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "creator": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "marketCapSol": {
+                "anyOf": [
+                  {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "description": "Provider decimal value; strings retain exact precision."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "uri": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "twitter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "created_at": {
+                "type": [
+                  "string",
+                  "number",
+                  "null"
+                ]
+              },
+              "price_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "price_change_24h_pct": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "mcap_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "liquidity_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "volume_24h_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "quote_generated_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "mint"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Source and research limitation, not execution authorization."
+        },
+        "site": {
+          "type": "string",
+          "const": "https://clawd-ws.fly.dev/"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "stream",
+        "listened_seconds",
+        "requested_seconds",
+        "count",
+        "launches",
+        "note",
+        "site",
+        "retrieved_at"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ],
+      "ui": {
+        "resourceUri": "ui://clawd-research/launches-v1.html"
+      },
+      "openai/outputTemplate": "ui://clawd-research/launches-v1.html"
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "stream": {
+          "type": "string"
+        },
+        "listened_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "requested_seconds": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 25
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "launches": {
+          "maxItems": 250,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "mint": {
+                "type": "string"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "symbol": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "creator": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "marketCapSol": {
+                "anyOf": [
+                  {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "description": "Provider decimal value; strings retain exact precision."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "uri": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "twitter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "created_at": {
+                "type": [
+                  "string",
+                  "number",
+                  "null"
+                ]
+              },
+              "price_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "price_change_24h_pct": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "mcap_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "liquidity_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "volume_24h_usd": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "quote_generated_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "mint"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Source and research limitation, not execution authorization."
+        },
+        "site": {
+          "type": "string",
+          "const": "https://clawd-ws.fly.dev/"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "stream",
+        "listened_seconds",
+        "requested_seconds",
+        "count",
+        "launches",
+        "note",
+        "site",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "search_agents",
+    "description": "Search public Musebook agent names and descriptions. User-provided profiles are not endorsements. Returns no wallet credentials, transaction links or account controls.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "query": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "limit": {
+          "default": 10,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "search agents",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "agents": {
+          "maxItems": 50,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "network": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "count",
+        "agents",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "get_agent",
+    "description": "Read a public Musebook agent profile by exact name or ID. A missing record is reported as an error, never fabricated.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "agent": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "agent"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "get agent",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "agent": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "network": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "agent",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "directory_stats",
+    "description": "Count registered Musebook directory profiles. This is a directory count, not active users, endorsements or an investment metric.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "directory stats",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "registered_agents": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "registered_agents",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "backpack_ticker",
+    "description": "Read public 24-hour market statistics from Backpack. Informational snapshot only, not a quote, order, recommendation or execution route.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 60,
+          "pattern": "^[A-Za-z0-9._-]+$",
+          "description": "Exact Backpack market symbol, for example SOL_USDC"
+        }
+      },
+      "required": [
+        "symbol"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "backpack ticker",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "ticker": {
+          "type": "object",
+          "properties": {
+            "symbol": {
+              "type": "string"
+            },
+            "firstPrice": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "lastPrice": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "high": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "low": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "priceChange": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "priceChangePercent": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "volume": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "quoteVolume": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            },
+            "trades": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "description": "Provider decimal value; strings retain exact precision."
+            }
+          },
+          "required": [
+            "symbol",
+            "firstPrice",
+            "lastPrice",
+            "high",
+            "low",
+            "priceChange",
+            "priceChangePercent",
+            "volume",
+            "quoteVolume",
+            "trades"
+          ],
+          "additionalProperties": {}
+        },
+        "note": {
+          "type": "string",
+          "description": "Source and research limitation, not execution authorization."
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "ticker",
+        "note",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "backpack_klines",
+    "description": "Read historical public Backpack OHLCV candles. No orders or wallet operations; gaps and provider errors must remain visible.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 60,
+          "pattern": "^[A-Za-z0-9._-]+$",
+          "description": "Exact Backpack market symbol, for example SOL_USDC"
+        },
+        "interval": {
+          "default": "1h",
+          "type": "string",
+          "enum": [
+            "1m",
+            "5m",
+            "15m",
+            "1h",
+            "4h",
+            "1d"
+          ]
+        },
+        "hours": {
+          "default": 24,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 168
+        }
+      },
+      "required": [
+        "symbol"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "backpack klines",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "interval": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "klines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "string"
+              },
+              "end": {
+                "type": "string"
+              },
+              "open": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "high": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "low": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "close": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "volume": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "quoteVolume": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              },
+              "trades": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ],
+                "description": "Provider decimal value; strings retain exact precision."
+              }
+            },
+            "required": [
+              "start",
+              "end",
+              "open",
+              "high",
+              "low",
+              "close",
+              "volume",
+              "quoteVolume",
+              "trades"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Source and research limitation, not execution authorization."
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "symbol",
+        "interval",
+        "count",
+        "klines",
+        "note",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "coin_snapshot",
+    "description": "Read current exact-mint public market evidence and source gaps; no model call, recommendation or history write.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "mint": {
+          "type": "string",
+          "pattern": "^[1-9A-HJ-NP-Za-km-z]{32,44}$",
+          "description": "Exact Solana mint, never a ticker"
+        }
+      },
+      "required": [
+        "mint"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "coin snapshot",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "snapshot": {
+          "type": "object",
+          "properties": {
+            "mint": {
+              "type": "string"
+            },
+            "token": {
+              "type": "object",
+              "properties": {
+                "mint": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "symbol": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "mint",
+                "name",
+                "symbol"
+              ],
+              "additionalProperties": {}
+            },
+            "fetchedAt": {
+              "type": "string"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "enum": [
+                      "jupiter",
+                      "birdeye",
+                      "dexscreener"
+                    ]
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "available": {
+                    "type": "boolean"
+                  },
+                  "fetchedAt": {
+                    "type": "string"
+                  },
+                  "observedAt": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "fresh": {
+                    "type": "boolean"
+                  },
+                  "error": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "token": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "mint": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "symbol": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "mint",
+                          "name",
+                          "symbol"
+                        ],
+                        "additionalProperties": {}
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "priceUsd": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "change1h": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "change24h": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "liquidityUsd": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "volume24hUsd": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "buys24h": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "sells24h": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "mintAuthorityDisabled": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "freezeAuthorityDisabled": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "topHoldersPercent": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "url",
+                  "available",
+                  "fetchedAt",
+                  "observedAt",
+                  "fresh",
+                  "error",
+                  "token",
+                  "priceUsd",
+                  "change1h",
+                  "change24h",
+                  "liquidityUsd",
+                  "volume24hUsd",
+                  "buys24h",
+                  "sells24h",
+                  "mintAuthorityDisabled",
+                  "freezeAuthorityDisabled",
+                  "topHoldersPercent"
+                ],
+                "additionalProperties": {}
+              }
+            },
+            "gates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "warnings": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "launch": {
+              "type": "object",
+              "properties": {
+                "available": {
+                  "type": "boolean"
+                },
+                "sampledAt": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "error": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "matched": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "mint": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "symbol": {
+                          "type": "string"
+                        },
+                        "observedAt": {
+                          "type": "string"
+                        },
+                        "receivedAt": {
+                          "type": "string"
+                        },
+                        "marketCapSol": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "mint",
+                        "name",
+                        "symbol",
+                        "observedAt",
+                        "receivedAt",
+                        "marketCapSol"
+                      ],
+                      "additionalProperties": {}
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "available",
+                "sampledAt",
+                "url",
+                "error",
+                "matched"
+              ],
+              "additionalProperties": {}
+            }
+          },
+          "required": [
+            "mint",
+            "token",
+            "fetchedAt",
+            "sources",
+            "gates",
+            "warnings",
+            "launch"
+          ],
+          "additionalProperties": {}
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "snapshot",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "coin_decision_history",
+    "description": "Read public saved coin assessments with their original timestamps and evidence. Historical labels are not current signals or profit probabilities. Does not generate or save a decision.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "mint": {
+          "type": "string",
+          "pattern": "^[1-9A-HJ-NP-Za-km-z]{32,44}$",
+          "description": "Exact Solana mint, never a ticker"
+        },
+        "cursor": {
+          "type": "string",
+          "maxLength": 2048
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "coin decision history",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "page": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_id": {
+                "type": "string"
+              },
+              "mint": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "result": {
+                "type": "object",
+                "properties": {
+                  "provider": {
+                    "type": "string",
+                    "enum": [
+                      "openrouter",
+                      "typesafe"
+                    ]
+                  },
+                  "model": {
+                    "type": "string"
+                  },
+                  "horizon": {
+                    "type": "string",
+                    "enum": [
+                      "1h",
+                      "24h"
+                    ]
+                  },
+                  "generatedAt": {
+                    "type": "string"
+                  },
+                  "snapshot": {
+                    "type": "object",
+                    "properties": {
+                      "mint": {
+                        "type": "string"
+                      },
+                      "token": {
+                        "type": "object",
+                        "properties": {
+                          "mint": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "symbol": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "mint",
+                          "name",
+                          "symbol"
+                        ],
+                        "additionalProperties": {}
+                      },
+                      "fetchedAt": {
+                        "type": "string"
+                      },
+                      "sources": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "enum": [
+                                "jupiter",
+                                "birdeye",
+                                "dexscreener"
+                              ]
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "available": {
+                              "type": "boolean"
+                            },
+                            "fetchedAt": {
+                              "type": "string"
+                            },
+                            "observedAt": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "fresh": {
+                              "type": "boolean"
+                            },
+                            "error": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "token": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "mint": {
+                                      "type": "string"
+                                    },
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "symbol": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "mint",
+                                    "name",
+                                    "symbol"
+                                  ],
+                                  "additionalProperties": {}
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            "priceUsd": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "change1h": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "change24h": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "liquidityUsd": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "volume24hUsd": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "buys24h": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "sells24h": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "mintAuthorityDisabled": {
+                              "type": [
+                                "boolean",
+                                "null"
+                              ]
+                            },
+                            "freezeAuthorityDisabled": {
+                              "type": [
+                                "boolean",
+                                "null"
+                              ]
+                            },
+                            "topHoldersPercent": {
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "url",
+                            "available",
+                            "fetchedAt",
+                            "observedAt",
+                            "fresh",
+                            "error",
+                            "token",
+                            "priceUsd",
+                            "change1h",
+                            "change24h",
+                            "liquidityUsd",
+                            "volume24hUsd",
+                            "buys24h",
+                            "sells24h",
+                            "mintAuthorityDisabled",
+                            "freezeAuthorityDisabled",
+                            "topHoldersPercent"
+                          ],
+                          "additionalProperties": {}
+                        }
+                      },
+                      "gates": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "warnings": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "launch": {
+                        "type": "object",
+                        "properties": {
+                          "available": {
+                            "type": "boolean"
+                          },
+                          "sampledAt": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "error": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "matched": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "mint": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "symbol": {
+                                    "type": "string"
+                                  },
+                                  "observedAt": {
+                                    "type": "string"
+                                  },
+                                  "receivedAt": {
+                                    "type": "string"
+                                  },
+                                  "marketCapSol": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "mint",
+                                  "name",
+                                  "symbol",
+                                  "observedAt",
+                                  "receivedAt",
+                                  "marketCapSol"
+                                ],
+                                "additionalProperties": {}
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "available",
+                          "sampledAt",
+                          "url",
+                          "error",
+                          "matched"
+                        ],
+                        "additionalProperties": {}
+                      }
+                    },
+                    "required": [
+                      "mint",
+                      "token",
+                      "fetchedAt",
+                      "sources",
+                      "gates",
+                      "warnings",
+                      "launch"
+                    ],
+                    "additionalProperties": {}
+                  },
+                  "answers": {
+                    "type": "object",
+                    "properties": {
+                      "direction": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "choice"
+                          },
+                          "choice": {
+                            "type": "string",
+                            "enum": [
+                              "BULLISH",
+                              "BEARISH",
+                              "NEUTRAL",
+                              "INSUFFICIENT"
+                            ]
+                          },
+                          "confidence": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                          },
+                          "probabilities": {
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "choice",
+                          "confidence",
+                          "probabilities"
+                        ],
+                        "additionalProperties": {}
+                      },
+                      "evidence": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "score"
+                          },
+                          "score": {
+                            "type": "number"
+                          },
+                          "confidence": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                          },
+                          "probabilities": {
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "score",
+                          "confidence",
+                          "probabilities"
+                        ],
+                        "additionalProperties": {}
+                      },
+                      "risk": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "score"
+                          },
+                          "score": {
+                            "type": "number"
+                          },
+                          "confidence": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                          },
+                          "probabilities": {
+                            "type": "object",
+                            "propertyNames": {
+                              "type": "string"
+                            },
+                            "additionalProperties": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "score",
+                          "confidence",
+                          "probabilities"
+                        ],
+                        "additionalProperties": {}
+                      },
+                      "sufficient": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "noul"
+                          },
+                          "noul": {
+                            "type": "number",
+                            "minimum": 0,
+                            "maximum": 1
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "noul"
+                        ],
+                        "additionalProperties": {}
+                      }
+                    },
+                    "required": [
+                      "direction",
+                      "evidence",
+                      "risk",
+                      "sufficient"
+                    ],
+                    "additionalProperties": {}
+                  },
+                  "recommendation": {
+                    "type": "string",
+                    "enum": [
+                      "BULLISH",
+                      "BEARISH",
+                      "NEUTRAL",
+                      "INSUFFICIENT"
+                    ]
+                  },
+                  "gates": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "autoExecute": {
+                    "type": "boolean",
+                    "const": false
+                  },
+                  "disclaimer": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "provider",
+                  "model",
+                  "horizon",
+                  "generatedAt",
+                  "snapshot",
+                  "answers",
+                  "recommendation",
+                  "gates",
+                  "autoExecute",
+                  "disclaimer"
+                ],
+                "additionalProperties": {}
+              }
+            },
+            "required": [
+              "_id",
+              "mint",
+              "createdAt",
+              "result"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "isDone": {
+          "type": "boolean"
+        },
+        "continueCursor": {
+          "type": "string"
+        },
+        "limitation": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "page",
+        "isDone",
+        "continueCursor",
+        "limitation",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "prediction_events",
+    "description": "Read public Jupiter prediction events, optionally searching by topic. Not trading advice or order preparation.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "query": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "limit": {
+          "default": 5,
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "provider": {
+          "type": "string",
+          "enum": [
+            "kalshi",
+            "polymarket",
+            "bisonfi"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "prediction events",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "events": {
+          "maxItems": 10,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "eventId": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "isLive": {
+                "type": "boolean"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "volumeUsd": {
+                "anyOf": [
+                  {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "description": "Provider decimal value; strings retain exact precision."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "metadata": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "subtitle": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "additionalProperties": {}
+              },
+              "markets": {
+                "maxItems": 10,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "marketId": {
+                      "type": "string"
+                    },
+                    "eventId": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "eventTitle": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "result": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "closeTime": {
+                      "type": [
+                        "string",
+                        "number",
+                        "null"
+                      ]
+                    },
+                    "rulesPrimary": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "rulesSecondary": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "pricing": {
+                      "type": "object",
+                      "properties": {
+                        "buyYesPriceUsd": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "buyNoPriceUsd": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "sellYesPriceUsd": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "sellNoPriceUsd": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        }
+                      },
+                      "additionalProperties": {},
+                      "description": "USD price fields are micro USD; no implicit conversion."
+                    }
+                  },
+                  "required": [
+                    "marketId",
+                    "status",
+                    "pricing"
+                  ],
+                  "additionalProperties": {}
+                }
+              }
+            },
+            "required": [
+              "eventId",
+              "metadata",
+              "markets"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "units": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "events",
+        "units",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "prediction_market",
+    "description": "Read rules, status and observed pricing for an exact prediction market. No wallet access or executable quote.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "marketId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_:.-]{1,200}$",
+          "description": "Exact marketId from prediction_events"
+        }
+      },
+      "required": [
+        "marketId"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "prediction market",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "market": {
+          "type": "object",
+          "properties": {
+            "marketId": {
+              "type": "string"
+            },
+            "eventId": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "eventTitle": {
+              "type": "string"
+            },
+            "provider": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "result": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "closeTime": {
+              "type": [
+                "string",
+                "number",
+                "null"
+              ]
+            },
+            "rulesPrimary": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "rulesSecondary": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "pricing": {
+              "type": "object",
+              "properties": {
+                "buyYesPriceUsd": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "buyNoPriceUsd": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "sellYesPriceUsd": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "sellNoPriceUsd": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": {},
+              "description": "USD price fields are micro USD; no implicit conversion."
+            }
+          },
+          "required": [
+            "marketId",
+            "status",
+            "pricing"
+          ],
+          "additionalProperties": {}
+        },
+        "units": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "market",
+        "units",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "prediction_orderbook",
+    "description": "Read up to 50 public depth levels per side for a prediction market. Preserve decimal-dollar strings and fractional sizes. Does not place orders.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "marketId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_:.-]{1,200}$",
+          "description": "Exact marketId from prediction_events"
+        }
+      },
+      "required": [
+        "marketId"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "prediction orderbook",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "marketId": {
+          "type": "string"
+        },
+        "orderbook": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "yes": {
+                  "maxItems": 50,
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "no": {
+                  "maxItems": 50,
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "yes_dollars": {
+                  "maxItems": 50,
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                },
+                "no_dollars": {
+                  "maxItems": 50,
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              },
+              "required": [
+                "yes",
+                "no",
+                "yes_dollars",
+                "no_dollars"
+              ],
+              "additionalProperties": {}
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available": {
+          "type": "boolean",
+          "const": false
+        },
+        "truncatedToLevelsPerSide": {
+          "type": "number",
+          "const": 50
+        },
+        "units": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "marketId",
+        "orderbook",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "site_launch_receipts",
+    "description": "Read confirmed Musebook token/agent creation receipts by network. No creation, registration, wallet controls or execution links.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {
+        "network": {
+          "default": "mainnet",
+          "type": "string",
+          "enum": [
+            "mainnet",
+            "devnet"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "token",
+            "agent"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "site launch receipts",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "network": {
+          "type": "string",
+          "enum": [
+            "mainnet",
+            "devnet"
+          ]
+        },
+        "items": {
+          "maxItems": 50,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "network": {
+                "type": "string",
+                "enum": [
+                  "mainnet",
+                  "devnet"
+                ]
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "token",
+                  "agent"
+                ]
+              },
+              "asset": {
+                "type": "string"
+              },
+              "signature": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "symbol": {
+                "type": "string"
+              },
+              "venue": {
+                "type": "string"
+              },
+              "_creationTime": {
+                "type": "number"
+              },
+              "createdAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "network",
+              "kind",
+              "asset",
+              "signature",
+              "name",
+              "venue"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "limitation": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "network",
+        "items",
+        "limitation",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  },
+  {
+    "name": "rwa_readiness",
+    "description": "Read Musebook MPL-3643 technical readiness and access gates. Not compliance certification or issuer authorization; never prepares issuance.",
+    "inputSchema": {
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "annotations": {
+      "title": "rwa readiness",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "_meta": {
+      "securitySchemes": [
+        {
+          "type": "noauth"
+        }
+      ]
+    },
+    "outputSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "protocol": {
+          "type": "string",
+          "const": "MPL-3643"
+        },
+        "network": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "launchEnabled": {
+          "type": "boolean"
+        },
+        "transactionBuilderAvailable": {
+          "type": "boolean"
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "required",
+                  "unavailable"
+                ]
+              },
+              "detail": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "state",
+              "detail"
+            ],
+            "additionalProperties": {}
+          }
+        },
+        "auditStatus": {
+          "type": "string"
+        },
+        "limitation": {
+          "type": "string"
+        },
+        "autoExecute": {
+          "type": "boolean",
+          "const": false
+        },
+        "retrieved_at": {
+          "type": "string",
+          "description": "Server retrieval time, not the original observation or generation time."
+        }
+      },
+      "required": [
+        "source",
+        "protocol",
+        "network",
+        "stage",
+        "launchEnabled",
+        "transactionBuilderAvailable",
+        "checks",
+        "auditStatus",
+        "limitation",
+        "autoExecute",
+        "retrieved_at"
+      ],
+      "additionalProperties": {}
+    },
+    "securitySchemes": [
+      {
+        "type": "noauth"
+      }
+    ]
+  }
+]

@@ -1,0 +1,178 @@
+{
+  "started_at": "2026-10-10T19:10:30.703196+00:00",
+  "checks": [
+    {
+      "name": "public Musebook MCP catalog",
+      "endpoint": "https://musebook.trade/mcp",
+      "initialize_status": 200,
+      "initialized_notification_status": 202,
+      "tools_list_status": 200,
+      "server_name": "musebook",
+      "server_version": "2.3.3",
+      "protocol_version": "2025-06-18",
+      "tool_count": 23,
+      "tool_names": [
+        "agent_feed",
+        "backpack_klines",
+        "backpack_market_cards",
+        "backpack_market_snapshot",
+        "backpack_markets",
+        "backpack_orderbook",
+        "backpack_ticker",
+        "backpack_trades",
+        "directory_stats",
+        "get_agent",
+        "live_launch_cards",
+        "live_launches",
+        "open_musebook",
+        "open_pump_stream",
+        "openmarket_snapshot",
+        "pump_stream_snapshot",
+        "render_musebook_results",
+        "search_agents",
+        "site_launches",
+        "stream_launches",
+        "trending_agents",
+        "x402_supported",
+        "x402m_discover"
+      ],
+      "tools_list_bytes": 43555,
+      "tools_list_sha256": "7e790fffd93db7f232b412a70f8e37850543bae1f83b0324aa1ae9ab22756755",
+      "session_established": false,
+      "resource_tools": [
+        "open_musebook",
+        "render_musebook_results",
+        "open_pump_stream"
+      ],
+      "passed": true
+    },
+    {
+      "name": "public Clawd Research MCP catalog",
+      "endpoint": "https://musebook.trade/mcp-research",
+      "initialize_status": 200,
+      "initialized_notification_status": 202,
+      "tools_list_status": 200,
+      "server_name": "Clawd Research",
+      "server_version": "1.2.0",
+      "protocol_version": "2025-06-18",
+      "tool_count": 14,
+      "tool_names": [
+        "backpack_klines",
+        "backpack_ticker",
+        "coin_decision_history",
+        "coin_snapshot",
+        "directory_stats",
+        "get_agent",
+        "prediction_events",
+        "prediction_market",
+        "prediction_orderbook",
+        "render_clawd_launches",
+        "rwa_readiness",
+        "search_agents",
+        "site_launch_receipts",
+        "stream_launches"
+      ],
+      "tools_list_bytes": 33867,
+      "tools_list_sha256": "c99b409ecf764a9f8393aa0c764f8d71b867296b8a587eb891386e5360a2ac3f",
+      "session_established": false,
+      "resource_tools": [
+        "render_clawd_launches"
+      ],
+      "passed": true
+    },
+    {
+      "name": "canonical health",
+      "url": "https://musebook.trade/api/health",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 84,
+      "sha256": "22bc32bbbb1b2964aafe8f4e07005c6930f524b9a645028eb9f382d4209a9600",
+      "authentication_challenge": false,
+      "passed": true
+    },
+    {
+      "name": "anonymous session is null",
+      "url": "https://musebook.trade/api/auth/get-session",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "authentication_challenge": false,
+      "passed": true
+    },
+    {
+      "name": "private MCP requires authentication",
+      "url": "https://musebook.trade/mcp-auth",
+      "status": 401,
+      "content_type": "",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authentication_challenge": true,
+      "passed": true
+    },
+    {
+      "name": "private API keys require authentication",
+      "url": "https://musebook.trade/api/keys/me",
+      "status": 401,
+      "content_type": "application/json",
+      "bytes": 41,
+      "sha256": "fd417bdd7c374020932ae27b609c977a0814e7c047631997e83b2edbac6843c4",
+      "authentication_challenge": false,
+      "passed": true
+    },
+    {
+      "name": "Auth0 API-host health remains gated",
+      "url": "https://api.musebook.trade/api/health",
+      "status": 401,
+      "content_type": "application/json",
+      "bytes": 80,
+      "sha256": "14bc49e2d0aeacecc2ad74ab50dbe294113b93a46129e9c11bea93c6587e4283",
+      "authentication_challenge": true,
+      "passed": true
+    },
+    {
+      "name": "Auth0 API-host OpenAPI remains gated",
+      "url": "https://api.musebook.trade/openapi.json",
+      "status": 401,
+      "content_type": "application/json",
+      "bytes": 80,
+      "sha256": "14bc49e2d0aeacecc2ad74ab50dbe294113b93a46129e9c11bea93c6587e4283",
+      "authentication_challenge": true,
+      "passed": true
+    },
+    {
+      "name": "protected MCP resource discovery",
+      "url": "https://musebook.trade/.well-known/oauth-protected-resource/mcp-auth",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 184,
+      "sha256": "e8f8f8a7a1873b8a9385d1698cf4adf956282484e5ba7d7076f4b656559465db",
+      "authentication_challenge": false,
+      "passed": true
+    },
+    {
+      "name": "Auth0 issuer discovery",
+      "url": "https://auth.musebook.trade/.well-known/openid-configuration",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2631,
+      "sha256": "a246c63fe7e5faf891bdd04b339e1288438786925e6c7bb973c2100cef5489aa",
+      "authentication_challenge": false,
+      "passed": true
+    }
+  ],
+  "permitted_mcp_methods": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list"
+  ],
+  "tools_called": false,
+  "wallet_signatures_submitted": false,
+  "payments_attempted": false,
+  "finished_at": "2026-10-10T19:10:33.886960+00:00",
+  "passed": true,
+  "limitations": [
+    "MCP tool discovery and contract metadata were verified; tool provider results were not called.",
+    "No OAuth login/callback, signed wallet action, paid provider call, funded trade or transaction execution was tested."
+  ]
+}

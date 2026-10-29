@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "stagedDiffBytes": 3918472,
+  "defaultGitleaksRulesUsed": true,
+  "publicInventoryFingerprintFalsePositives": 20,
+  "uniqueAllowlistedValues": 10,
+  "everyExceptionVerifiedAgainstActualFrozenFileBytes": true,
+  "allowlistScope": "Exact verified public file fingerprint values for this review only; repository rules unchanged",
+  "credentialValuesPublished": false
+}

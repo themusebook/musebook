@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Build output
+*.tgz
+
+# Test artifacts
+.test-cache/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+
+# Secrets and local env — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+keypair*.json
+**/keypair.json
+id_rsa*
+.npmrc
+
+# Agent and runtime state — never commit
+.supermemory/
+.playwright-mcp/
+*.log
+.sessions/

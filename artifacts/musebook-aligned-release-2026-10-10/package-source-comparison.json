@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10T19:32:29.670824+00:00",
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "sourceCheck": {
+    "frozenReleaseManifestCheckPassed": true,
+    "designatedOriginalReleaseManifestCheckPassed": true,
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6"
+  },
+  "routeOnlyCarryforward": {
+    "passed": true,
+    "previousRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:06:49.290Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+      "artifactHash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "release": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:16:35.466Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "88a7c82f7f4ed97c3632c50627e4943133bd1b19a906b742707ee8ef6246b2eb",
+      "artifactHash": "2e41768e88acbee0d5148dbb2f6f45c417e62c4cc4fd0c9dd70e0bd5948c15c6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "filesCompared": 1097,
+    "changedFiles": [
+      "_redirects",
+      "release.json"
+    ],
+    "compiledHtmlJsCssPackagesUnchanged": true
+  },
+  "finalDocumentationArtifactComparison": {
+    "previousRelease": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:16:35.466Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "88a7c82f7f4ed97c3632c50627e4943133bd1b19a906b742707ee8ef6246b2eb",
+      "artifactHash": "2e41768e88acbee0d5148dbb2f6f45c417e62c4cc4fd0c9dd70e0bd5948c15c6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "release": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:29:44.179Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+      "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "filesCompared": 1097,
+    "unchangedFiles": 1090,
+    "changedFiles": [
+      {
+        "path": "agentic-layer.md",
+        "previousSha256": "1cb93827ec8c504bd4a4152430dfd79df842ab70e59c8b3f4f904de2343b9deb",
+        "finalSha256": "43b197e65962a6c9f937711ced153d4413d658e02658c31c387bac76a1a09c47"
+      },
+      {
+        "path": "clawd-agentic-layer-whitepaper.pdf",
+        "previousSha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+        "finalSha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465"
+      },
+      {
+        "path": "downloads/manifest.json",
+        "previousSha256": "1f98b7a586a0f560e745ca5d57af907d4731ac5c2f11594e91ae71a3facde0ca",
+        "finalSha256": "09332633e559e10bf8b79ca8ae970bade3f1e11d570a7a724d4813517a6c475e"
+      },
+      {
+        "path": "downloads/musebook-1.2.0.tgz",
+        "previousSha256": "d68ec5bf37678c23665a1c9839e3eca7c71c4d0e06a9b0a44595e22007dd6487",
+        "finalSha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5"
+      },
+      {
+        "path": "release.json",
+        "previousSha256": "66de4ac61f38c2cf4817d36de18bb3b40200421b5006900c367053ce7452c1f9",
+        "finalSha256": "a84372eba173aa77f6da81afd11c7ed3d2793869ad5769eadaa81a63bc616d33"
+      },
+      {
+        "path": "research/clawd-agentic-layer-v0.6.pdf",
+        "previousSha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+        "finalSha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465"
+      },
+      {
+        "path": "research/manifest.json",
+        "previousSha256": "568ef0a75f691093be95df2e0c15135003b8c85a16c99959f1b10a92807ad4bd",
+        "finalSha256": "1f029ab242673c6ea558ddead762bf79a48ad2e5428ce7bdbd29a424bbadf35c"
+      }
+    ],
+    "addedFiles": [],
+    "missingFiles": [],
+    "compiledHtmlJsCssUnchanged": true,
+    "otherEightArchiveBytesUnchanged": true,
+    "paperMarkdownAndHtmlUnchanged": true,
+    "previousFingerprintInventorySha256": "0a71109a1f77cfabe1fa468ef665413b8b8cd16f9bb603b115f9c0376e924299"
+  },
+  "vercelStaticComparison": {
+    "filesCompared": 1097,
+    "mismatches": 0,
+    "missingFiles": [],
+    "extraFiles": []
+  },
+  "archives": [
+    {
+      "archive": "musebook-1.2.0.tgz",
+      "bytes": 132536,
+      "sha256": "65ade79affb5daca9b9daaacc567ff714666e2f1555b8132639fe934af3c4bf5",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 33,
+      "mismatches": 0
+    },
+    {
+      "archive": "musebook-sdk-1.5.0.tgz",
+      "bytes": 45119,
+      "sha256": "10aa06c688680cdcf2aba4a475c390829f7c001c440a5cf68f5a5e67ef7f782f",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 32,
+      "mismatches": 0
+    },
+    {
+      "archive": "musebook-tui-0.1.2.tgz",
+      "bytes": 25847,
+      "sha256": "05b6b0afab4b118de1b96bfe9c60aae5202e18e78ebd143b311d3dff11fdce7e",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "compiledSystemPromptComparison": {
+        "equal": true,
+        "bytes": 1407,
+        "sha256": "a5b58c953cf17c8806896ff4c6f72f056db5f213b881fe458e1ff3464411d331"
+      },
+      "metadataFilesCompared": 3,
+      "allCompiledModulesRebuiltFromCurrentSource": false
+    },
+    {
+      "archive": "connector-clawd.tar.gz",
+      "bytes": 156127,
+      "sha256": "052027e789be8e4e5b1a1af0dd91914a0609570571a4312b742c61b0830002c4",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 9,
+      "mismatches": 0,
+      "githubArchiveBytesMatch": true
+    },
+    {
+      "archive": "connector-birdeye.tar.gz",
+      "bytes": 8707,
+      "sha256": "c91a65fb14010e55e3a7693b5411700f660f3e15f7a9d2934e84bd73cebfb059",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 7,
+      "mismatches": 0,
+      "githubArchiveBytesMatch": true
+    },
+    {
+      "archive": "clawd-skills.tar.gz",
+      "bytes": 23381619,
+      "sha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "githubArchiveBytesMatch": true
+    },
+    {
+      "archive": "musebook-plugin.zip",
+      "bytes": 1008808,
+      "sha256": "e90ca181c16e13f2e9980c1b8bbd60282d8f51ec77d568ea4f3fc706956835a5",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 11,
+      "mismatches": 0,
+      "githubArchiveBytesMatch": true
+    },
+    {
+      "archive": "clawd-plugin.zip",
+      "bytes": 26160278,
+      "sha256": "2491b0ba6904aed552cc5da612865d14ab457154fbf2ded6a550620ace0e46fc",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 2626,
+      "mismatches": 0,
+      "normalizedOriginalsPreserved": 24,
+      "githubArchiveBytesMatch": true
+    },
+    {
+      "archive": "clawd-research-plugin.zip",
+      "bytes": 1013116,
+      "sha256": "68fef7e925c96167abddc68c59f0ee09d8b4273bcd0d2de6fd4ae4ee756454f0",
+      "frozenPublicDistAndOriginalPublicMatchExactly": true,
+      "sourceFilesCompared": 11,
+      "mismatches": 0,
+      "githubArchiveBytesMatch": true
+    }
+  ],
+  "sourceFilesCompared": 2729,
+  "publicGithubMirrors": [
+    {
+      "sitePath": "/openapi.json",
+      "githubPath": "openapi.json",
+      "sha256": "3e57f19ca0599ee55e56fbe7827dbb5cd8e4fdb14be71d942bf7abd44c62eb79",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/llms.txt",
+      "githubPath": "llms.txt",
+      "sha256": "56fc5fb2fa150e70fb92ddacdb6d429573a0ce9b53bdf80e95c54040e62340fc",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/skill.md",
+      "githubPath": "SKILL.md",
+      "sha256": "8f759bd780949471342a57e08b854e0f6003e0b92acaef12bc8e160a05124cd7",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/install-cli.sh",
+      "githubPath": "install-cli.sh",
+      "sha256": "235170d307286b71927f56aa5aeb724c5b75f36c34e8a3ad5d3f902df65973f5",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/agentic-layer.md",
+      "githubPath": "docs/AGENTIC-LAYER.md",
+      "sha256": "43b197e65962a6c9f937711ced153d4413d658e02658c31c387bac76a1a09c47",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/manifest.json",
+      "githubPath": "research/manifest.json",
+      "sha256": "1f029ab242673c6ea558ddead762bf79a48ad2e5428ce7bdbd29a424bbadf35c",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.md",
+      "githubPath": "research/clawd-agentic-layer-v0.6.md",
+      "sha256": "c05255a5d1117b6f6cff2434800da7473e767ac58ea06c1c8e5ddaee56298c70",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.html",
+      "githubPath": "research/clawd-agentic-layer-v0.6.html",
+      "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1",
+      "exactBytes": true
+    },
+    {
+      "sitePath": "/research/clawd-agentic-layer-v0.6.pdf",
+      "githubPath": "research/clawd-agentic-layer-v0.6.pdf",
+      "sha256": "5585f3412f2c2e84c5d8a3a8d900bb177cc8995847b3ca12ae1db84ffe8b8465",
+      "exactBytes": true
+    }
+  ],
+  "metadataParity": {
+    "pluginManifestMatchesGitHub": true,
+    "clawdManifestMatchesGitHubSemantically": true,
+    "connectorManifestMatchesGitHub": true,
+    "researchManifestMatchesGitHubExactly": true
+  },
+  "fullFrontendTests": {
+    "pass": 525,
+    "fail": 0,
+    "skipped": 0,
+    "release": {
+      "schemaVersion": 1,
+      "builtAt": "2026-10-10T19:29:44.179Z",
+      "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+      "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+      "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+      "entry": "/assets/index-BazqlYN_.js"
+    },
+    "logSha256": "6f1e967bf3255511c0bf9efeef79aeffce0bc82eca29f8b28a295858ee389de1"
+  },
+  "allChecksPassed": true
+}

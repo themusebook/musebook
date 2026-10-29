@@ -1,0 +1,119 @@
+{
+  "bpm_detected": 117.45383522727273,
+  "music": "/Users/8bit/Downloads/SOLGPT Night - Track 2 - Treblo.mp3",
+  "music_start": 0.603718820861678,
+  "fps": 30,
+  "duration": 33.4,
+  "scenes": [
+    {
+      "index": 0,
+      "recording": null,
+      "source_in": 0,
+      "timeline_in": 0.0,
+      "duration": 2.066666666666667,
+      "label": "MUSEBOOK",
+      "title": "Catch the first signal.",
+      "subtitle": "Explore the market. Find your next move.",
+      "beat_index": 0
+    },
+    {
+      "index": 1,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 1.14.51\u202fPM.mov",
+      "source_in": 11,
+      "timeline_in": 2.066666666666667,
+      "duration": 4.166666666666666,
+      "label": "MARKET DISCOVERY",
+      "title": "Catch the first signal.",
+      "subtitle": "A closer look at the Musebook feed.",
+      "beat_index": 4
+    },
+    {
+      "index": 2,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 1.14.51\u202fPM.mov",
+      "source_in": 1,
+      "timeline_in": 6.233333333333333,
+      "duration": 4.2,
+      "label": "LIVE ACTIVITY",
+      "title": "Follow the live feed.",
+      "subtitle": "Watch market activity unfold.",
+      "beat_index": 12
+    },
+    {
+      "index": 3,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 2.07.00\u202fPM.mov",
+      "source_in": 0,
+      "timeline_in": 10.433333333333334,
+      "duration": 4.133333333333333,
+      "label": "TOKEN DISCOVERY",
+      "title": "Explore tokens.",
+      "subtitle": "Inspect the details that matter.",
+      "beat_index": 20
+    },
+    {
+      "index": 4,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 2.07.00\u202fPM.mov",
+      "source_in": 2.5,
+      "timeline_in": 14.566666666666666,
+      "duration": 2.0666666666666664,
+      "label": "WALLET REVIEW",
+      "title": "Review before signing.",
+      "subtitle": "See the amount. Set your slippage.",
+      "beat_index": 28
+    },
+    {
+      "index": 5,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 2.07.00\u202fPM.mov",
+      "source_in": 6,
+      "timeline_in": 16.633333333333333,
+      "duration": 2.1000000000000014,
+      "label": "WALLET REVIEW",
+      "title": "Stay in control.",
+      "subtitle": "Review a fresh quote before signing.",
+      "beat_index": 32
+    },
+    {
+      "index": 6,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 1.17.02\u202fPM.mov",
+      "source_in": 11,
+      "timeline_in": 18.733333333333334,
+      "duration": 4.199999999999999,
+      "label": "SOLGPT WORKSPACE",
+      "title": "Meet your workspace.",
+      "subtitle": "Markets, tools, and Clawd in one view.",
+      "beat_index": 36
+    },
+    {
+      "index": 7,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 2.07.00\u202fPM.mov",
+      "source_in": 20,
+      "timeline_in": 22.933333333333334,
+      "duration": 4.166666666666668,
+      "label": "AGENT TOKENS",
+      "title": "Discover agent tokens.",
+      "subtitle": "Explore what is moving.",
+      "beat_index": 44
+    },
+    {
+      "index": 8,
+      "recording": "/Users/8bit/Downloads/Screen Recording 2026-10-02 at 1.14.51\u202fPM.mov",
+      "source_in": 12,
+      "timeline_in": 27.1,
+      "duration": 2.099999999999998,
+      "label": "MUSEBOOK",
+      "title": "Find your next signal.",
+      "subtitle": "Explore at musebook.trade",
+      "beat_index": 52
+    },
+    {
+      "index": 9,
+      "recording": null,
+      "source_in": 0,
+      "timeline_in": 29.2,
+      "duration": 4.199999999999999,
+      "label": "EXPLORE MUSEBOOK",
+      "title": "musebook.trade",
+      "subtitle": "Catch the first signal.",
+      "beat_index": 56
+    }
+  ]
+}

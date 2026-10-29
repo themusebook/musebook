@@ -1,0 +1,13 @@
+{
+  "name": "metaplex-nft-mint",
+  "version": "1.0.0",
+  "description": "Mint a Metaplex Core NFT with browser signing (agent builds, user signs)",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@metaplex-foundation/mpl-core": "^1.2.0",
+    "@metaplex-foundation/umi": "^1.2.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@solana/web3.js": "^1.98.0"
+  }
+}

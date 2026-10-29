@@ -1,0 +1,93 @@
+{
+  "binding_writes": 0,
+  "checked_at": "2026-10-10T19:22:52.104205+00:00",
+  "existing_agent_routes_unchanged": true,
+  "existing_route_writes": 0,
+  "module_writes": 0,
+  "passed": true,
+  "pattern": "musebook.trade/clawd-agentic-layer-whitepaper.pdf*",
+  "pdf_checks": [
+    {
+      "app_proxy": "vercel",
+      "bytes": 2681278,
+      "content_type": "application/pdf",
+      "passed": true,
+      "sha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+      "status": 200,
+      "url": "https://musebook.trade/clawd-agentic-layer-whitepaper.pdf"
+    },
+    {
+      "app_proxy": "vercel",
+      "bytes": 2681278,
+      "content_type": "application/pdf",
+      "passed": true,
+      "sha256": "b0002d0922ffe74cce451a0e559fb0b4e9bb2b5cc0c4cc52569bfaa7763a4ca5",
+      "status": 200,
+      "url": "https://musebook.trade/clawd-agentic-layer-whitepaper.pdf?download=1"
+    }
+  ],
+  "route_comparison": {
+    "added": [
+      {
+        "id": "0e5a4cd1f5bc4866a1aa75839c46bf7a",
+        "pattern": "musebook.trade/clawd-agentic-layer-whitepaper.pdf*",
+        "request_limit_fail_open": false,
+        "script": "musebook-proxy"
+      }
+    ],
+    "after_count": 35,
+    "all_original_routes_byte_equivalent": true,
+    "before_count": 34,
+    "changed_ids": [],
+    "passed": true,
+    "removed_ids": []
+  },
+  "target_worker": "musebook-proxy",
+  "worker_comparison": {
+    "observed": {
+      "binding_count": 126,
+      "binding_digest": "cd06729b28204c75319b554e658076b5b5ea41993353eb36897c270a9fb3a2cd",
+      "module_sha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1",
+      "named_handlers": [
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "BackpackConnectedAccount"
+        },
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "BackpackMcpEvents"
+        },
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "MusebookMcpEvents"
+        },
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "OreComputer"
+        },
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "PumpStreamMcpEvents"
+        },
+        {
+          "handlers": [
+            "class"
+          ],
+          "name": "SvmBatchFacilitator"
+        }
+      ],
+      "version_id": "54343cd5-7475-4889-9379-9b7b8effedd8"
+    },
+    "unchanged": true
+  }
+}

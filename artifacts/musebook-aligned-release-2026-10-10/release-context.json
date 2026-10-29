@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "source": "user-designated private web-react checkout including reviewed uncommitted changes",
+  "privateSourceBaseRevision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+  "githubPreparedFromCommit": "4a3540d049999107cc598cbd0feb63555a9beb5c",
+  "githubRepository": "Solizardking/musebook",
+  "release": {
+    "schemaVersion": 1,
+    "builtAt": "2026-10-10T19:29:44.179Z",
+    "revision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+    "sourceHash": "d1318baa00c5cac53a5110b27a75f1bf8221c361dbcfbceb2ea610d80699f716",
+    "artifactHash": "5c85aaa1fa55bd9ff038442e586831cbff825fd68ef64ff62e799b570bd609e6",
+    "entry": "/assets/index-BazqlYN_.js"
+  },
+  "production": {
+    "canonicalOrigin": "https://musebook.trade",
+    "terminalOrigin": "https://terminal.musebook.trade",
+    "vercelOrigin": "https://musebook-private-46t1xx1gy-clawd-c4b28c7e.vercel.app",
+    "vercelDeploymentId": "dpl_Hwc1U91VRNw2EaQKmNmn1tKNk5Vb",
+    "pagesOrigin": "https://1d01c558.musebook-3al.pages.dev",
+    "workerVersionId": "36310a5c-b5a5-4395-8282-72577857502a",
+    "workerDeploymentId": "daf7aaaa-e809-47fe-a624-150d2eebd9bc",
+    "workerBindingCount": 127,
+    "workerModuleSha256": "38af6931cb095701b1e1e1e4c90e29451ab7a8c6f828f73c79cc68262fc71fe1"
+  },
+  "verified": {
+    "frontendTestsPassed": 525,
+    "publicGetHeadChecksPassed": 1068,
+    "finalRouteReleaseChecksPassed": 12,
+    "archivesVerified": 9,
+    "packagedSourceFilesCompared": 2729
+  },
+  "knownBackendLimitations": {
+    "convexDirectoryAndTown": "Convex deployment disabled after free-plan limits were exceeded.",
+    "onchainAgentFeed": "503 agent_indexer_unavailable remains after verified historical limiter restoration; remaining cause unverified.",
+    "additionalSourceOnlyApiContracts": 7
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 1,
+  "scope": "Four reviewed HTML captures only; unknown changes remain failures. No production/source edits performed.",
+  "captures": [
+    {
+      "capture": "1.html",
+      "origin": "https://skill.musebook.trade",
+      "path": "/",
+      "passed": true,
+      "policy": "strict_reviewed_html_transforms_v1",
+      "remaining_bytes_match_frozen_exactly": true,
+      "observed": {
+        "bytes": 7572,
+        "sha256": "ba83f9a74c963d8f6d3e72339780f67b6b9f7456a262542e857404b725e19fd8"
+      },
+      "normalized": {
+        "bytes": 6979,
+        "sha256": "26bf453dc3883d9ce961272ce881e72d18dc8897a390ae51a0a49e261b3a1a80"
+      },
+      "transformations": [
+        {
+          "kind": "reviewed_same_origin_webmcp_bridge",
+          "bytes": 120,
+          "sha256": "e941fbc4523db61fb57cfb61763d617c1d658f4ad1283da1858e6ba8b562e05d",
+          "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+          "insertion_offset": 323
+        },
+        {
+          "kind": "cloudflare_precursor_loader",
+          "bytes": 473,
+          "sha256": "78db0c966ada438ad781a60628d86a416c12dc4bb749c97f18f3d9d1558b1e9a",
+          "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+          "dynamic_data_fields": [
+            "r",
+            "t",
+            "u",
+            "ut"
+          ],
+          "dynamic_fields_never_executed_by_verifier": true
+        }
+      ],
+      "helpers": [
+        {
+          "url": "https://skill.musebook.trade/.webmcp/bridge.js",
+          "bytes": 72952,
+          "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "capture": "2.html",
+      "origin": "https://musebook.trade",
+      "path": "/skill/",
+      "passed": true,
+      "policy": "strict_reviewed_html_transforms_v1",
+      "remaining_bytes_match_frozen_exactly": true,
+      "observed": {
+        "bytes": 7566,
+        "sha256": "dbab589a906c04b5e88a2ce081fe0c85b60fbf1f17764dcf7b549df15ac5c141"
+      },
+      "normalized": {
+        "bytes": 6979,
+        "sha256": "26bf453dc3883d9ce961272ce881e72d18dc8897a390ae51a0a49e261b3a1a80"
+      },
+      "transformations": [
+        {
+          "kind": "reviewed_same_origin_webmcp_bridge",
+          "bytes": 114,
+          "sha256": "49df804bfae39c69dc8fae8020e3f8e8a9b9fd11afe9a6bdc6e51ce5462aed78",
+          "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+          "insertion_offset": 323
+        },
+        {
+          "kind": "cloudflare_precursor_loader",
+          "bytes": 473,
+          "sha256": "439081a3316a9651ed29fe210d2e2eda4d33715da28e8adcd68bc64644042d8a",
+          "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+          "dynamic_data_fields": [
+            "r",
+            "t",
+            "u",
+            "ut"
+          ],
+          "dynamic_fields_never_executed_by_verifier": true
+        }
+      ],
+      "helpers": [
+        {
+          "url": "https://musebook.trade/.webmcp/bridge.js",
+          "bytes": 72952,
+          "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "capture": "3.html",
+      "origin": "https://musebook.trade",
+      "path": "/research/clawd-agentic-layer-v0.6.html",
+      "passed": true,
+      "policy": "strict_reviewed_html_transforms_v1",
+      "remaining_bytes_match_frozen_exactly": true,
+      "observed": {
+        "bytes": 2143579,
+        "sha256": "9ca6ff27e32e94c7299fbfd6102a87b08a0c8fd249bffef2d23d6ce31da7ada8"
+      },
+      "normalized": {
+        "bytes": 2142897,
+        "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1"
+      },
+      "transformations": [
+        {
+          "kind": "reviewed_same_origin_webmcp_bridge",
+          "bytes": 114,
+          "sha256": "49df804bfae39c69dc8fae8020e3f8e8a9b9fd11afe9a6bdc6e51ce5462aed78",
+          "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+          "insertion_offset": 38
+        },
+        {
+          "kind": "preserved_worker_connector_navigation",
+          "bytes": 568,
+          "sha256": "127b9ddc9be9c8fb927afd3faaebaed296bd548faababf605ff87798832726f5",
+          "template_sha256": "127b9ddc9be9c8fb927afd3faaebaed296bd548faababf605ff87798832726f5",
+          "insertion_offset": 38
+        }
+      ],
+      "helpers": [
+        {
+          "url": "https://musebook.trade/.webmcp/bridge.js",
+          "bytes": 72952,
+          "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "capture": "4.html",
+      "origin": "https://terminal.musebook.trade",
+      "path": "/research/clawd-agentic-layer-v0.6.html",
+      "passed": true,
+      "policy": "strict_reviewed_html_transforms_v1",
+      "remaining_bytes_match_frozen_exactly": true,
+      "observed": {
+        "bytes": 2143712,
+        "sha256": "711f427491a99be810a14918384e70804c40e9359e05a4e39ecbae4d6a524c93"
+      },
+      "normalized": {
+        "bytes": 2142897,
+        "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1"
+      },
+      "transformations": [
+        {
+          "kind": "reviewed_same_origin_webmcp_bridge",
+          "bytes": 123,
+          "sha256": "8e2f2cafe898eeb33c3a820b06b8f159fa6162b2bc0dd4b888acbcd8687cdd49",
+          "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+          "insertion_offset": 169
+        },
+        {
+          "kind": "cloudflare_precursor_loader",
+          "bytes": 473,
+          "sha256": "471d2d641c7cd5c5b5c8b39fa1af9d9e90e0774e13f48592d8434b7266b918d1",
+          "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+          "dynamic_data_fields": [
+            "r",
+            "t",
+            "u",
+            "ut"
+          ],
+          "dynamic_fields_never_executed_by_verifier": true
+        },
+        {
+          "kind": "cloudflare_email_obfuscation",
+          "bytes": 119,
+          "sha256": "d1be52ed45e527ee04660d58f93d5f6f325fa433bd19fb849c08daefe3241ef6",
+          "template_sha256": "9427549a87a86d2f0a3a386e2c792080c543e6ecd9710bd5afc30ee66d48a4f2",
+          "decoded": {
+            "bytes": 8,
+            "sha256": "3a0b5931651b8c28fd07fb50df98e49ae0c2163217edf820411869098aa52851"
+          }
+        },
+        {
+          "kind": "cloudflare_email_decoder",
+          "bytes": 108,
+          "sha256": "d9bfa4dd31a8c86f6ad537774d2fd2e2b1658e59f4fa204991eab7704bcad99d",
+          "template_sha256": "d9bfa4dd31a8c86f6ad537774d2fd2e2b1658e59f4fa204991eab7704bcad99d"
+        }
+      ],
+      "helpers": [
+        {
+          "url": "https://terminal.musebook.trade/.webmcp/bridge.js",
+          "bytes": 72952,
+          "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+          "verified": true
+        },
+        {
+          "url": "https://terminal.musebook.trade/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+          "bytes": 1239,
+          "sha256": "2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "negativeChecks": [
+    {
+      "case": "unknown_script",
+      "rejected": true
+    },
+    {
+      "case": "unknown_origin",
+      "rejected": true
+    },
+    {
+      "case": "unknown_route",
+      "rejected": true
+    },
+    {
+      "case": "different_expected_file",
+      "rejected": true
+    },
+    {
+      "case": "different_frozen_bytes",
+      "rejected": true
+    },
+    {
+      "case": "cross_origin_bridge",
+      "rejected": true
+    },
+    {
+      "case": "different_bridge_packs",
+      "rejected": true
+    },
+    {
+      "case": "duplicate_bridge",
+      "rejected": true
+    },
+    {
+      "case": "moved_bridge",
+      "rejected": true
+    },
+    {
+      "case": "changed_challenge_code",
+      "rejected": true
+    },
+    {
+      "case": "changed_challenge_data_syntax",
+      "rejected": true
+    },
+    {
+      "case": "unrelated_html_edit",
+      "rejected": true
+    },
+    {
+      "case": "changed_navigation_code",
+      "rejected": true
+    },
+    {
+      "case": "changed_cf_email_text",
+      "rejected": true
+    },
+    {
+      "case": "unknown_helper_javascript",
+      "rejected": true
+    }
+  ],
+  "negativeChecksPassed": 15,
+  "reviewedHelperSources": {
+    "webmcpBridge": {
+      "bytes": 72952,
+      "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60"
+    },
+    "cloudflareEmailDecoder": {
+      "bytes": 1239,
+      "sha256": "2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8"
+    }
+  },
+  "sourceAttribution": {
+    "connectorNavigation": "Exact literal verified in preserved Musebook Worker module.",
+    "webmcpBridge": "Exact observed tag and payload verified at three public origins. Injector absent from captured Musebook Worker; attribution not inferred.",
+    "cloudflareEmailDecoder": "Public Cloudflare helper reviewed; first-byte XOR decoding restores the original eight bytes.",
+    "cloudflareChallenge": "Exact 473-byte loader skeleton pinned; only restricted data fields r,t,u,ut vary. No inline JavaScript executed by verifier."
+  },
+  "liveCheckedAt": "2026-10-10T19:20:11.896507+00:00",
+  "liveChecks": [
+    {
+      "origin": "https://skill.musebook.trade",
+      "path": "/",
+      "status": 200,
+      "url": "https://skill.musebook.trade/",
+      "bytes": 7572,
+      "sha256": "7d8e6cb62a3329154da1eaabac396e2dab3fa1310a68f089b8f8f5b4255894ac",
+      "passed": true,
+      "review": {
+        "policy": "strict_reviewed_html_transforms_v1",
+        "remaining_bytes_match_frozen_exactly": true,
+        "observed": {
+          "bytes": 7572,
+          "sha256": "7d8e6cb62a3329154da1eaabac396e2dab3fa1310a68f089b8f8f5b4255894ac"
+        },
+        "normalized": {
+          "bytes": 6979,
+          "sha256": "26bf453dc3883d9ce961272ce881e72d18dc8897a390ae51a0a49e261b3a1a80"
+        },
+        "transformations": [
+          {
+            "kind": "reviewed_same_origin_webmcp_bridge",
+            "bytes": 120,
+            "sha256": "e941fbc4523db61fb57cfb61763d617c1d658f4ad1283da1858e6ba8b562e05d",
+            "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+            "insertion_offset": 323
+          },
+          {
+            "kind": "cloudflare_precursor_loader",
+            "bytes": 473,
+            "sha256": "75300fc0f0a322559afb1382bbf889dab6f514e896f8b3f967647b37c11a48b6",
+            "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+            "dynamic_data_fields": [
+              "r",
+              "t",
+              "u",
+              "ut"
+            ],
+            "dynamic_fields_never_executed_by_verifier": true
+          }
+        ],
+        "helpers": [
+          {
+            "url": "https://skill.musebook.trade/.webmcp/bridge.js",
+            "bytes": 72952,
+            "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "origin": "https://musebook.trade",
+      "path": "/skill/",
+      "status": 200,
+      "url": "https://musebook.trade/skill/",
+      "bytes": 7566,
+      "sha256": "df2783b7b5a7ec7e924f557ec6efb50c875ce654e7134e8846d291cf2d5f06f2",
+      "passed": true,
+      "review": {
+        "policy": "strict_reviewed_html_transforms_v1",
+        "remaining_bytes_match_frozen_exactly": true,
+        "observed": {
+          "bytes": 7566,
+          "sha256": "df2783b7b5a7ec7e924f557ec6efb50c875ce654e7134e8846d291cf2d5f06f2"
+        },
+        "normalized": {
+          "bytes": 6979,
+          "sha256": "26bf453dc3883d9ce961272ce881e72d18dc8897a390ae51a0a49e261b3a1a80"
+        },
+        "transformations": [
+          {
+            "kind": "reviewed_same_origin_webmcp_bridge",
+            "bytes": 114,
+            "sha256": "49df804bfae39c69dc8fae8020e3f8e8a9b9fd11afe9a6bdc6e51ce5462aed78",
+            "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+            "insertion_offset": 323
+          },
+          {
+            "kind": "cloudflare_precursor_loader",
+            "bytes": 473,
+            "sha256": "17d04e9a86704a839f083f70c2b78ee8da8dd22c4fb7e27a76b27478b5cf28e0",
+            "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+            "dynamic_data_fields": [
+              "r",
+              "t",
+              "u",
+              "ut"
+            ],
+            "dynamic_fields_never_executed_by_verifier": true
+          }
+        ],
+        "helpers": [
+          {
+            "url": "https://musebook.trade/.webmcp/bridge.js",
+            "bytes": 72952,
+            "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "origin": "https://musebook.trade",
+      "path": "/research/clawd-agentic-layer-v0.6.html",
+      "status": 200,
+      "url": "https://musebook.trade/research/clawd-agentic-layer-v0.6",
+      "bytes": 2143579,
+      "sha256": "9ca6ff27e32e94c7299fbfd6102a87b08a0c8fd249bffef2d23d6ce31da7ada8",
+      "passed": true,
+      "review": {
+        "policy": "strict_reviewed_html_transforms_v1",
+        "remaining_bytes_match_frozen_exactly": true,
+        "observed": {
+          "bytes": 2143579,
+          "sha256": "9ca6ff27e32e94c7299fbfd6102a87b08a0c8fd249bffef2d23d6ce31da7ada8"
+        },
+        "normalized": {
+          "bytes": 2142897,
+          "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1"
+        },
+        "transformations": [
+          {
+            "kind": "reviewed_same_origin_webmcp_bridge",
+            "bytes": 114,
+            "sha256": "49df804bfae39c69dc8fae8020e3f8e8a9b9fd11afe9a6bdc6e51ce5462aed78",
+            "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+            "insertion_offset": 38
+          },
+          {
+            "kind": "preserved_worker_connector_navigation",
+            "bytes": 568,
+            "sha256": "127b9ddc9be9c8fb927afd3faaebaed296bd548faababf605ff87798832726f5",
+            "template_sha256": "127b9ddc9be9c8fb927afd3faaebaed296bd548faababf605ff87798832726f5",
+            "insertion_offset": 38
+          }
+        ],
+        "helpers": [
+          {
+            "url": "https://musebook.trade/.webmcp/bridge.js",
+            "bytes": 72952,
+            "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "origin": "https://terminal.musebook.trade",
+      "path": "/research/clawd-agentic-layer-v0.6.html",
+      "status": 200,
+      "url": "https://terminal.musebook.trade/research/clawd-agentic-layer-v0.6",
+      "bytes": 2143712,
+      "sha256": "85a9e38b3ca8af304b0fc844586fbfb54de69fa4320aab3d155175aa632650b6",
+      "passed": true,
+      "review": {
+        "policy": "strict_reviewed_html_transforms_v1",
+        "remaining_bytes_match_frozen_exactly": true,
+        "observed": {
+          "bytes": 2143712,
+          "sha256": "85a9e38b3ca8af304b0fc844586fbfb54de69fa4320aab3d155175aa632650b6"
+        },
+        "normalized": {
+          "bytes": 2142897,
+          "sha256": "75374394023f077d0a3fcc01cff5d38c421ff6a249f8f99dc65cb633fad2c8d1"
+        },
+        "transformations": [
+          {
+            "kind": "reviewed_same_origin_webmcp_bridge",
+            "bytes": 123,
+            "sha256": "8e2f2cafe898eeb33c3a820b06b8f159fa6162b2bc0dd4b888acbcd8687cdd49",
+            "template_sha256": "ac9dba8ca48c2f65987ba994654da18f74ddd049002a6061ec4ac8d10c08336a",
+            "insertion_offset": 169
+          },
+          {
+            "kind": "cloudflare_precursor_loader",
+            "bytes": 473,
+            "sha256": "cdd064a3d44f1039bdb5997f244c997b651f54cd1ae5c02d4be1a90c40fa2b10",
+            "template_sha256": "a50e77a1baad13c244ea20e707921f9f24783322e393e1e1f5a82b4f162a0949",
+            "dynamic_data_fields": [
+              "r",
+              "t",
+              "u",
+              "ut"
+            ],
+            "dynamic_fields_never_executed_by_verifier": true
+          },
+          {
+            "kind": "cloudflare_email_obfuscation",
+            "bytes": 119,
+            "sha256": "8405b062f17adc47734adcf11627f0b4f75fa23d7f21084c2e8e846988d868b0",
+            "template_sha256": "9427549a87a86d2f0a3a386e2c792080c543e6ecd9710bd5afc30ee66d48a4f2",
+            "decoded": {
+              "bytes": 8,
+              "sha256": "3a0b5931651b8c28fd07fb50df98e49ae0c2163217edf820411869098aa52851"
+            }
+          },
+          {
+            "kind": "cloudflare_email_decoder",
+            "bytes": 108,
+            "sha256": "d9bfa4dd31a8c86f6ad537774d2fd2e2b1658e59f4fa204991eab7704bcad99d",
+            "template_sha256": "d9bfa4dd31a8c86f6ad537774d2fd2e2b1658e59f4fa204991eab7704bcad99d"
+          }
+        ],
+        "helpers": [
+          {
+            "url": "https://terminal.musebook.trade/.webmcp/bridge.js",
+            "bytes": 72952,
+            "sha256": "2e3d1e39775cdbea0da8ddcca3876eee3b91119ccefb2295c295a8e562c14d60",
+            "verified": true
+          },
+          {
+            "url": "https://terminal.musebook.trade/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "bytes": 1239,
+            "sha256": "2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8",
+            "verified": true
+          }
+        ]
+      }
+    }
+  ],
+  "liveChecksPassed": true,
+  "verifierImplementation": {
+    "verify_aligned_live.py": {
+      "bytes": 16634,
+      "sha256": "d921f7b8e878faac9e30038a1c38badf408b3922e2df772415cfa9cb4bf76569"
+    },
+    "reviewed_html_transforms.py": {
+      "bytes": 10586,
+      "sha256": "bf4461e74c975ec8740ac1f383a4f9a791e5861d835f90f88ffd874528d57cdd"
+    }
+  },
+  "effectiveRedirectPolicy": "Exact requested public URL or same-origin removal of the reviewed .html extension only; unknown origins/routes rejected.",
+  "genuineRoutingFailuresNotWaived": [
+    "Pages/terminal uppercase /SKILL.md alias",
+    "Canonical /clawd-agentic-layer-whitepaper.pdf HTTP404"
+  ]
+}

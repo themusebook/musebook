@@ -1,0 +1,22 @@
+{
+  "requestedSource": "designated-private-source/web-react",
+  "sourceBaseRevision": "a6879417018e3763550d32b21bc1e782c0dd4548",
+  "sourceIncludesReviewedUncommittedChanges": true,
+  "preservedPublicMcpTools": 23,
+  "preservedResearchMcpTools": 14,
+  "sourceOnlyPaths": [
+    "/api/metaplex/i/{key}/{file}",
+    "/api/metaplex/identities",
+    "/api/metaplex/identities/verify",
+    "/api/metaplex/identities/{hash}/{file}",
+    "/api/otc/coins",
+    "/api/otc/ipfs",
+    "/api/otc/meteora/launch"
+  ],
+  "paymentOrWalletExecutionPerformed": false,
+  "ownerOAuthCallbackPerformed": false,
+  "apiHostOpenapiAuthBoundary": "Auth0 protected; unauthenticated GET401",
+  "workerReleaseMethod": "Preserve existing runtime handlers and bindings; replace reviewed OpenAPI literal and frontend release pins only; restore verified public asset/runtime bindings.",
+  "additionalContractStatus": "source_only",
+  "existingRuntimePreserved": true
+}

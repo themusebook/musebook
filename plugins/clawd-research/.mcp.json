@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "clawd-research": {
+      "type": "http",
+      "url": "https://musebook.trade/mcp-research"
+    }
+  }
+}

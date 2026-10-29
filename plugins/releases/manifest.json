@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "publisher": "Musebook",
+  "openaiDirectoryStatus": "not_submitted",
+  "registeredChatGPTApp": false,
+  "sourceClawdSha256": "5839a373bf7bfb8e9cd8030b1e6d0ab9c8553ccb5958b264aa454d429100efd0",
+  "packages": [
+    {
+      "name": "musebook",
+      "version": "1.1.5",
+      "download": "/plugins/musebook-plugin.zip",
+      "sha256": "e90ca181c16e13f2e9980c1b8bbd60282d8f51ec77d568ea4f3fc706956835a5",
+      "bytes": 1008808,
+      "skills": 1,
+      "discoverableSkills": 1,
+      "files": 11
+    },
+    {
+      "name": "clawd",
+      "version": "3.15.1",
+      "download": "/plugins/clawd-plugin.zip",
+      "sha256": "2491b0ba6904aed552cc5da612865d14ab457154fbf2ded6a550620ace0e46fc",
+      "bytes": 26160278,
+      "skills": 273,
+      "discoverableSkills": 272,
+      "files": 2662
+    },
+    {
+      "name": "clawd-research",
+      "version": "1.2.1",
+      "download": "/plugins/clawd-research-plugin.zip",
+      "sha256": "68fef7e925c96167abddc68c59f0ee09d8b4273bcd0d2de6fd4ae4ee756454f0",
+      "bytes": 1013116,
+      "skills": 1,
+      "discoverableSkills": 1,
+      "files": 11
+    }
+  ]
+}

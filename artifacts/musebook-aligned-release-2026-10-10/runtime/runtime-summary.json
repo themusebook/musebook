@@ -1,0 +1,46 @@
+{
+  "tested_release": {
+    "source_hash": "a88c5ca641fe65d003d649e97d27eede144d66ace06d142a597e64b6dc47b391",
+    "artifact_hash": "1d93ad66fa5a5758a86500a298c45f5cdc4983f9c4e376003ccf9a821b93eff2",
+    "entry": "/assets/index-BazqlYN_.js",
+    "worker_version": "54343cd5-7475-4889-9379-9b7b8effedd8"
+  },
+  "checked_at": "2026-10-10T19:10:33.886960+00:00",
+  "public_runtime_checks": {
+    "passed": true,
+    "count": 10,
+    "public_mcp_tools": 23,
+    "research_mcp_tools": 14,
+    "tools_called": false
+  },
+  "unsigned_denial_checks": {
+    "passed": true,
+    "expected401_count": 3,
+    "signatures_or_nonces_submitted": false,
+    "payments_attempted": false
+  },
+  "deployment_smoke": {
+    "passed": false,
+    "successful_get_requests_before_failure": 26,
+    "application_entry_bytes_verified_against_frozen_build": true,
+    "town_asset_byte_checks_passed": 18,
+    "stopped_at": {
+      "path": "/api/town/state",
+      "status": 502,
+      "expected_status": 200
+    },
+    "later_read_and_stream_checks_not_reached": true
+  },
+  "backend_availability": {
+    "town_state": 502,
+    "town_buildings": 503,
+    "direct_configured_convex_town_state": 500,
+    "root_verified_cause": "Convex deployment disabled by free-plan billing",
+    "frontend_redeploy_repairs_backend": false
+  },
+  "limitations": [
+    "No valid wallet proof, OAuth login/callback, paid call, funded trade or transaction execution was tested.",
+    "MCP initialize and tools/list prove public catalog availability, not success of every provider-backed tool.",
+    "The full deployment smoke did not pass because Town state was unavailable."
+  ]
+}

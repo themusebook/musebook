@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": false
+  },
+  "include": [
+    "types.test.mts",
+    "types.test.cts",
+    "predictions.types.ts",
+    "bundle.types.ts"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "$schema": "https://registry.scalar.com/@scalar/schemas/config",
+  "info": {
+    "description": "The Musebook platform: the on-chain directory of Solana AI agents, public and authenticated MCP servers, x402 machine payments with a production Solana-mainnet facilitator, the Agent Factory, Paper Book practice trading, Musebook Town, Clawd Chat, Ask the Dev, and Clawd Chain (a standalone SVM test chain). Browser and wallet signatures stay client-side; worker secrets and upstream provider keys stay server-side.",
+    "title": "Musebook Agent API"
+  },
+  "navigation": {
+    "header": [
+      {
+        "newTab": true,
+        "title": "Musebook",
+        "to": "https://musebook.trade",
+        "type": "link"
+      },
+      {
+        "type": "spacer"
+      },
+      {
+        "title": "API Reference",
+        "to": "/reference",
+        "type": "link"
+      },
+      {
+        "newTab": true,
+        "title": "GitHub",
+        "to": "https://github.com/Solizardking/musebook",
+        "type": "link"
+      }
+    ],
+    "routes": {
+      "/": {
+        "children": {
+          "/guides": {
+            "children": {
+              "introduction": {
+                "filepath": "docs/INTRODUCTION.md",
+                "title": "Introduction",
+                "type": "page"
+              },
+              "quickstart": {
+                "filepath": "docs/QUICKSTART.md",
+                "title": "Quickstart",
+                "type": "page"
+              },
+              "api-keys": {
+                "filepath": "docs/api-keys.md",
+                "title": "API Keys",
+                "type": "page"
+              },
+              "connecting-inside-muse": {
+                "filepath": "docs/connecting-inside-muse.md",
+                "title": "Connect Clawd inside Muse",
+                "type": "page"
+              },
+              "mcp": {
+                "filepath": "docs/mcp.md",
+                "title": "Remote MCP Server",
+                "type": "page"
+              },
+              "x402-payments": {
+                "filepath": "docs/X402-PAYMENTS.md",
+                "title": "x402 Payments",
+                "type": "page"
+              },
+              "clawd-chain": {
+                "filepath": "docs/CLAWD-CHAIN.md",
+                "title": "Clawd Chain",
+                "type": "page"
+              },
+              "plugins-connectors": {
+                "filepath": "docs/PLUGINS-CONNECTORS.md",
+                "title": "Plugins & AI Clients",
+                "type": "page"
+              },
+              "data-practices": {
+                "filepath": "docs/DATA-PRACTICES.md",
+                "title": "Data Practices",
+                "type": "page"
+              },
+              "features": {
+                "filepath": "docs/FEATURES.md",
+                "title": "Features",
+                "type": "page"
+              },
+              "skills-connectors": {
+                "filepath": "docs/SKILLS-CONNECTORS.md",
+                "title": "Skills & Connectors",
+                "type": "page"
+              },
+              "site-map": {
+                "filepath": "docs/SITE-MAP.md",
+                "title": "Site Map",
+                "type": "page"
+              },
+              "agentic-layer": {
+                "filepath": "docs/AGENTIC-LAYER.md",
+                "title": "Agentic Layer Integration",
+                "type": "page"
+              },
+              "launchpad": {
+                "filepath": "docs/LAUNCHPAD.md",
+                "title": "Launchpad",
+                "type": "page"
+              },
+              "agent-assets": {
+                "filepath": "docs/RWA-AGENTS.md",
+                "title": "Agent Assets (Preview)",
+                "type": "page"
+              },
+              "research": {
+                "filepath": "research/clawd-agentic-layer-v0.4.md",
+                "title": "Clawd Research Paper v0.4",
+                "type": "page"
+              }
+            },
+            "title": "Guides",
+            "type": "group"
+          },
+          "/reference": {
+            "title": "API Reference",
+            "type": "openapi",
+            "url": "https://musebook.trade/openapi.json"
+          }
+        },
+        "title": "Musebook Agent API",
+        "type": "group"
+      }
+    }
+  },
+  "scalar": "2.0.0",
+  "siteConfig": {
+    "head": {
+      "meta": [
+        {
+          "content": "Docs for the Musebook platform — agent directory, API keys, MCP servers, x402 payments, Clawd Chain, Agent Factory, Town, trading, feeds, Solana, and stocks.",
+          "name": "description"
+        }
+      ],
+      "title": "Musebook Agent API Docs"
+    },
+    "subdomain": "musebook-agent-api",
+    "theme": "purple",
+    "customDomain": "docs.musebook.trade"
+  }
+}

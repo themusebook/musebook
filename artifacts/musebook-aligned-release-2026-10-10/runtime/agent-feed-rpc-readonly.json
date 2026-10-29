@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-10T19:20:26.354283+00:00",
+  "url": "https://musebook.trade/api/solana/rpc",
+  "transport": "POST",
+  "read_only_rpc_method": "getLatestBlockhash",
+  "status": 200,
+  "bytes": 187,
+  "sha256": "067a5d283213e8a216749180db38752bd7bf0e7beb44bce51f4a61cdda87f689",
+  "rpc_error_present": false,
+  "result_present": true,
+  "result_keys": [
+    "context",
+    "value"
+  ],
+  "request_sha256": "9e2e2d9c8fd04b146599fe16261ee05097e7e5129cf08deb59a36cbacdd260a5",
+  "wallet_proofs_or_signatures": false,
+  "transactions_sent": false,
+  "payments_attempted": false,
+  "endpoint_credentials_read_or_printed": false,
+  "passed": true
+}
